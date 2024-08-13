@@ -10,3 +10,6 @@ References:
 draft: 
 description: 
 ---
+
+This is for initial testing
+[[content/index|index]]
