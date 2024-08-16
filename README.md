@@ -1,18 +1,8 @@
-# Quartz v4
+# CTF Writeups
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+Welcome to my Capture The Flag (CTF) writeup repository! Here you'll find detailed explanations and solutions to various CTF challenges I've tackled.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+## Contents
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
-
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
-
-## Sponsors
-
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+-  **Challenges**: Each challenge is organized by category and includes a writeup detailing the approach, methodology, and solution.
+-  **Tools Used**: Information about the tools and techniques employed in solving the challenges.
