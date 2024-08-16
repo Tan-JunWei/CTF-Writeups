@@ -21,7 +21,7 @@ Another forensics challenge! As usual, we first download the suspicious file.
 
 We notice that the file is supposedly a pdf file. However, when we run `file <file-name>`, we realise that the file is a PNG file instead. 
 
-Using the CLI, I opened the PDF file to check whether there is anything inside. 
+Using the GUI, I opened the PDF file to check whether there is anything inside. 
 
 
 

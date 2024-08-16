@@ -11,4 +11,4 @@ title: CTF Writeups
 Welcome to my CTF Writeups page! Here, you'll find explanations and solutions for various Capture The Flag (CTF) challenges I’ve worked on. 
 
 ### Navigation
-[[PicoCTF Writeups]]
+-  [[PicoCTF Writeups]]
