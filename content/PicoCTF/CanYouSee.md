@@ -28,7 +28,7 @@ As per usual, we begin by downloading the file. For this challenge, it is a zip 
 
 The image doesn't seem to tell us anything. 
 
->[!question] PicoCTF clue: How can you view the information about the picture? 
+>[!question] PicoCTF Hint: How can you view the information about the picture? 
 
 The clue seems to be hinting us to check the metadata of the picture. We shall do just that.
 
