@@ -1,15 +1,11 @@
 ---
-Author:
-  - JW Tan
-Author Profile:
-  - www.linkedin.com/in/jun-wei-tan
-tags:
-  - trial
-Creation Date: 2024-08-13, 9:46
+tags: 
+Creation Date: 
+Last Date: 
 References: 
-draft: 
-description: 
+draft:
 ---
 
-This is for initial testing
-[[content/index|index]]
+>[!important] Entry point function
+
+>[!question] What?
