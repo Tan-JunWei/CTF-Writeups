@@ -1,6 +1,7 @@
 ---
 tags:
   - Forensics
+  - easy
 Creation Date: 
 Last Date: 
 References: 
