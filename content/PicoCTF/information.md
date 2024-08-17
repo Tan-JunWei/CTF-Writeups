@@ -2,6 +2,7 @@
 tags:
   - Forensics
   - easy
+  - metadata
 Creation Date: 
 Last Date: 
 References: 
