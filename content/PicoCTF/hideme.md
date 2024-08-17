@@ -26,7 +26,7 @@ Running binwalk reveals that there are embedded files that we need to take note 
 
 There are a total of 4 files/directories in the `_file.png.extracted` directory. These are: `29`, `29.zlib`, `9B3B.zip`, and a `secret` directory. Running `file 29` shows that `29` is an empty file. 
 
->[!important] The `secret` directory seems most suspicious. I `cd` into it to find that there is another `png` file called `flag.png`. Using the GUI, I open the image to find the common flag prefix of `picoCTF`. There's our flag in plaintext!
+>[!important] The `secret` directory seems most suspicious. I `cd` into it to find that there is another `png` file called `flag.png`. Using the GUI, I open the image to find the familiar flag prefix of `picoCTF`. There's our flag in plaintext!
 
 ### Flag found in `flag.png`
 ![[PicoCTF hideme 4.png]]
