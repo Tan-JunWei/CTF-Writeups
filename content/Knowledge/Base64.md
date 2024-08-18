@@ -8,7 +8,7 @@
 ### Encoding Base64
 
 >[!important] The encoding algorithm is pretty simple:  
-Take three character bytes from the input stream (24bits), divide them into four 6 bit parts and convert each 6 bit value according to the table above. Repeat this until no more input character bytes are left.
+>Take three character bytes from the input stream (24bits), divide them into four 6 bit parts and convert each 6 bit value according to the table above. Repeat this until no more input character bytes are left.
 ![[base 64 encoding example.png]]
 
 >[!question] What to do if the number of input character bytes is not divisible by three?  
