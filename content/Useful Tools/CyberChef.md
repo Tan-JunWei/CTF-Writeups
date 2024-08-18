@@ -7,5 +7,6 @@ This tool can be downloaded from Github and run on your local machine, or it can
 
 #### What is CyberChef used for? ###
 
->[!important] CyberChef can be used to: encode, decode, format data, parse data, encrypt, decrypt, compress data, extract data, perform arithmetic functions against data, defang data, and many other functions.
+>[!important] Uses
+>CyberChef can be used to: encode, decode, format data, parse data, encrypt, decrypt, compress data, extract data, perform arithmetic functions against data, defang data, and many other functions.
 

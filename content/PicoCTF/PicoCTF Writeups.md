@@ -1,13 +1,16 @@
 - Forensics
-	- [[Verify]]
-	- [[Scan Surprise]]
-	- [[Secret of the Polyglot]]
-	- [[CanYouSee]]
-	- [[information]]
-	- [[Glory of the Garden]]
-	- [[PcapPoisoning]]
-	- [[hideme]]
-	- [[Sleuthkit Intro]]
-	- [[FIndAndOpen]]
-	- [[St3g0]]
+	- easy
+		- [[Verify]]
+		- [[Scan Surprise]]
+		- [[Secret of the Polyglot]]
+		- [[CanYouSee]]
+		- [[information]]
+		- [[Glory of the Garden]]
+	- medium
+		- [[PcapPoisoning]]
+		- [[hideme]]
+		- [[Sleuthkit Intro]]
+		- [[FIndAndOpen]]
+		- [[St3g0]]
+		- [[Sleuthkit Apprentice]]
 	
