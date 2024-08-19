@@ -3,10 +3,10 @@ tags:
   - Forensics
   - easy
   - metadata
-Creation Date: 
-Last Date: 
+Creation Date: 2024-08-15
 References: 
-draft:
+draft: false
+modified: 2024-08-19T15:22:20+08:00
 ---
 ## Challenge Description
 

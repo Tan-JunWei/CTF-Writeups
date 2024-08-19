@@ -10,7 +10,7 @@
 		- [[PcapPoisoning]]
 		- [[hideme]]
 		- [[Sleuthkit Intro]]
-		- [[FIndAndOpen]]
+		- [[FindAndOpen]]
 		- [[St3g0]]
 		- [[Sleuthkit Apprentice]]
 		- [[Redaction gone wrong]]
