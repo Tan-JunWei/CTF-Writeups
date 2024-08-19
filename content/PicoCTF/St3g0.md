@@ -6,7 +6,8 @@ tags:
 Creation Date: 
 Last Date: 
 References: 
-draft:
+draft: 
+modified: 2024-08-19T15:26:51+08:00
 ---
 ## Challenge Description
 ![[PicoCTF St3g0.png]]

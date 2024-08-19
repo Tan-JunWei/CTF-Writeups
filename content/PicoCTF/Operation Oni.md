@@ -6,7 +6,8 @@ tags:
 Creation Date: 
 Last Date: 
 References: 
-draft:
+draft: 
+modified: 2024-08-19T15:26:10+08:00
 ---
 ## Challenge Description
 
@@ -63,4 +64,4 @@ After we ran `icat -o 206848 disk.img 2345`, it seemed like it contained the ful
 After changing the file permissions, we can successfully connect to the SSH server. We can run `ls` and `cat flag.txt` to get our flag. 
 
 > [!NOTE] Flag
-picoCTF{k3y_5l3u7h_339601ed}
+> picoCTF{k3y_5l3u7h_339601ed}
