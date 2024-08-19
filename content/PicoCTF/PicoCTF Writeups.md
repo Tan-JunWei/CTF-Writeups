@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-19T17:23:12+08:00
+modified: 2024-08-19T18:05:31+08:00
 ---
 - Forensics
 	- easy
@@ -22,4 +22,5 @@ modified: 2024-08-19T17:23:12+08:00
 		- [[Operation Oni]]
 		- [[File types]]
 		- [[Enhance!]]
+		- [[MacroHard WeakEdge]]
 	
