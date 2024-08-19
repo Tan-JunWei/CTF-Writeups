@@ -28,6 +28,7 @@ After running `binwalk -e <file-name>` to extract the embedded files, I ran `tre
 >Running `tree <directory-name>` allows us to get an overview of the contents present in a directory, especially if there are many files within it. 
 >
 >`-a`: prints all files, but without full path prefix for each file
+>
 >`-f`: prints the full path prefix for each file
 
 While looking through the files and directories, I chanced upon a suspicious file named `hidden`.
