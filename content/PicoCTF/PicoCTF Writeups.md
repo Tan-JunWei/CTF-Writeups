@@ -1,3 +1,6 @@
+---
+modified: 2024-08-19T16:09:52+08:00
+---
 - Forensics
 	- easy
 		- [[Verify]]
@@ -17,4 +20,5 @@
 		- [[Packets Primer]]
 		- [[Lookey here]]
 		- [[Operation Oni]]
+		- [[File types]]
 	
