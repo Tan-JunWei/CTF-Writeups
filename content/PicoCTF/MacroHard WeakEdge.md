@@ -6,7 +6,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-19T18:38:38+08:00
+modified: 2024-08-19T20:01:26+08:00
 ---
 ## Challenge Description
 
@@ -26,6 +26,7 @@ After running `binwalk -e <file-name>` to extract the embedded files, I ran `tre
 
 >[!important] `tree` command
 >Running `tree <directory-name>` allows us to get an overview of the contents present in a directory, especially if there are many files within it. 
+>
 >`-a`: prints all files, but without full path prefix for each file
 >`-f`: prints the full path prefix for each file
 
