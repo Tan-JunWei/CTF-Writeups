@@ -7,13 +7,13 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-19T17:10:49+08:00
+modified: 2024-08-19T17:13:07+08:00
 ---
 ## Challenge Description
 
 ![[PicoCTF file types.png]]
 
-This challenge requires us to use `binwalk` and decompress many file types to eventually obtain our flag. 
+This challenge requires us to use `binwalk` and decompress many file types to eventually obtain our flag... and there's a reason why it's only 26% liked.
 
 As usual, we start by using `wget` to download our file from PicoCTF. After running `file <file-name>`, we realise that the `flag.pdf` file should have a `.sh` file extension instead. So we do `cp flag.pdf flag.sh` in order to be able to execute the script.
 
