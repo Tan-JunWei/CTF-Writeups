@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-19T15:26:10+08:00
+modified: 2024-08-19T16:31:17+08:00
 ---
 ## Challenge Description
 
@@ -42,6 +42,7 @@ After we ran `icat -o 206848 disk.img 2345`, it seemed like it contained the ful
 
 ![[PicoCTF operation oni 6.png]]
 
+#### File permissions
 >[!caution] Unprotected Private Key File
 >It is recommended that private key files are NOT accessible by others. To fix this problem, we can run `chmod 600 <file-name>`.
 >##### Understanding `600` Permissions
