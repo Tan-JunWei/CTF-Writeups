@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-19T16:31:17+08:00
+modified: 2024-08-19T20:20:44+08:00
 ---
 ## Challenge Description
 
@@ -16,9 +16,12 @@ modified: 2024-08-19T16:31:17+08:00
 From the description, it looks like we will have to download the disk image and retrieve an ssh key to connect to an ssh server afterwards, in order to obtain our flag. 
 
 ### Download, extract and check the contents
+
 ![[PicoCTF operation oni 2.png]]
 We first download and extract the disk image using `wget <link>` and `gunzip <image-name>`. We then run `mmls <file-name>` to display the partition layout of this volume system. We have to take note of the starting offsets of the different partitions. 
 
+>[!question] Disk Analysis Tool
+>[[The Sleuth Kit (TSK)]]
 ### `fls` command
 ![[PicoCTF operation oni 3.png]]
  We proceed by running `fls -o <image-offset> -r <image-name>` to display the files and directories of the available partitions. It appears that we will have to zoom into the second partition instead of the first, as the first partition does not look like it has the ssh keys. 

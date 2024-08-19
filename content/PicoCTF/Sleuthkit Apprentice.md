@@ -7,13 +7,13 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-19T15:26:39+08:00
+modified: 2024-08-19T20:20:09+08:00
 ---
 ### Challenge Description
 
 ![[PicoCTF Sleuthkit Apprentice.png]]
 
-We will first download and extract the compressed disk image using `wget <link>` and `gunzip <file-name>` respectively. 
+We will first download and extract the compressed disk image using `wget <link>` and `gunzip <file-name>` respectively. We will then need to use [[The Sleuth Kit (TSK)]] commands for disk image analysis.
 
 ### `mmls` command
 ![[PicoCTF Sleuthkit Apprentice 2.png]]
