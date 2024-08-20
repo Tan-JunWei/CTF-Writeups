@@ -14,7 +14,7 @@ Welcome to my Capture The Flag (CTF) writeup repository! Here you'll find detail
 	- **Lines (Links)**: The lines between nodes present internal links, showcasing how these elements are interconnected. 
 - By using this visualization, you can gain a deeper understanding of the strategies used across multiple challenges, identify common tools or techniques, and explore how different concepts are interlinked.
 
-## Explore\
+## Explore
 To dive right in, visit the [website](https://tan-junwei.github.io/CTF-Writeups/) to explore the challenges and tools
 
 ## Contributions
