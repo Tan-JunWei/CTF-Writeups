@@ -7,14 +7,14 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-20T15:53:04+08:00
+modified: 2024-08-20T23:20:15+08:00
 ---
 ## Challenge Description 
 ![[PicoCTF Matryoshka doll.png]]
 
 This seems like an interesting challenge. The name suggests that we will probably have to recursively extract embedded files from the file provided, since [this source](https://en.wikipedia.org/wiki/Matryoshka_doll) explains what Matryoshka Dolls are. 
 
-### Attempting first binwalk
+### Attempting the first binwalk
 
 ![[PicoCTF Matryoshka doll 2.png]]
 
