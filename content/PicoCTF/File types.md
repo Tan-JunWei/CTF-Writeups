@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-19T16:54:28+08:00
+modified: 2024-08-20T09:58:18+08:00
 ---
 ## Challenge Description
 
@@ -66,7 +66,7 @@ I simply decompressed and extracted the files one after the other, until I ran `
 ![[PicoCTF file types 8.png]]
 I proceeded to `cat` the file, obtaining a string of numbers. Then I tried to input the string in [[CyberChef]], and from there I got the flag. 
 
->[!important] CyberChef "Magic" Operation
+>[!important] [[CyberChef#CyberChef "Magic"|CyberChef "Magic"]] Operation
 >To obtain the flag, I just connected both strings of numbers and used the CyberChef "Magic Wand" icon. 
 >To read more about CyberChef "Magic" Operation, you may refer to [this](https://github.com/gchq/CyberChef/wiki/Automatic-detection-of-encoded-data-using-CyberChef-Magic).
 

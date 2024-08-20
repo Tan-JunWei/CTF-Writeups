@@ -10,3 +10,7 @@ This tool can be downloaded from Github and run on your local machine, or it can
 >[!important] Uses
 >CyberChef can be used to: encode, decode, format data, parse data, encrypt, decrypt, compress data, extract data, perform arithmetic functions against data, defang data, and many other functions.
 
+##### CyberChef "Magic"
+>[!success] CyberChef "Magic" Operation
+>CyberChef v8 introduces the Magic operation, designed to automatically detect how your data is encoded and which operations can be used to decode it. 
+>For more information, you may want to refer to [this page](https://github.com/gchq/CyberChef/wiki/Automatic-detection-of-encoded-data-using-CyberChef-Magic).
