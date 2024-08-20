@@ -1,6 +1,3 @@
----
-modified: 2024-08-19T20:48:32+08:00
----
 # CTF Writeups
 
 Welcome to my Capture The Flag (CTF) writeup repository! Here you'll find detailed explanations and solutions to various CTF challenges I've tackled.
