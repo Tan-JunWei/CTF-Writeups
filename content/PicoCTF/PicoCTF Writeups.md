@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-20T15:15:56+08:00
+modified: 2024-08-20T15:34:16+08:00
 ---
 - Forensics
 	- easy
@@ -24,4 +24,5 @@ modified: 2024-08-20T15:15:56+08:00
 		- [[Enhance!]]
 		- [[MacroHard WeakEdge]]
 		- [[Disk DIsk Sleuth II]]
+		- [[Matryoshka doll]]
 	
