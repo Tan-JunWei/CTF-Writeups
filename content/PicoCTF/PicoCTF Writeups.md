@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-20T21:59:18+08:00
+modified: 2024-08-20T22:39:10+08:00
 ---
 - Forensics
 	- easy
@@ -26,4 +26,6 @@ modified: 2024-08-20T21:59:18+08:00
 		- [[Disk Disk Sleuth II]]
 		- [[Matryoshka doll]]
 		- [[Wireshark Doo Dooo Do Doo...]]
+		- [[Disk Disk Sleuth]]
+	
 	
