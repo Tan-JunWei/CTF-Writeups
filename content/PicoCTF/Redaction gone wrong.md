@@ -6,7 +6,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-19T15:26:00
+modified: 2024-08-20T23:19:45+08:00
 ---
 
 ## Challenge Description 
@@ -17,7 +17,6 @@ After downloading the file, we can simply use the GUI to open the pdf file. In t
 
 ### GUI Approach
 ![[PicoCTF redaction gone wrong 2.png]]
-
 
 ### CLI Approach
 ![[PicoCTF redaction gone wrong 3.png]]
