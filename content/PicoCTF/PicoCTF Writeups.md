@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-19T18:05:31+08:00
+modified: 2024-08-20T15:15:56+08:00
 ---
 - Forensics
 	- easy
@@ -23,4 +23,5 @@ modified: 2024-08-19T18:05:31+08:00
 		- [[File types]]
 		- [[Enhance!]]
 		- [[MacroHard WeakEdge]]
+		- [[Disk DIsk Sleuth II]]
 	
