@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-20T15:34:16+08:00
+modified: 2024-08-20T21:59:18+08:00
 ---
 - Forensics
 	- easy
@@ -23,6 +23,7 @@ modified: 2024-08-20T15:34:16+08:00
 		- [[File types]]
 		- [[Enhance!]]
 		- [[MacroHard WeakEdge]]
-		- [[Disk DIsk Sleuth II]]
+		- [[Disk Disk Sleuth II]]
 		- [[Matryoshka doll]]
+		- [[Wireshark Doo Dooo Do Doo...]]
 	

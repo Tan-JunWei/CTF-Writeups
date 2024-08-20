@@ -1,3 +1,6 @@
+---
+modified: 2024-08-20T22:12:34+08:00
+---
 CyberChef is a web-application developed by GCHQ that’s been called the “Cyber Swiss Army Knife”. From the CyberChef GitHub page:
 
 >[!quote] 

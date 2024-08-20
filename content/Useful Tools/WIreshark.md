@@ -1,4 +1,6 @@
-
+---
+modified: 2024-08-20T21:49:02+08:00
+---
 Wireshark is a network protocol analyzer, or an application that captures packets from a network connection, such as from your computer to your home office or the internet. Packet is the name given to a discrete unit of data in a typical Ethernet network (_What Is Wireshark and How to Use It | Cybersecurity | CompTIA_, n.d.).
 
 Wireshark is the most often-used packet sniffer in the world. Like any other packet sniffer, 
