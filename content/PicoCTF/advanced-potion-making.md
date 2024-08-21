@@ -6,13 +6,13 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-21T10:40:22+08:00
+modified: 2024-08-21T10:45:04+08:00
 ---
 ## Challenge Description
 
 ![[PicoCTF advanced potion making .png]]
 
-We begin our quest for the flag by downloading the file using `wget`. Upon running `file advanced-potion-making` and `exiftool advanced-potion-making`, we realise that there was no clue about the file type of this file. 
+We begin our quest for the flag by downloading the file using `wget`. Running `file advanced-potion-making` and `exiftool advanced-potion-making` did not provide us with any clue about the file type of this file. 
 
 ![[PicoCTF advanced potion making 2.png]]
 ### Trying `hexedit`
