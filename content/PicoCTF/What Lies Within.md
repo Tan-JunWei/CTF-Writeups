@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-20T23:16:32+08:00
+modified: 2024-08-20T23:21:04+08:00
 ---
 ## Challenge Description
 ![[PicoCTF What Lies Within.png]]
