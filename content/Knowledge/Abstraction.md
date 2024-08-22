@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-22T14:52:05+08:00
+modified: 2024-08-22T14:55:06+08:00
 ---
 Abstraction in computer science is the process of removing elements of a code or program that aren't relevant or that distract from more important elements. 
 
@@ -35,3 +35,6 @@ Abstraction in computer science is the process of removing elements of a code or
 >	  
 >In the non-abstraction approach, each button represents a specific, detailed task. Users need to manage multiple steps and handle the minutiae of the process, which can be cumbersome and error-prone.
 
+#### References
+- Parr, K. (2020, December 18). _The Four Pillars of Object-Oriented Programming_. freeCodeCamp.org. https://www.freecodecamp.org/news/four-pillars-of-object-oriented-programming/
+- _Operating System Design/File Systems/Abstraction - Wikibooks, open books for an open world_. (n.d.). https://en.wikibooks.org/wiki/Operating_System_Design/File_Systems/Abstraction
