@@ -1,7 +1,10 @@
 ---
-modified: 2024-08-20T21:48:52+08:00
+modified: 2024-08-22T14:59:39+08:00
 ---
 The Sleuth Kit® (TSK) is a library and collection of command line tools that allow you to investigate disk images. The core functionality of TSK allows you to analyze volume and file system data. The library can be incorporated into larger digital forensics tools and the command line tools can be directly used to find evidence (_The Sleuth Kit_, n.d.).
+
+>[!info] Linux File System
+>To use TSK more effectively, having knowledge about the [[Linux File System]] is important. 
 
 >[!important] Quick Access
 >For a quick lookup on Sleuth Kit commands, you can refer to [this page](https://wiki.sleuthkit.org/index.php?title=The_Sleuth_Kit_commands).
