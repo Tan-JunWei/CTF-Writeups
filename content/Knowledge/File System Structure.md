@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-22T14:20:55+08:00
+modified: 2024-08-22T14:24:00+08:00
 ---
 A file system is a fundamental component of an operating system that manages how data is stored, organized, and accessed on storage devices. It provides a structured way to store and retrieve files, ensuring efficient data management across various storage mediums. Understanding its layered architecture helps explain how data is handled from the physical storage up to user interactions.
 
@@ -23,7 +23,7 @@ A file system is a fundamental component of an operating system that manages how
 
 Each layer builds upon the previous, with increasing levels of [[Abstraction|abstraction]] to manage complexity and provide a seamless user experience.
 
->[!example]- Layered Architecture of File Systems
+>[!todo]- Layered Architecture of File Systems
 >The layered approach allows for efficient data handling by isolating hardware-specific details, standardizing interactions between different file systems, and offering a simplified interface for end users, ultimately creating a cohesive and user-friendly data management system.
 
 #### References
