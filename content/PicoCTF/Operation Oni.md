@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-19T20:20:44+08:00
+modified: 2024-08-22T21:09:57+08:00
 ---
 ## Challenge Description
 
@@ -21,12 +21,12 @@ From the description, it looks like we will have to download the disk image and 
 We first download and extract the disk image using `wget <link>` and `gunzip <image-name>`. We then run `mmls <file-name>` to display the partition layout of this volume system. We have to take note of the starting offsets of the different partitions. 
 
 >[!question] Disk Analysis Tool
->[[The Sleuth Kit (TSK)]]
+>This challenge will require the usage of disk analysis tools like[[The Sleuth Kit (TSK)]].
 ### `fls` command
 ![[PicoCTF operation oni 3.png]]
  We proceed by running `fls -o <image-offset> -r <image-name>` to display the files and directories of the available partitions. It appears that we will have to zoom into the second partition instead of the first, as the first partition does not look like it has the ssh keys. 
 
->[!important] Location of the SSH keys
+>[!info] Location of the SSH keys
 >According to [this source](https://superuser.com/questions/370028/where-are-my-private-public-ssh-keys-on-unix), the ssh keys are normally stored in `~/.ssh` directory. So let's attempt `grep ssh` after we do `fls`
 
 ### `grep ssh`

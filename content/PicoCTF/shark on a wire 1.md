@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-21T15:32:05+08:00
+modified: 2024-08-22T21:11:06+08:00
 ---
 ## Challenge Description
 
@@ -26,7 +26,8 @@ The `capture.pcap` file contained a total of 2317 packets. After checking the Pr
 
 I analysed the various `UDP streams`, and managed to find the flag in the 6th stream. 
 
->[!caution] There are decoy flags in this challenge, such as one fake flag in _UDP 7th stream_. 
+>[!danger] Decoy Flags
+>There are decoy flags in this challenge, such as one fake flag in _UDP 7th stream_. 
 
 ![[PicoCTF shark on a wire 1 3.png]]
 

@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-20T23:20:15+08:00
+modified: 2024-08-22T21:07:32+08:00
 ---
 ## Challenge Description 
 ![[PicoCTF Matryoshka doll.png]]
@@ -38,7 +38,7 @@ Running `binwalk -e` on this file allowed us to extract another directory with s
 ### Again
 ![[PicoCTF Matryoshka doll 5.png]]
 A final `binwalk -e` on `4_c.jpg` extracted a `_4_c.jpg extracted` directory, but did not extract a `base_images` directory. Hence I stopped and did an `ls` to list the contents of the `_4_c.jpg extracted` directory. 
->[!success] flag.txt
+>[!todo] flag.txt
 >A `flag.txt` was present in this directory. Using `cat` revealed the flag in plaintext.
 
 > [!NOTE] Flag
