@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-23T09:58:01+08:00
+modified: 2024-08-23T10:31:07+08:00
 ---
 - Forensics
 	- easy
@@ -36,6 +36,7 @@ modified: 2024-08-23T09:58:01+08:00
 	- easy
 		- [[Mod 26]]
 		- [[interencdec]]
+		- [[The Numbers]]
 	- medium
 		- [[Mind your Ps and Qs]]
 	
