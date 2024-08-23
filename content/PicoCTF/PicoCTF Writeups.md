@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-23T11:15:51+08:00
+modified: 2024-08-23T14:00:15+08:00
 ---
 - Forensics
 	- easy
@@ -41,4 +41,5 @@ modified: 2024-08-23T11:15:51+08:00
 	- medium
 		- [[Mind your Ps and Qs]]
 		- [[Vigenere]]
+		- [[rotation]]
 	
