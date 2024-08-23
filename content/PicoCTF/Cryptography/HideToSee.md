@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-23T14:45:42+08:00
+modified: 2024-08-23T15:18:45+08:00
 ---
 ## Challenge Description
 
@@ -28,7 +28,8 @@ After opening the file, we now know that the flag is likely encrypted using the 
 ### Attempts to extract the hidden files
 ![[PicoCTF HideToSee 2.png]]
 
-Running `exiftool` and `binwalk` to get a better understanding of the file was not useful. They did not provide me with any clue to proceed. 
+>[!fail] 
+>Running `exiftool` and `binwalk` to get a better understanding of the file was not useful. They did not provide me with any clue to proceed. 
 
 However, since we are tasked to extract hidden files, I tried using [[Stegseek]].
 

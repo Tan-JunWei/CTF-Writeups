@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-23T15:13:06+08:00
+modified: 2024-08-23T15:16:40+08:00
 ---
 ## Challenge Description
 
@@ -51,8 +51,7 @@ From the above 3 blocks. we can conclude that the last character of each block s
 >print(flag)
 >```
 
-Using the script, the decrypted message is:
-`The flag is picoCTF{7R4N5P051N6_15_3XP3N51V3_56E6924A}`
+Decrypted message: `The flag is picoCTF{7R4N5P051N6_15_3XP3N51V3_56E6924A}`
 
  >[!NOTE] Flag
 >picoCTF{7R4N5P051N6_15_3XP3N51V3_56E6924A}
