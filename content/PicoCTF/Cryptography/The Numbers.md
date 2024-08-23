@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-23T10:47:11+08:00
+modified: 2024-08-23T15:20:10+08:00
 ---
 ## Challenge Description
 
@@ -22,7 +22,7 @@ Seems like an interesting challenge. The downloaded file looks like this.
 
 I realised "P" is the 16th character of the alphabet, and "I" is the 9th. I concluded that the numbers most likely correspond the alphabets' place in the alphabet. After all, the numbers are all within the range of 1 and 26. 
 
->[!info] Check 
+>[!tip] Check 
 >This also means that the flag will only contain uppercase letters.
 
 ### Decryption script
