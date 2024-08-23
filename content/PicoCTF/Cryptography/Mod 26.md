@@ -2,11 +2,12 @@
 tags:
   - Cryptography
   - ROT13
+  - medium
 Creation Date: 
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-23T09:11:52+08:00
+modified: 2024-08-23T10:06:27+08:00
 ---
 ## Challenge Description
 
