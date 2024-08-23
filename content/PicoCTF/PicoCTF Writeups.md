@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-23T14:32:42+08:00
+modified: 2024-08-23T14:56:07+08:00
 ---
 - Forensics
 	- easy
@@ -43,4 +43,5 @@ modified: 2024-08-23T14:32:42+08:00
 		- [[Vigenere]]
 		- [[rotation]]
 		- [[HideToSee]]
+		- [[transposition-trial]]
 	
