@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-21T15:21:07+08:00
+modified: 2024-08-23T09:03:39+08:00
 ---
 - Forensics
 	- easy
@@ -32,3 +32,6 @@ modified: 2024-08-21T15:21:07+08:00
 		- [[extensions]]
 		- [[So Meta]]
 		- [[shark on a wire 1]]
+- Cryptography
+	- easy
+		- [[Mod 26]]
