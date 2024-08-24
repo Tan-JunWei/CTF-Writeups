@@ -5,7 +5,7 @@ tags:
   - Substitution
 Creation Date: 
 Last Date: 
-modified: 2024-08-24T22:27:46+08:00
+modified: 2024-08-24T22:39:19+08:00
 References: 
 draft: 
 ---
@@ -14,6 +14,8 @@ draft:
 
 As the description suggests, we will likely have to decode a message which was encrypted using substitution cipher. We first download the file using `wget`, and then run `cat` to see the message.
 
+>[!important] Closely similar challenges
+>[[substitution0]], [[substitution1]] and [[substitution2]] are 3 closely similar PicoCTF #Cryptography  challenges.
 ### The Message
 ![[PicoCTF substitution 0 2.png]]
 
@@ -33,7 +35,7 @@ tcbrcswulp uw.
 Wqc xmzp ub: ruseSWX{5NG5717N710L_3A0MN710L_357GX9XX} 
 ```
 
-### Decoding
+### Decoding the Message
 ![[PicoCTF substitution 0 3.png]]
 Using a substitution cipher decoder tool like [this one](https://planetcalc.com/8047/) by [PlanetCalc](https://planetcalc.com/), we can obtain the flag. 
 
