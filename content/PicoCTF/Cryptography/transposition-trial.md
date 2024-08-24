@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-23T15:16:40+08:00
+modified: 2024-08-24T14:27:04+08:00
 ---
 ## Challenge Description
 
@@ -42,7 +42,7 @@ From the above 3 blocks. we can conclude that the third character of each block 
 ><`third-chr`><`first-chr`><`second-chr`>
 >
 >I used a Python script to decrypt the scrambled message to obtain the flag.
->```
+>```python
 >enc_flag = "heTfl g as iicpCTo{7F4NRP051N5_16_35P3X51N3_V6E5926A}4"
 >flag = ""
 >
