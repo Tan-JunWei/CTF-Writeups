@@ -33,7 +33,7 @@ export default {
       title: "탐색기",
     },
     footer: {
-      createdWith: "Created with",
+      createdWith: "Created by",
     },
     graph: {
       title: "그래프 뷰",
