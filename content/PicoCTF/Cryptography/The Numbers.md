@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-23T15:20:10+08:00
+modified: 2024-08-24T14:32:54+08:00
 ---
 ## Challenge Description
 
@@ -27,7 +27,7 @@ I realised "P" is the 16th character of the alphabet, and "I" is the 9th. I conc
 
 ### Decryption script
 >[!todo]+ Script to obtain the flag
->```
+>```python
 >enc_flag = "16 9 3 15 3 20 6 { 20 8 5 14 21 13 2 5 18 19 13 1 19 15 14 }"
 >
 >alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"

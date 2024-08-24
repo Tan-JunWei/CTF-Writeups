@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-23T14:56:07+08:00
+modified: 2024-08-24T14:35:19+08:00
 ---
 - Forensics
 	- easy
@@ -44,4 +44,10 @@ modified: 2024-08-23T14:56:07+08:00
 		- [[rotation]]
 		- [[HideToSee]]
 		- [[transposition-trial]]
+		- [[substitution0]]
+		- [[substitution1]]
+		- [[substitution2]]
+		- [[rail-fence]]
+		- [[morse-code]]
+		- [[credstuff]]
 	
