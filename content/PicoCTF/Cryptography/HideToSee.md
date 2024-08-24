@@ -28,7 +28,7 @@ After opening the file, we now know that the flag is likely encrypted using the 
 ### Attempts to extract the hidden files
 ![[PicoCTF HideToSee 2.png]]
 
->[!fail] 
+>[!fail] Failed Attempts
 >Running `exiftool` and `binwalk` to get a better understanding of the file was not useful. They did not provide me with any clue to proceed. 
 
 However, since we are tasked to extract hidden files, I tried using [[Stegseek]].
@@ -44,7 +44,7 @@ Running `stegseek` was successful, and now we have extracted a file from the ori
 ### Getting the Flag
 ![[PicoCTF HideToSee 5.png]]
 
-We can simply use an online Atbash Cipher tool to decrypt the flag. I used [this](https://www.boxentriq.com/code-breaking/atbash-cipher), but [[CyberChef]] works as well. 
+We can simply use an online Atbash Cipher tool to decrypt the flag. I used [this](https://www.boxentriq.com/code-breaking/atbash-cipher), but [[CyberChef]] works just as well. 
 
 > [!NOTE] Flag
 >picoCTF{atbash_crack_7142fde9}
