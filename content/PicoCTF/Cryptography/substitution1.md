@@ -6,7 +6,7 @@ tags:
 Creation Date: 
 Last Date: 
 References: 
-modified: 2024-08-24T22:48:22+08:00
+modified: 2024-08-24T22:55:45+08:00
 draft: 
 ---
 ## Challenge Description
@@ -16,7 +16,7 @@ draft:
 For this challenge, we will basically repeat the same steps we did to retrieve the flag for the [[substitution0]] challenge. We first download the file using `wget`, and then run `cat` to see the message.
 
 >[!important] Closely similar challenges
->[[substitution0]], [[substitution1]] and [[substitution2]] are 3 closely similar PicoCTF #Cryptography  challenges.
+>[[substitution0]], [[substitution1]] and [[substitution2]] are 3 closely similar PicoCTF [[PicoCTF Writeups#Cryptography|Cryptography]] challenges.
 
 ### The Message
 ![[PicoCTF substitution1 2.png]]
@@ -40,6 +40,7 @@ Well, actually...no.
 >[!bug] Error
 >Using the tool mentioned above, we managed to get this string that resembles a flag.
 >`PICOCTF{FR3JU3NCY_4774CK5_4R3_C001_7AA384BC}` 
+>
 >However, when I tried submitting this string in [PicoCTF](https://picoctf.org/), it states that the flag is incorrect. I attempted to use other online tools, yet I kept receiving the same string. 
 >
 >In the end, changing the "`J`" in the above string to a "`Q`" solved the problem. Since this was an older [PicoCTF](https://picoctf.org/) challenge, I read through some of the writeups by others and they did encounter the same issue. Perhaps this is the reason why this challenge is only 44% liked.
