@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-24T22:53:55+08:00
+modified: 2024-08-25T14:49:37+08:00
 ---
 ### Forensics
 - easy
@@ -50,3 +50,4 @@ modified: 2024-08-24T22:53:55+08:00
 	- [[rail-fence]]
 	- [[morse-code]]
 	- [[credstuff]]
+	- [[basic-mod1]]
