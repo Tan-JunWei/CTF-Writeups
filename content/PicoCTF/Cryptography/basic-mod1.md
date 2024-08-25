@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-25T14:58:23+08:00
+modified: 2024-08-25T15:02:06+08:00
 ---
 ## Challenge Description
 ![[PicoCTF basic-mod1.png]]
@@ -23,9 +23,11 @@ After downloading the file using `wget`, and running `cat message.txt`, we get t
 165 248 94 346 299 73 198 221 313 137 205 87 336 110 186 69 223 213 216 216 177 138
 ```
 
+### Decrypting the Message
 >[!todo]+ Decryption Script
->I used a python script to decrypt the message above in order to get the flag The following shows my code.
+>I used a python script to decrypt the message above in order to get the flag. The following shows my code.
 >```python
+># Based on the specifications in the challenge description
 >chrs = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_"
 >
 >enc_message = "165 248 94 346 299 73 198 221 313 137 205 87 336 110 186 69 223 213 216 216 177 138"

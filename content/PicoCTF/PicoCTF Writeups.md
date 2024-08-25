@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-25T14:49:37+08:00
+modified: 2024-08-25T15:02:26+08:00
 ---
 ### Forensics
 - easy
@@ -51,3 +51,4 @@ modified: 2024-08-25T14:49:37+08:00
 	- [[morse-code]]
 	- [[credstuff]]
 	- [[basic-mod1]]
+	- [[basic-mod2]]
