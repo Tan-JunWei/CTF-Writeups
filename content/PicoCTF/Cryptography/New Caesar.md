@@ -8,7 +8,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-26T21:50:05+08:00
+modified: 2024-08-26T21:57:46+08:00
 ---
 ## Challenge Description
 ![[PicoCTF New Caesar.png]]
@@ -28,15 +28,14 @@ mlnklfnknljflfjljnjijjmmjkmljnjhmhjgjnjjjmmkjjmijhmkjhjpmkmkmljkjijnjpmhmjjgjj
 >
 >LOWERCASE_OFFSET = ord("a")
 >
-># Only first 16 alphabets
->ALPHABET = string.ascii_lowercase[:16] # abcdefghijklmnop 
+>ALPHABET = string.ascii_lowercase[:16]         # Only first 16 alphabets
 >
 >def b16_encode(plain):
 >    enc = ""
 >    for c in plain:
->        binary = "{0:08b}".format(ord(c))   # Converts each >character to its binary representation, like such: 01110000
->        enc += ALPHABET[int(binary[:4], 2)] # Converts the 1st half >of the binary representation into a decimal, then use it as an index
->        enc += ALPHABET[int(binary[4:], 2)] # Converts the 2nd half >of the binary representation into a decimal, then use it as an index
+>        binary = "{0:08b}".format(ord(c))      # Converts each character to its binary representation, like such: 01110000
+>        enc += ALPHABET[int(binary[:4], 2)]    # Converts the 1st half of the binary representation into a decimal, then use it as an index
+>        enc += ALPHABET[int(binary[4:], 2)]    # Converts the 2nd half of the binary representation into a decimal, then use it as an index
 >    return enc
 >
 >def shift(c, k):
@@ -46,8 +45,8 @@ mlnklfnknljflfjljnjijjmmjkmljnjhmhjgjnjjjmmkjjmijhmkjhjpmkmkmljkjijnjpmhmjjgjj
 >
 >flag = "REDACTED"
 >key = "REDACTED"
->assert all([k in ALPHABET for k in key]) # Checks if the key is in the alphabet
->assert len(key) == 1 # Checks if the key is only 1 character long
+>assert all([k in ALPHABET for k in key])       # Checks if the key is in the alphabet
+>assert len(key) == 1                           # Checks if the key is only 1 character long
 >
 >b16 = b16_encode(flag)
 >enc = ""
@@ -71,18 +70,17 @@ So how do we proceed? We currently have 2 unknowns, `flag` and `key`. They have 
 >def unshift(c, k):
 >    t1 = ord(c) - LOWERCASE_OFFSET
 >    t2 = ord(k) - LOWERCASE_OFFSET
->    return ALPHABET[(t1 - t2) % len(ALPHABET)] # Reverse the shift and return the original character
+>    return ALPHABET[(t1 - t2) % len(ALPHABET)]            # Reverse the shift and return the original character
 >
 >def b16_decode(enc):
 >    flag = ""
 >    for i in range(0, len(enc), 2):
->        t1 = "{0:04b}".format(ALPHABET.index(enc[i])) #  # Convert first character to 4-bit binary
+>        t1 = "{0:04b}".format(ALPHABET.index(enc[i]))     # Convert first character to 4-bit binary
 >        t2 = "{0:04b}".format(ALPHABET.index(enc[i + 1])) # Convert second character to 4-bit binary
->        flag += chr(int(t1 + t2, 2)) # Concatenate binaries and convert to ASCII character
+>        flag += chr(int(t1 + t2, 2))                      # Concatenate binaries and convert to ASCII character
 >    return flag
 >
-># Brute force the key
->for k in ALPHABET:
+>for k in ALPHABET:                                        # Bruteforcing the key
 >    dec = ""
 >    for c in cipher_text:
 >        dec += unshift(c, k)
@@ -110,7 +108,7 @@ Key: i, Decrypted: edfcdnfcfdbndnbdbfbabbeebcedbfbpepbobfbbbeecbbeabpecbpbhecece
 Decoded: CR=RS↔=‼§►◄D↕C§▼O▲§◄¶B◄@▼B▼↨BBC↕►§↨OA▲◄
 ```
 
-As seen, some of the decoded strings are weird-looking. After skimming through the decoded strings, we narrow our options to only 1 string.
+As seen, some of the decoded strings are weird-looking. After skimming through the decoded strings, we narrow our options to only 1 possible string.
 
  >[!NOTE] Flag
 >picoCTF{et_tu?_5723f4e71a0736d3b1d19dde4279ac03}
