@@ -8,7 +8,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-26T21:57:46+08:00
+modified: 2024-08-26T22:00:50+08:00
 ---
 ## Challenge Description
 ![[PicoCTF New Caesar.png]]
@@ -21,7 +21,7 @@ The downloaded file, `new_caesar.py` is used to encrypt the flag, and the encryp
 mlnklfnknljflfjljnjijjmmjkmljnjhmhjgjnjjjmmkjjmijhmkjhjpmkmkmljkjijnjpmhmjjgjj
 ```
 
->[!abstract]- Script used to encrypt the flag
+>[!abstract]+ Script used to encrypt the flag
 >The following is how the encryption script, `new_caesar.py` looks like. I have added some comments to understand the code more easily.
 >```python
 >import string

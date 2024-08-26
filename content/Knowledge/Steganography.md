@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-22T20:57:15+08:00
+modified: 2024-08-26T22:08:12+08:00
 ---
 >[!important] Description
 >Steganography is the practice of concealing information within another message or physical object to avoid detection. Steganography can be used to hide virtually any type of digital content, including text, image, video, or audio content. That hidden data is then extracted at its destination (_What Is Steganography & How Does It Work?_, 2023). 
@@ -23,5 +23,6 @@ Steganography works by concealing information in a way that avoids suspicion. On
 >- https://medium.com/@renantkn/lsb-steganography-hiding-a-message-in-the-pixels-of-an-image-4722a8567046
 >- https://ctf101.org/forensics/what-is-stegonagraphy/
 
-_What Is Steganography & How Does It Work?_ (2023, February 8). /. https://www.kaspersky.com/resource-center/definitions/what-is-steganography
-Llc, O. L. C. (n.d.). _What is Steganography - CTF Handbook_. https://ctf101.org/forensics/what-is-stegonagraphy/
+#### References
+- _What Is Steganography & How Does It Work?_ (2023, February 8). /. https://www.kaspersky.com/resource-center/definitions/what-is-steganography
+- Llc, O. L. C. (n.d.). _What is Steganography - CTF Handbook_. https://ctf101.org/forensics/what-is-stegonagraphy/
