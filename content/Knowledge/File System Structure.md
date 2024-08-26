@@ -1,23 +1,23 @@
 ---
-modified: 2024-08-22T14:24:00+08:00
+modified: 2024-08-26T20:10:13+08:00
 ---
 A file system is a fundamental component of an operating system that manages how data is stored, organized, and accessed on storage devices. It provides a structured way to store and retrieve files, ensuring efficient data management across various storage mediums. Understanding its layered architecture helps explain how data is handled from the physical storage up to user interactions.
 
 >[!info] The 3 layers of a file system
 >A file system mainly consists of 3 layers: 
->- Physical File System
+>- Physical File System (PFS)
 >	- responsible for the management and storage of physical memory blocks on the disk
 >	- handles the low-level storage and retrieval of data
 >	- ensures the efficient allocation and utilization of physical storage resources
->	- interacts with storage hardware via [[Device Drivers]]
+>	- interacts with storage hardware via [Device Drivers](https://www.spiceworks.com/tech/devops/articles/what-is-device-driver/)
 >	  
->- Virtual File System
+>- Virtual File System (VFS)
 >	- acts as the intermediary between the PFS and the LFS
 >	- enables the concurrent operation of multiple instances of physical file systems
 >	- provides a standardised interface, allowing different file systems to operate simultaneously
 >	- ensures compatibility and cohesion between various file system implementations
 >	
->- Logical File System
+>- Logical File System (LFS)
 >	- acts as the interface between the user applications and the file system itself
 >	- facilitates essential operations like opening and reading files, without the user having to deal with any storage hardware
 

@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-26T15:11:59+08:00
+modified: 2024-08-26T21:27:40+08:00
 ---
 ### Forensics
 - easy
@@ -55,3 +55,4 @@ modified: 2024-08-26T15:11:59+08:00
 	- [[spelling-quiz]]
 	- [[Easy1]]
 	- [[la cifra de]]
+	- [[New Caesar]]

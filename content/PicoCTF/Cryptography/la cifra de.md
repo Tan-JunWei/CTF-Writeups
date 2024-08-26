@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 draft: 
 References: 
-modified: 2024-08-26T15:28:15+08:00
+modified: 2024-08-26T15:30:09+08:00
 ---
 ## Challenge Description
 ![[PicoCTF la cifra de.png]]
