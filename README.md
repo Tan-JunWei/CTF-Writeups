@@ -13,7 +13,7 @@ The **Graph View** provides an interactive way to explore the relationships betw
 By using this visualization, you can gain a deeper understanding of the strategies used across multiple challenges, identify common tools or techniques, and explore how different concepts are interlinked.
 
 ## Explore
-To dive right in, visit this [website](https://tan-junwei.github.io/CTF-Writeups/). 
+Visit this [website](https://tan-junwei.github.io/CTF-Writeups/) to explore.
 
 ## Contributions
 Contribution are always welcome! If you'd like the suggest improvements, feel free to submit a pull request or open an issue. 

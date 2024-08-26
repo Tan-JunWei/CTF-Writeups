@@ -8,12 +8,12 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-26T14:38:22+08:00
+modified: 2024-08-26T14:40:25+08:00
 ---
 ## Challenge Description
 ![[PicoCTF spellingquiz.png]]
 
-This is. once again, a challenge involving substitution ciphers. 
+This is, once again, a challenge involving substitution ciphers. 
 
 We begin by downloading the given file and seeing its contents.
 
