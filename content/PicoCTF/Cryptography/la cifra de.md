@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 draft: 
 References: 
-modified: 2024-08-26T15:19:36+08:00
+modified: 2024-08-26T15:28:15+08:00
 ---
 ## Challenge Description
 ![[PicoCTF la cifra de.png]]
@@ -33,6 +33,10 @@ It 1508, Ozhgsyey Ycizmpmozd itapnzjo tnj do-ifwlki eahzwa xjntg (f xazwtx uk dh
 Merqlsu’x deityd htzkrje avupaxjo it 1555 fd a itytosfaznzn uk ehk ktryy. Ehk qzwkw saraps uk ehk fwpnfmezx lrk szw ymtfzjo rklflgwwy, hze tnj llvmlbkyd ati ehk nydkc wezypry fce sniej gj mkfys uk l mtjxotnn kkd ahxfde, cmtcn hln hj oilkprkse woys eghs cuwceyuznjjyt.
 ```
 
+>[!tip] Determining the cipher
+>>[!question] PicoCTF Hint: Perhaps looking at history will help
+>
+>With this clue, I tried searching the years mentioned in the above text (1508, 1467, 1553, 1555). This led to the [Wikipedia page for the Vigènere cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher). Indeed, some of these dates were mentioned again the "History" section of this page.
 ### Getting the flag
 
 Since the key is not provided, we can use a tool like [this](https://www.guballa.de/vigenere-solver)to break the Vigenère cipher without knowing the key. 
