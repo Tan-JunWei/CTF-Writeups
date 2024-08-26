@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-22T21:04:26+08:00
+modified: 2024-08-26T22:07:45+08:00
 ---
 ### Introduction 
 **Base64 encoding** is a format designed to prevent communication “mishaps” during the transfer of binary information. It achieves this through the conversion of binary data and a “lookup table” — data is eventually made in a stream of _ASCII_ characters, which can then be transmitted and decoded. On base 64 encoded data, the resultant string is always larger than the original (i.e. this is _not_ a compression algorithm). Another important distinction is that base 64 _does not_ encrypt any information — it uses a “standard” table of characters to encode and decode information. In other words, any base-64 string can be decoded, as long as the string was encoded using a standard set of characters (which the decoder can also understand). (_What Is Base64 Encoding & Decoding?_, n.d.)
@@ -27,6 +27,6 @@ modified: 2024-08-22T21:04:26+08:00
 >[!success] Decoding a [[Base64]] string
 >The decoding process is the reverse of that of the encoding.
 
-
-_What is Base64 Encoding & Decoding?_ (n.d.). bunny.net. https://bunny.net/academy/http/what-is-base64-encoding-and-decoding/
-Sunshine2k. (n.d.). _Sunshine2k’s homepage - Understanding and implementing Base64_. http://www.sunshine2k.de/articles/coding/base64/understanding_base64.html
+#### References
+- _What is Base64 Encoding & Decoding?_ (n.d.). bunny.net. https://bunny.net/academy/http/what-is-base64-encoding-and-decoding/
+- Sunshine2k. (n.d.). _Sunshine2k’s homepage - Understanding and implementing Base64_. http://www.sunshine2k.de/articles/coding/base64/understanding_base64.html
