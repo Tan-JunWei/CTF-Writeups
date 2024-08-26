@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-25T14:24:54+08:00
+modified: 2024-08-26T14:31:35+08:00
 ---
 ## Challenge Description
 ![[PicoCTF credstuff.png]]
@@ -24,7 +24,7 @@ The file provided for this challenge is a `.tar` file.
 To extract a `.tar` file, we can run this command:
 
 ```bash
-tar -xvf <file-name>
+tar -xvf < file-name >
 ```
 - `-x`: Extract files from an archive
 - `-v`: Verbosely list files processed (basically prints the names of the files extracted)

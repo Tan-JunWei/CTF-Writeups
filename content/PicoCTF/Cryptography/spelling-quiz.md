@@ -8,7 +8,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-26T14:27:58+08:00
+modified: 2024-08-26T14:38:22+08:00
 ---
 ## Challenge Description
 ![[PicoCTF spellingquiz.png]]
@@ -74,19 +74,16 @@ Running `cat study-guide.txt` displays the 272543 encrypted lines in this file.
 >[!tip] Number of lines
 >To display the number of lines in a file, we can run this command:
 >```bash
->wc -l <file-name>
+>wc -l < file-name >
 >```
 >This will print the number of lines in a file, followed by the name of the file
 
-Since we are unable to reverse-engineer the key, we can do a frequency analysis attack based on the contents in this file instead. After all, this should be the reason this file was provided.
+Since we are unable to reverse-engineer the key, we can do [frequency analysis](https://www.101computing.net/frequency-analysis/) based on the contents in this file instead. After all, this should be the reason this file was provided.
 
+### Getting the Flag
+![[PicoCTF spellingquiz 5.png]]
 
+For this challenge, I used [this](https://www.boxentriq.com/code-breaking/cryptogram) tool from [Boxentriq](https://www.boxentriq.com/) to retrieve the flag. I was able to get the flag by feeding this tool the first 50 lines of the `study-guide.txt` file, and adding the encrypted flag at the top. 
 
-
-
-
-
-
-
-
-
+>[!NOTE] Flag
+>picoCTF{perhaps_the_dog_jumped_over_was_just_tired}
