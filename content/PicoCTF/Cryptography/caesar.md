@@ -7,12 +7,12 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-27T11:03:44+08:00
+modified: 2024-08-27T17:04:27+08:00
 ---
 ## Challenge Description
 ![[PicoCTF Caesar.png]]
 
-This challenge, as the name and hint suggest, is all about the Caesar cipher.
+This challenge, as both the name and hint suggest, is all about the Caesar cipher.
 
 ### Encrypted flag
 ![[PicoCTF Caesar 2.png]]
@@ -20,7 +20,7 @@ We first download the provided file using `wget`, and running `cat` on it displa
 ```
 picoCTF{ynkooejcpdanqxeykjrbdofgkq}
 ```
-This looks like a possible flag that we can submit. However, it is not.
+This looks like a possible flag that we can submit...right? Nope.
 
 ### Acquiring Clues
 >[!info] Flag
