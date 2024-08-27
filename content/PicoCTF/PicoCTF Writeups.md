@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-26T21:27:40+08:00
+modified: 2024-08-27T09:32:00+08:00
 ---
 ### Forensics
 - easy
@@ -56,3 +56,4 @@ modified: 2024-08-26T21:27:40+08:00
 	- [[Easy1]]
 	- [[la cifra de]]
 	- [[New Caesar]]
+	- [[caesar]]
