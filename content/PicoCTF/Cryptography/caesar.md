@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-27T10:59:44+08:00
+modified: 2024-08-27T11:03:44+08:00
 ---
 ## Challenge Description
 ![[PicoCTF Caesar.png]]
@@ -32,6 +32,7 @@ This looks like a possible flag that we can submit. However, it is not.
 >
 >##### Anomalies
 >Of course, there are anomalies such as the flag for [[New Caesar]]:
+>
 >`picoCTF{et_tu?_5723f4e71a0736d3b1d19dde4279ac03}`
 >
 >As you can see, this flag just looks like a combination of random characters.
@@ -41,7 +42,6 @@ This looks like a possible flag that we can submit. However, it is not.
 >The string of characters in the "flag" above, `ynkooejcpdanqxeykjrbdofgkq`, seems suspicious. 
 >
 >As we know, the [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) is a substitution cipher where each letter in the [plaintext](https://en.wikipedia.org/wiki/Plaintext "Plaintext") is replaced by a letter some fixed number of positions down the alphabet. Hence, since we are dealing with the Caesar cipher in this challenge, the correct flag should not contain numbers.
->
 >>[!question] Piecing everything together
 >>This begs the next question: If the correct flag doesn't contain any numbers, it should look similar to the first flag format example above, where the flag contains readable text. Hence, it will likely contain words in the English dictionary that we should look out for.
 
