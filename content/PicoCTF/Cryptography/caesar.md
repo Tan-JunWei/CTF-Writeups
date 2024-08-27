@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-27T10:11:37+08:00
+modified: 2024-08-27T10:47:54+08:00
 ---
 ## Challenge Description
 ![[PicoCTF Caesar.png]]
@@ -29,6 +29,7 @@ This looks like a possible flag that we can submit. However, it is not.
 >An example containing only words from the english dictionary is from [[The Numbers]] challenge, where the flag was `PICOCTF{THENUMBERSMASON}`.
 >
 >There are also instances where some, if not most, of the letters in the flag are substituted by similar looking numbers instead. The flag for [[credstuff]] is `picoCTF{C7r1F_54V35_71M3}`, which is still "readable" in some sense since we can make out the words "CtrlF saves time".
+>
 >>[!warning] Anomalies
 >>Of course, there are anomalies such as the flag for [[New Caesar]], which is `picoCTF{et_tu?_5723f4e71a0736d3b1d19dde4279ac03}`. As you can see, this flag just looks like a combination of random characters.
 >>
