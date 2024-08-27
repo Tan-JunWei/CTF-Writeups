@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-27T17:04:04+08:00
+modified: 2024-08-27T17:10:00+08:00
 ---
 ## Challenge Description
 ![[PicoCTF Flags.png]]
@@ -30,8 +30,11 @@ So, we can proceed by checking what these flags mean. Since I had no prior knowl
 >[!tip] What are these flags?
 >According to the page above, the first flag (blue background with white square in the middle) in the ciphertext is the ICS signal flag for "P". This once again justifies my observation above. 
 
-We have now established that the flags above are ICS signal flags. The [Wikipedia page for ICS signal flags]((https://en.wikipedia.org/wiki/International_Code_of_Signals) shows a useful image that we can use to find the plaintext:
+We have now established that the flags above are ICS signal flags. The [Wikipedia page for ICS signal flags](https://en.wikipedia.org/wiki/International_Code_of_Signals) shows a useful image that we can use to find the plaintext:
+
+
 ![[PicoCTF Flags 3.png|500]]
+
 
 >[!warning] Remaining unknown flags
 >Using the above image, we can replace the flags with the letters associated with them. This allows us to get the following string:
@@ -42,14 +45,17 @@ We have now established that the flags above are ICS signal flags. The [Wikipedi
 >
 >2 of the flags are not included in the above image, which causes us to have 2 unknown characters in the plaintext (as shown by the question marks `?`)
 >
->Now, we can technically guess that the flag is going to be `PICOCTF{F1AG5AND5TUFF}`, because the question marks will likely be replaced by numbers since they were not replaced by letters.
 
-However, we shall not just rely on our intelligent guess. 
+>[!fail] Possible approach: Guessing
+>Now, we can technically guess that the flag is going to be `PICOCTF{F1AG5AND5TUFF}`, because the question marks will likely be replaced by numbers since they were not replaced by letters. 
+>
+>However, we shall not just rely on our intelligent guess. 
 
 >[!tip] Finding the full flag
 >After further searching online, I found [this](http://www.quadibloc.com/other/flaint.htm) page, which states "The illustration below illustrates the flags used for the International Code of Signals, and additional flags currently in use by the U.S. Navy and apparently by the British Navy as well".
 >
 >This was accompanied by the following image:
+>
 >![[PicoCTF flag 4.png|400]]
 
 With this, we can finally replace the 2 question marks and obtain the full flag, instead of purely guessing. 
