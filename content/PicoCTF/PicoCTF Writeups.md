@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-27T09:32:00+08:00
+modified: 2024-08-27T10:27:14+08:00
 ---
 ### Forensics
 - easy
@@ -57,3 +57,4 @@ modified: 2024-08-27T09:32:00+08:00
 	- [[la cifra de]]
 	- [[New Caesar]]
 	- [[caesar]]
+	- [[Mr-Worldwide]]
