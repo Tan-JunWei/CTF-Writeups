@@ -7,11 +7,11 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-19T15:26:00+08:00
+modified: 2024-08-28T16:27:36+08:00
 ---
 ## Challenge Description
 
-![[information.png]]
+![[PicoCTF information.png]]
 
 >[!question] PicoCTF Hint: Look at the details of the file
 >
@@ -20,12 +20,11 @@ That may be a clue for us to check the metadata of the file downloaded, we shall
 
 ### Metadata of the file
 
-![[information 2.png]]
+![[PicoCTF information 2.png]]
 Spot on! We can see that there is a suspicious string of characters at `License` section of the metadata after running `exiftool`.  It also seems `base64 encoded`. Let's head over to [[CyberChef]] and give it a try!
 
-
 ### CyberChef output
-![[information 3.png]]
+![[PicoCTF information 3.png]]
 
 Indeed, we managed to get the flag instantly!
 
@@ -33,6 +32,6 @@ Indeed, we managed to get the flag instantly!
 >picoCTF{the_m3tadata_1s_modified}
 
 
-Similar:
+#### Similar
 - [[CanYouSee]]
 
