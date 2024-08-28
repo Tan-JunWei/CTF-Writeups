@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-28T15:42:52+08:00
+modified: 2024-08-28T16:07:46+08:00
 ---
 ## Challenge Description
 ![[PicoCTF tapping.png]]
@@ -25,10 +25,35 @@ After I ran `nc jupiter.challenges.picoctf.org 9422`, this was displayed:
 ```
 
 We likely have the correct flag format, as the encoded text included the curly braces `{}`. So we will only need to convert the morse characters into letters to get our flag.
-### Decoding morse code
+### Decoding morse code using a script
+
+We can either decode morse code using an online morse code translator, or write a script to do the same thing.
+
+>[!abstract] Python Script to decode morse code
+>This script translates each morse sequence into its corresponding character using a dictionary. Characters that are not morse characters, such as the curly braces `{}` remain unchanged.
+>```python
+>morse_characters = ['.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....', '..', '.---', '-.-', '.-..', '--', '-.', '---', '.--.', '--.-', '.-.', '...', '-', '..-', '...-', '.--', '-..-', '-.--', '--..',"-----",".----","..---","...--","....-",".....","-....","--...","---..","----."]
+>
+>morse_dict = dict(zip(morse_characters,'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789')) 
+>
+>def morse_code(text:str)->str:
+>    plaintext = ""
+>    morse = text.split()
+>    for char in morse:
+>        if char in morse_characters:
+>            plaintext += morse_dict[char]
+>        else:
+>            plaintext += char
+>    return plaintext
+>
+>morse = ".--. .. -.-. --- -.-. - ..-. { -- ----- .-. ... ...-- -.-. ----- -.. ...-- .---- ... ..-. ..- -. ..--- -.... ---.. ...-- ---.. ..--- ....- -.... .---- ----- }"
+>print(morse_code(morse)) # PICOCTF{M0RS3C0D31SFUN2683824610}
+>```
+
+### Decoding morse code using online tools
 ![[PicoCTF tapping 2.png]]
 
-I used [BoxenTriq's morse code translator] and successfully found the flag, after providing the displayed text above.
+[BoxenTriq's morse code translator] is also another option to get the flag, without programming.
 
 >[!warning] Caution
 >The translator helps to translate the morse characters successfully, giving us this string:
