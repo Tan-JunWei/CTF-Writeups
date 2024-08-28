@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-28T15:15:51+08:00
+modified: 2024-08-28T15:20:43+08:00
 ---
 ## Challenge Description
 ![[PicoCTF john_pollard.png]]
@@ -34,7 +34,7 @@ q16/S1WLvzg4PsElmv1f
 ```
 
 ### Certificate Decoder
-Since the challenge wants us to break the certificate, I used this [CertLogik Certificate Decoder](https://certlogik.com/decoder/) website to gain a better understanding of the certificate.
+Since the challenge wants us to break the certificate, I used the [CertLogik Certificate Decoder](https://certlogik.com/decoder/) website to gain a better understanding of the certificate.
 
 ![[PicoCTF john_pollard 2.png]]
 
@@ -48,7 +48,7 @@ Since the challenge wants us to break the certificate, I used this [CertLogik Ce
 >
 >Since `n = p * q`, where both `p` and `q` are prime numbers, we can factorise `n` to find these values.
 
-### Factorising `n`
+### Finding `p` and `q`
 ![[PicoCTF john_pollard 4.png]]
 
 We can use [dCode.fr's prime factors decomposition tool] to find the 2 values, `p` and `q`. 
