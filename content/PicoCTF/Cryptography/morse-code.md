@@ -7,12 +7,12 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-25T13:34:38+08:00
+modified: 2024-08-28T15:32:26+08:00
 ---
 ## Challenge Description
 ![[PicoCTF morse-code.png]]
 
-For this challenge, we are required to decrypt morse code in an audio format. 
+For this challenge, we are required to decode morse code in an audio format. 
 
 We begin by downloading the file provided, which is a `.wav` file.
 
