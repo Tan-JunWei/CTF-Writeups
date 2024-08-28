@@ -1,1 +1,2 @@
+# This line ensures all text files use Line Feed (LF) line endings in the repository, regardless of the operating system.
 * text=auto eol=lf

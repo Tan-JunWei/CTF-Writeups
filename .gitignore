@@ -1,11 +1,22 @@
-.DS_Store
+# Ignore macOS system files
+.DS_Store 
+
+# Ignore Git specific files
 .gitignore
+.replit
+replit.nix
+
+# Ignore Node.js dependencies
 node_modules
+
+# Ignore build output
 public
 prof
 tsconfig.tsbuildinfo
+
+# Ignore Obsidian notes and cache files
 .obsidian
 .quartz-cache
+
+# Ignore private directories
 private/
-.replit
-replit.nix

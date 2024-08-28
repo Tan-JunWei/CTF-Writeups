@@ -3,11 +3,12 @@ tags:
   - Cryptography
   - medium
   - MorseCode
+  - Python
 Creation Date: 
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-28T16:07:46+08:00
+modified: 2024-08-28T16:12:31+08:00
 ---
 ## Challenge Description
 ![[PicoCTF tapping.png]]
