@@ -4,7 +4,7 @@ tags:
   - medium
   - Sleuthkit
   - OpenSSL
-modified: 2024-08-29T22:31:12+08:00
+modified: 2024-08-29T23:01:50+08:00
 Creation Date: 
 Last Date: 
 References: 
@@ -62,8 +62,7 @@ I continued and tried to use `grep "flag"` to check if there is any file or dire
 >>
 >>`r/r * 1876(realloc): flag.txt` was displayed when we successfully used `grep` to find files with "flag" in their names. From the above excerpt, this indicates that the file name is in an unallocated state (meaning the file has been deleted or moved), but the metadata structure (the detailed information about the file) is still in an allocated state.
 >
->See also:
->- [[Unallocated space#Allocated vs. Unallocated in `fls`|Allocated vs Unallocated in `fls`]]
+>See also: [[Unallocated space|Unallocated vs Allocated]]
 
 Hence, as expected, running `cat flag.txt` did not show anything special. 
 
@@ -86,10 +85,14 @@ Other than this, we basically have no other information about how we can decrypt
 fls -o 411648 -r disk.flag.img | grep -C 5 flag
 ```
 
-The `-C` argument displays the lines before and after the matching line(s). We can then specify the number of lines we would like to display.
-- `-C 5`: Only displays 5 lines before and after the matching line(s) kali
+The `-C` argument displays the lines before and after the matching line(s). We can then specify the number of lines we would like to display. 
+- `-C 5`: Only displays 5 lines before and after the matching line(s)
 
-This command displayed a `.ash_history` file at inode 1875.
+>[!question] Additional information: Before and After matching line(s)
+>- `-A`: displays the lines after the matching line(s)
+>- `-B`: displays the lines before the matching line(s)
+
+This command displayed a `.ash_history` file at inode 1875. 
 
 >[!tip] What is `.ash_history`?
 >This command displayed the inode number of `.ash_history` (1875). 
@@ -105,7 +108,7 @@ We can check the contents of `.ash_history` by running the command below:
 icat -o 411648 disk.flag.img 1875
 ```
 
-These are the displayed contents:
+These are the displayed commands in `.ash_history`:
 ```bash
 touch flag.txt
 nano flag.txt 
