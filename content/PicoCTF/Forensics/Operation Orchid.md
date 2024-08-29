@@ -4,7 +4,7 @@ tags:
   - medium
   - Sleuthkit
   - OpenSSL
-modified: 2024-08-29T22:10:22+08:00
+modified: 2024-08-29T22:31:12+08:00
 Creation Date: 
 Last Date: 
 References: 
@@ -36,8 +36,8 @@ I continued and tried to use `grep "flag"` to check if there is any file or dire
 >[!bug] `r/r * 1876(realloc): flag.txt`
 >According to the official [[The Sleuth Kit (TSK)]] [fls command page](https://wiki.sleuthkit.org/index.php?title=Fls):
 >```
->If the file name is in unallocated space of the directory, there will be a '*' between the 
->file type(r/r) and the metadata address.
+>If the file name is in unallocated space of the directory, there will be a '*' between the file type(r/r)
+>and the metadata address.
 >
 >`r/r * 1304-128-1: IO.SYS`
 >
@@ -87,12 +87,16 @@ fls -o 411648 -r disk.flag.img | grep -C 5 flag
 ```
 
 The `-C` argument displays the lines before and after the matching line(s). We can then specify the number of lines we would like to display.
-- `-C 5`: Only displays 5 lines before and after the matching line(s) 
+- `-C 5`: Only displays 5 lines before and after the matching line(s) kali
 
->[!tip]
+This command displayed a `.ash_history` file at inode 1875.
+
+>[!tip] What is `.ash_history`?
 >This command displayed the inode number of `.ash_history` (1875). 
 >
->This file typically stores the command history for the ash shell, recording the commands users executed. It functions similarly to `.bash_history` in the Bash shell or `.zsh_history` in Zsh.
+>This file typically stores the command history for the ash shell, recording the commands users executed. It functions similarly to `.bash_history` in the Bash shell or `.zsh_history` in Zsh. 
+>
+>This is the reason why we can see our past commands which we ran or tried to execute when we press the up/down arrow (Vconnectit, 2018).
 ### Reverse engineering for the flag
 ![[PicoCTF Operation Orchid 4.png]]
 
@@ -100,7 +104,26 @@ We can check the contents of `.ash_history` by running the command below:
 ```bash
 icat -o 411648 disk.flag.img 1875
 ```
-From the displayed contents, we can pick out the command used to encrypt the file:
+
+These are the displayed contents:
+```bash
+touch flag.txt
+nano flag.txt 
+apk get nano
+apk --help
+apk add nano
+nano flag.txt 
+openssl
+openssl aes256 -salt -in flag.txt -out flag.txt.enc -k unbreakablepassword1234567
+shred -u flag.txt
+ls -al
+halt
+```
+
+>[!todo] Recall: [[Operation Orchid#Unallocated space|Unallocated Space]]
+>We have previously established above that the `flag.txt` is in an unallocated state. Now, we understand the reason why. The command `shred -u flag.txt` was run, securely deleting the original `flag.txt` file by overwriting it and then deallocating and removing it.
+
+From the above displayed contents, we can also pick out the command used to encrypt the file:
 ```bash
 openssl aes256 -salt -in flag.txt -out flag.txt.enc -k unbreakablepassword1234567
 ```
@@ -124,3 +147,4 @@ This command stores the decrypted output in the `flag.txt` file, which we can th
 - _Salt (cryptography)_. (2024, August 26). Wikipedia. https://en.wikipedia.org/wiki/Salt_(cryptography)
 - _Rainbow table_. (2024, June 23). Wikipedia. https://en.wikipedia.org/wiki/Rainbow_table
 - _Fls - SleuthKitWiki_. (n.d.). https://wiki.sleuthkit.org/index.php?title=Fls
+- Vconnectit. (2018, September 21). _ash_history – vConnect-IT_. vConnect-IT. https://vconnectit.wordpress.com/tag/ash_history/
