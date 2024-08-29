@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-29T11:30:01+08:00
+modified: 2024-08-29T14:10:29+08:00
 ---
 <!-- ### Forensics
 
@@ -116,6 +116,7 @@ modified: 2024-08-29T11:30:01+08:00
 	- [[So Meta]]
 	- [[shark on a wire 1]]
 	- [[WPA-ing Out]]
+	- [[Operation Orchid]]
 ### Cryptography
 -  easy
 	- [[Mod 26]]
