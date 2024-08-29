@@ -1,5 +1,6 @@
 ---
-modified: 2024-08-29T11:06:34+08:00
+modified: 2024-08-29T11:19:21+08:00
+title: Wireshark
 ---
 Wireshark is a network protocol analyzer, or an application that captures packets from a network connection, such as from your computer to your home office or the internet. Packet is the name given to a discrete unit of data in a typical Ethernet network (_What Is Wireshark and How to Use It | Cybersecurity | CompTIA_, n.d.).
 
