@@ -3,7 +3,7 @@ Welcome to my Capture The Flag (CTF) writeup repository! Here you'll find detail
 
 ## Contents
 -  **Challenges**: Organized by category (e.g., Forensics, Cryptography, OSINT, Web Exploitation), each challenge writeup includes a step-by-step guide on how to approach and solve the problem. These writeups cover the thought process, tools used, methodologies applied, and lessons learned.
--  **Useful Tools**: Feature some of the tools which came in handy when solving challenges
+-  **Useful Tools**: Features some of the tools which came in handy when solving challenges
 -  **Fundamental Knowledge**: Gives more in-depth, technical insights to important concepts that are required or beneficial for solving challenges
 
 ## Graph View Visualization
@@ -13,7 +13,7 @@ The **Graph View** provides an interactive way to explore the relationships betw
 By using this visualization, you can gain a deeper understanding of the strategies used across multiple challenges, identify common tools or techniques, and explore how different concepts are interlinked.
 
 ## Explore
-Visit this [website](https://tan-junwei.github.io/CTF-Writeups/) to explore.
+Visit this [website](https://tan-junwei.github.io/CTF-Writeups/).
 
 ## Contributions
 Contribution are always welcome! If you'd like the suggest improvements, feel free to submit a pull request or open an issue. 
