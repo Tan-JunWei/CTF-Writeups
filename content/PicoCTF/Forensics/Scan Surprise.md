@@ -2,11 +2,12 @@
 tags:
   - Forensics
   - easy
+  - QRcode
 Creation Date: 
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-19T15:26:00
+modified: 2024-08-29T13:09:11+08:00
 ---
 ## Challenge Description
 

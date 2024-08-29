@@ -2,11 +2,12 @@
 tags:
   - Forensics
   - easy
+  - filetypes
 Creation Date: 
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-19T15:26:32+08:00
+modified: 2024-08-29T13:10:36+08:00
 ---
 ## Challenge Description
 
@@ -42,9 +43,10 @@ Hmmm... it looks like gibberish at the moment. I move on to make a copy of this 
 
 That's it! We found the flag! ...or is it? It seems like only half the flag is present in the PNG file. 
 
->[!question] Recall that there were characters inside the pdf file earlier, with a closing curly brace `}` at the end! Could that be the other half of the flag? 
+>[!question] Recall
+>There were characters inside the pdf file earlier, with a closing curly brace `}` at the end! Could that be the other half of the flag? 
 
-Upon further inspection, it seems like the contents of both the `.pdf` and `.png` files combine to form the flag. Joining both of them together, we can get the flag. 
+Upon further inspection, it seems like the contents of both the `.pdf` and `.png` files combine to form the flag. Joining both of them together will allow us to get the flag. 
 
 
 

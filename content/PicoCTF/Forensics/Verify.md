@@ -2,11 +2,12 @@
 tags:
   - Forensics
   - easy
+  - Checksum
 Creation Date: 
 Last Date: 
 References: 
 draft: false
-modified: 2024-08-19T15:27:16+08:00
+modified: 2024-08-29T13:12:15+08:00
 ---
 ## Challenge Description
 
@@ -31,7 +32,7 @@ There is a `files` directory in after we use the `ls` command. It seems that we 
 ### Finding the file and decrypting it
 
 ![[PicoCTF Verify 3.png]]
-We find the path to the file by using `grep` to find the file with the same checksum.  We can then run `/decrypt.sh files/<file>` to obtain the flag!
+We find the path to the file by using `grep` to find the file with the same checksum.  We can then run `/decrypt.sh files/<file-name>` to obtain the flag!
 
 
 
