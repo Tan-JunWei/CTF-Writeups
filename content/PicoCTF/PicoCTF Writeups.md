@@ -1,6 +1,89 @@
 ---
-modified: 2024-08-28T22:09:22+08:00
+modified: 2024-08-29T11:30:01+08:00
 ---
+<!-- ### Forensics
+
+<details>
+<summary>easy</summary>
+
+- [[Verify]]
+- [[Scan Surprise]]
+- [[Secret of the Polyglot]]
+- [[CanYouSee]]
+- [[information]]
+- [[Glory of the Garden]]
+
+</details>
+
+<details>
+<summary>medium</summary>
+
+- [[PcapPoisoning]]
+- [[hideme]]
+- [[Sleuthkit Intro]]
+- [[FindAndOpen]]
+- [[St3g0]]
+- [[Sleuthkit Apprentice]]
+- [[Redaction gone wrong]]
+- [[Packets Primer]]
+- [[Lookey here]]
+- [[Operation Oni]]
+- [[File types]]
+- [[Enhance!]]
+- [[MacroHard WeakEdge]]
+- [[Disk Disk Sleuth II]]
+- [[Matryoshka doll]]
+- [[Wireshark Doo Dooo Do Doo...]]
+- [[Disk Disk Sleuth]]
+- [[What Lies Within]]
+- [[advanced-potion-making]]
+- [[extensions]]
+- [[So Meta]]
+- [[shark on a wire 1]]
+- [[WPA-ing Out]]
+
+</details>
+
+### Cryptography
+
+<details>
+<summary>easy</summary>
+
+- [[Mod 26]]
+- [[interencdec]]
+- [[The Numbers]]
+- [[13]]
+
+</details>
+
+<details>
+<summary>medium</summary>
+
+- [[Mind your Ps and Qs]]
+- [[Vigenere]]
+- [[rotation]]
+- [[HideToSee]]
+- [[transposition-trial]]
+- [[substitution0]]
+- [[substitution1]]
+- [[substitution2]]
+- [[rail-fence]]
+- [[morse-code]]
+- [[credstuff]]
+- [[basic-mod1]]
+- [[basic-mod2]]
+- [[spelling-quiz]]
+- [[Easy1]]
+- [[la cifra de]]
+- [[New Caesar]]
+- [[caesar]]
+- [[Mr-Worldwide]]
+- [[Flags]]
+- [[john_pollard]]
+- [[Tapping]]
+
+</details> -->
+
 ### Forensics
 - easy
 	- [[Verify]]
