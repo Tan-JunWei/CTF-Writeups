@@ -4,7 +4,7 @@ tags:
   - medium
   - Sleuthkit
   - OpenSSL
-modified: 2024-08-29T21:55:52+08:00
+modified: 2024-08-29T22:10:22+08:00
 Creation Date: 
 Last Date: 
 References: 
@@ -32,23 +32,35 @@ Running this command on the `2048` offset did not show anything suspicious. Howe
 ![[PicoCTF Operation Orchid 3.png]]
 
 I continued and tried to use `grep "flag"` to check if there is any file or directory that contains the word "flag" in its name. Indeed, running this command revealed 2 files, `flag.txt` and `flag.txt.enc`.
-#### Unallocated space
+### Unallocated space
 >[!bug] `r/r * 1876(realloc): flag.txt`
 >According to the official [[The Sleuth Kit (TSK)]] [fls command page](https://wiki.sleuthkit.org/index.php?title=Fls):
 >```
->If the file name is in unallocated space of the directory, there will be a '*' between the file type(r/r) and the metadata address.
+>If the file name is in unallocated space of the directory, there will be a '*' between the 
+>file type(r/r) and the metadata address.
 >
 >`r/r * 1304-128-1: IO.SYS`
 >
->In general, this means that the file is deleted. But, some file systems keep the directory contents sorted and will move file names around. This can result in unallocated copies of the file name, even when the file is still allocated. As of version 3.0.0, TSK suppresses duplicate file names and will suppress a deleted version of a name if an equivalent allocated version exists (equivalent is defined as the same name and pointing to the same metadata address).
+>In general, this means that the file is deleted. But, some file systems keep the directory 
+>contents sorted and will move file names around. This can result in unallocated copies of the file
+>name, even when the file is still allocated. As of version 3.0.0, TSK suppresses duplicate 
+>file names and will suppress a deleted version of a name if an equivalent allocated version exists
+>(equivalent is defined as the same name and pointing to the same metadata address).
 >
 >Sometimes, you will see the text '(realloc)' after the metadata address.
 >
 >`r/r * 1304-128-1(realloc): IO.SYS`
 >
->This occurs when the file name is in an unallocated state and the metadata structure is in an allocated state. This can only occur on file systems that separate the file name from the metadata (such as NTFS, Ext2/3, UFS, etc.). Seeing '(realloc)' with versions of TSK 3.0.0 and greater (because of the duplicate name suppression) is generally an indication that the metadata structure has been reallocated to a new file and therefore not likely to be the metadata or file content that originally corresponded to this file name.
+>This occurs when the file name is in an unallocated state and the metadata structure is in an allocated 
+>state. This can only occur on file systems that separate the file name from the metadata 
+>(such as NTFS, Ext2/3, UFS, etc.). Seeing '(realloc)' with versions of TSK 3.0.0 and greater 
+>(because of the duplicate name suppression) is generally an indication that the metadata structure has 
+>been reallocated to a new file and therefore not likely to be the metadata or file content that
+>originally corresponded to this file name.
 >```
->`r/r * 1876(realloc): flag.txt` was displayed when we successfully used `grep` to find files with "flag" in their names. From the above excerpt, this indicates that the file name is in an unallocated state (meaning the file has been deleted or moved), but the metadata structure (the detailed information about the file) is still in an allocated state.
+>>[!tip] Conclusion
+>>
+>>`r/r * 1876(realloc): flag.txt` was displayed when we successfully used `grep` to find files with "flag" in their names. From the above excerpt, this indicates that the file name is in an unallocated state (meaning the file has been deleted or moved), but the metadata structure (the detailed information about the file) is still in an allocated state.
 >
 >See also:
 >- [[Unallocated space#Allocated vs. Unallocated in `fls`|Allocated vs Unallocated in `fls`]]
