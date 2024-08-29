@@ -8,7 +8,7 @@ Creation Date: 2024-08-28
 Last Date: 2024-08-28
 References: 
 draft: 
-modified: 2024-08-28T22:42:39+08:00
+modified: 2024-08-29T11:06:05+08:00
 ---
 ## Challenge Description
 ![[PicoCTF WPA-ing Out.png]]
