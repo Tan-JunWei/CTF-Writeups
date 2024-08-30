@@ -4,7 +4,7 @@ tags:
   - medium
   - Sleuthkit
   - OpenSSL
-modified: 2024-08-29T23:01:50+08:00
+modified: 2024-08-30T14:04:18+08:00
 Creation Date: 
 Last Date: 
 References: 
@@ -75,8 +75,10 @@ L�ޢȤ7� ���؎$�'%
 ```
 
  It seems like the contents have been encrypted. A salt was used in the encryption process, as we can conclude from  "Salted". 
+ 
+### Salt
 
->[!info] Salt
+>[!info] What is a salt?
 >In cryptography, a salt is random data fed as an additional input to a one-way function that hashes data, a password, or passphrase. Salting helps defend against attacks that use precomputed tables (E.g. [rainbow tables](https://en.wikipedia.org/wiki/Rainbow_table)) by vastly growing the size of table required for a successful attack. It also helps protect passwords that occur multiple times in a database, since a new salt is used to each password instance (_Salt (Cryptography)_, 2024). 
 
 Other than this, we basically have no other information about how we can decrypt the content of this file. Hence, I ran the following command to gather more information:
@@ -132,17 +134,32 @@ openssl aes256 -salt -in flag.txt -out flag.txt.enc -k unbreakablepassword123456
 ```
 We can see that the key used for encryption is `unbreakablepassword1234567`. 
 
+>[!abstract] What this command does
+>The command takes the contents of `flag.txt`, encrypts it using [AES-256](https://www.kiteworks.com/risk-compliance-glossary/aes-256-encryption/#:~:text=What%20Is%20AES%2D256%20Encryption,decrypt%20a%20block%20of%20messages.) with a key derived from the provided password (`unbreakablepassword1234567`), and outputs the encrypted content to a new file called `flag.txt.enc`. 
+>
+>The encryption process is made more secure by adding a [[Operation Orchid#Salt|salt]], which ensures that even if the same content and password are used in the future, the resulting ciphertext will be different.
+>
+>>[!question] Advanced Encryption Standard (AES)
+>>AES is a symmetric encryption algorithm, meaning the same key is used for both encryption and decryption. 
+>>
+>>`-k unbreakablepassword1234567` specifies the key, or more accurately, the password used to derive the encryption key, which must be used for decryption as well.
+>
+>Since we now understand how the contents in `flag.txt.enc` was encrypted, we can decrypt it as well using OpenSSL.
+
 ![[PicoCTF Operation Orchid 5.png]]
 
-We will store the encrypted contents into a file called `enc_flag.txt`, by running:
+We first store the encrypted contents into a file called `enc_flag.txt`, by running:
 ```bash
 icat -o 411648 disk.flag.img 1782 > enc_flag.txt
 ```
+
+This is to create a file in our local directory, which will be the input file used for decryption.
+
 The command to decrypt the encrypted contents is:
 ```bash
 openssl aes256 -d -salt -in flag.txt.enc -out flag.txt -k unbreakablepassword1234567
 ```
-This command stores the decrypted output in the `flag.txt` file, which we can then run `cat` on to get the flag. 
+The `-d` option tells OpenSSL to decrypt the contents of the input file. This command stores the decrypted output in the `flag.txt` file, which we can then run `cat` on to get the flag. 
 
 > [!NOTE] Flag
 >picoCTF{h4un71ng_p457_1d02081e}
@@ -151,3 +168,4 @@ This command stores the decrypted output in the `flag.txt` file, which we can th
 - _Rainbow table_. (2024, June 23). Wikipedia. https://en.wikipedia.org/wiki/Rainbow_table
 - _Fls - SleuthKitWiki_. (n.d.). https://wiki.sleuthkit.org/index.php?title=Fls
 - Vconnectit. (2018, September 21). _ash_history – vConnect-IT_. vConnect-IT. https://vconnectit.wordpress.com/tag/ash_history/
+- Lee, M. M. (2024, August 2). _Everything You Need to Know About AES-256 Encryption_. Kiteworks | Your Private Content Network. https://www.kiteworks.com/risk-compliance-glossary/aes-256-encryption/#:~:text=What%20Is%20AES%2D256%20Encryption,decrypt%20a%20block%20of%20messages.
