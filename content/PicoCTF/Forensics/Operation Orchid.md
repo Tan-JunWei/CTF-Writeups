@@ -4,7 +4,7 @@ tags:
   - medium
   - Sleuthkit
   - OpenSSL
-modified: 2024-08-30T14:12:28+08:00
+modified: 2024-08-30T14:16:19+08:00
 Creation Date: 
 Last Date: 
 References: 
@@ -142,8 +142,6 @@ We can see that the key used for encryption is `unbreakablepassword1234567`.
 >>[!question] Advanced Encryption Standard (AES)
 >>
 >>AES is a symmetric encryption algorithm, meaning the same key is used for both encryption and decryption. 
->>
->>`-k unbreakablepassword1234567` specifies the key, or more accurately, the password used to derive the encryption key, which must be used for decryption as well.
 >
 >Since we now understand how the contents in `flag.txt.enc` was encrypted, we can decrypt it as well using OpenSSL.
 
