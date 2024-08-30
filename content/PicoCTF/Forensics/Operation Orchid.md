@@ -4,7 +4,7 @@ tags:
   - medium
   - Sleuthkit
   - OpenSSL
-modified: 2024-08-30T14:04:18+08:00
+modified: 2024-08-30T14:12:28+08:00
 Creation Date: 
 Last Date: 
 References: 
@@ -140,6 +140,7 @@ We can see that the key used for encryption is `unbreakablepassword1234567`.
 >The encryption process is made more secure by adding a [[Operation Orchid#Salt|salt]], which ensures that even if the same content and password are used in the future, the resulting ciphertext will be different.
 >
 >>[!question] Advanced Encryption Standard (AES)
+>>
 >>AES is a symmetric encryption algorithm, meaning the same key is used for both encryption and decryption. 
 >>
 >>`-k unbreakablepassword1234567` specifies the key, or more accurately, the password used to derive the encryption key, which must be used for decryption as well.
