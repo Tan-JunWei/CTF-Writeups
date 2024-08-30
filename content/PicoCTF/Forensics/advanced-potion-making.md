@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-30T14:53:23+08:00
+modified: 2024-08-30T15:07:44+08:00
 ---
 ## Challenge Description
 
@@ -43,7 +43,7 @@ The above shows how the `advanced-potion-making.png` image looks like. It seems 
 I then headed over to [https://29a.ch/photo-forensics/#forensic-magnifier](https://29a.ch/photo-forensics/#forensic-magnifier) to see if I can retrieve the flag by magnifying the image. Indeed, hovering over specific portions of the image reveals parts of the flag. I would be able to get the flag from this. But this process would be rather tedious if I rely solely on magnification. 
 
 ### The Flag
-![[PicoCTF Advanced Potion Making 7.png]]
+![[PicoCTF advanced potion making 7.png]]
 
 I searched online for other tools for image forensics, and came across [Aperi'Solve](https://www.aperisolve.com/). This was my first time using it. As seen above, the full flag was easily seen when I uploaded the file on Aperi'Solve.
 
