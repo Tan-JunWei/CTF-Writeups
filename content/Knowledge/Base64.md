@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-26T22:07:45+08:00
+modified: 2024-09-01T14:50:09+08:00
 ---
 ### Introduction 
 **Base64 encoding** is a format designed to prevent communication “mishaps” during the transfer of binary information. It achieves this through the conversion of binary data and a “lookup table” — data is eventually made in a stream of _ASCII_ characters, which can then be transmitted and decoded. On base 64 encoded data, the resultant string is always larger than the original (i.e. this is _not_ a compression algorithm). Another important distinction is that base 64 _does not_ encrypt any information — it uses a “standard” table of characters to encode and decode information. In other words, any base-64 string can be decoded, as long as the string was encoded using a standard set of characters (which the decoder can also understand). (_What Is Base64 Encoding & Decoding?_, n.d.)
@@ -10,7 +10,7 @@ modified: 2024-08-26T22:07:45+08:00
 
 ### Encoding Base64
 
->[!important] The encoding algorithm is pretty simple:  
+>[!important] The encoding algorithm is simple:  
 >Take three character bytes from the input stream (24bits), divide them into four 6 bit parts and convert each 6 bit value according to the table above. Repeat this until no more input character bytes are left.
 ![[base 64 encoding example.png]]
 
