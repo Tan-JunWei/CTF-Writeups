@@ -1,5 +1,5 @@
 ---
-modified: 2024-08-31T23:12:18+08:00
+modified: 2024-09-02T22:33:50+08:00
 ---
 [[File System Structure]]
 
@@ -19,9 +19,10 @@ The image below shows the filesystem hierarchy. All files and directories appear
 >
 >`/bin` : contains essential & ready to run binaries
 >	- This directory contains _binaries_, which are some of the applications and programs a user can run. These are also known as user executable files.
+>	- These include common Linux commands such as `cat`, `rm` and `mv`.
 >
 >`/boot` : contains bootloader files
->	- The files required for starting the system(boot process) are stored in the `/boot` directory. 
+>	- The files required for successfully starting the system(boot process) are stored in the `/boot` directory. 
 >
 >`/dev` : contains device files
 >	- This directory contains device files for every single hardware device attached to the system. These are different from [device drivers](https://www.spiceworks.com/tech/devops/articles/what-is-device-driver/). `/dev` files are the interface that user programs use to access hardware, while device drivers are the software components that make this access possible by managing the actual hardware interaction.
@@ -30,13 +31,16 @@ The image below shows the filesystem hierarchy. All files and directories appear
 >	- This directory contains the local system configuration files for the host computer. It contains most, if not all system-wide configuration files.
 >	  
 >`/home` : home directory
->	- This is the home directory storage for user files, where a user will find his personal directories. 
+>	- This is a directory that contains users' personal files. It is the entry point for any login user on the Linux system. 
+>	- The directories and files in the `/home` directory is specific to an individual user. 
 >	  
 >`/lib` : contains libraries
->	- This directory contains shared library files, such as shared library images needed to boot the system.
+>	- The `/lib` directory contains shared library images required in the `/bin` or `/sbin` directories. These are essential libraries required by the system to boot and run normally.
 >	- Libraries are files containing code that applications can use. 
 >
 >`/mnt` : temp mounted FS
+>	- This directory provides a temporary mount point on which removal media such as CDROMs can be mounted. 
+>	- It is used to mount storage devices or partitions manually. However, it is not used very often nowadays.
 >
 >`/opt` : optional software packages
 >
@@ -56,6 +60,7 @@ The image below shows the filesystem hierarchy. All files and directories appear
 
 
 #### References
+- _A Complete Guide to Understanding Linux File System Tree_. (n.d.). Cherry Servers. https://www.cherryservers.com/blog/a-complete-guide-to-understanding-linux-file-system-tree#:~:text=the%20booting%20process.-,%2Fusr,are%20shareable%20among%20other%20users. 
 - _Linux Filesystem, Partitions & Inodes - A Deep Dive For Beginners_. (2023, June 6). Anurag Kashyap. https://anuragkashyap.hashnode.dev/linux-filesystem-partitions-inodes-a-deep-dive-for-beginners
 - _Classic SysAdmin: The Linux Filesystem Explained - Linux Foundation_. (2022, September 13). https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained
 - GeeksforGeeks. (2024b, January 3). _Linux File System_. GeeksforGeeks. https://www.geeksforgeeks.org/linux-file-system/
