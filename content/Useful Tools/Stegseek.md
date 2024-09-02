@@ -9,7 +9,7 @@ Stegseek is a lightning fast steghide cracker that can be used to extract hidden
 >[!tip] Cracking
 >The most important feature of stegseek is wordlist cracking. StegSeek uses a wordlist that you provide to crack hidden data in the file:
 >
->```
+>```bash
 >stegseek [stegofile.jpg] [wordlist.txt]
 >```
 >
