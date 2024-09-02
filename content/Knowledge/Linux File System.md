@@ -1,5 +1,5 @@
 ---
-modified: 2024-09-02T22:33:50+08:00
+modified: 2024-09-02T22:48:47+08:00
 ---
 [[File System Structure]]
 
@@ -43,6 +43,10 @@ The image below shows the filesystem hierarchy. All files and directories appear
 >	- It is used to mount storage devices or partitions manually. However, it is not used very often nowadays.
 >
 >`/opt` : optional software packages
+>	-  This directory contains add-on applications or software packages that are not installed through your operating system package manager. 
+>	- Each of these applications has its own subdirectory which contains all essential files required for it to run.
+>	- When you install a software package from a third-party repository, or compile software binaries yourself, the files are stored in the `/opt` directory.
+>	- Applications are stored in the `/opt/bin` directory, while libraries are stored in `/opt/lib`.
 >
 >`/proc` : process info
 >
