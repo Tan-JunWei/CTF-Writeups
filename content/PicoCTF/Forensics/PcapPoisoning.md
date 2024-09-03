@@ -18,9 +18,9 @@ After downloading the file, we realise that it is a `pcap` file, as the challeng
 
 >[!success]  We can run `strings <file-name> | grep pico` to get the flag immediately.
 
-Alternatively, we can use [[WIreshark]] for packet analysis.
+Alternatively, we can use [[Wireshark]] for packet analysis.
 
-### Using [[WIreshark]]
+### Using [[Wireshark]]
 
 ![[PicoCTF Pcap Poisoning 3.png]]
 

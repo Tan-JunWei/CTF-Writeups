@@ -12,16 +12,16 @@ modified: 2024-08-22T21:08:50+08:00
 ## Challenge Description
 
 ![[PicoCTF Wireshark doo dooo do doo... .png]]
-Aha, a [[WIreshark]] challenge. First we download the .`pcapng` file using `wget <link>`. 
+Aha, a [[Wireshark]] challenge. First we download the .`pcapng` file using `wget <link>`. 
 
 >[!important] Wireshark
 > Wireshark is a network analysis tool. 
 > 
-> For more information, refer to [[WIreshark|this page]].
+> For more information, refer to [[Wireshark|this page]].
 ### Finding the flag
 ![[PicoCTF Wireshark doo dooo do doo... 1.5.png]]
 
-After opening the file in [[WIreshark]], I first went to check the Protocol Hierarchy, and decided to use `tcp` as a filter. 
+After opening the file in [[Wireshark]], I first went to check the Protocol Hierarchy, and decided to use `tcp` as a filter. 
 
 >[!question] What is Protocol Hierarchy?
 >Protocol hierarchy in Wireshark is a feature that displays a breakdown of the different protocols
