@@ -10,7 +10,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-03T13:13:25+08:00
+modified: 2024-09-03T13:35:38+08:00
 ---
 ## Challenge Description 
 ![[PicoCTF Trivial Flag Transfer Protocol.png]]
@@ -59,10 +59,8 @@ TFTPDOESNTENCRYPTOURTRAFFICSOWEMUSTDISGUISEOURFLAGTRANSFER.FIGUREOUTAWAYTOHIDETH
 
 The guess was spot on. By adding spaces in between the words, we can make out this message: 
 
-```
-TFTP DOESNT ENCRYPT OUR TRAFFIC SO WE MUST DISGUISE OUR FLAG TRANSFER. 
-FIGURE OUT A WAY TO HIDE THE FLAG AND I WILL CHECK BACK FOR THE PLAN
-```
+`TFTP DOESNT ENCRYPT OUR TRAFFIC SO WE MUST DISGUISE OUR FLAG TRANSFER. FIGURE OUT A WAY TO HIDE THE FLAG AND I WILL CHECK BACK FOR THE PLAN`
+
 We can see that they are trying to hide the flag from plain sight. 
 
 >[!tip] Recall
@@ -76,15 +74,10 @@ VHFRQGURCEBTENZNAQUVQVGJVGU-QHRQVYVTRAPR.PURPXBHGGURCUBGBF
 
 It looks like it has been encoded in the same way. Using the same command, we get another clue: 
 
-```
-IUSEDTHEPROGRAMANDHIDITWITH-DUEDILIGENCE.CHECKOUTTHEPHOTOS
-```
+`IUSEDTHEPROGRAMANDHIDITWITH-DUEDILIGENCE.CHECKOUTTHEPHOTOS`
 
-With added spaces, the message becomes this:
-
-```
-I USED THE PROGRAM AND HID IT WITH-DUEDILIGENCE.CHECK OUT THE PHOTOS
-```
+With the added spaces, the message becomes:
+`I USED THE PROGRAM AND HID IT WITH-DUEDILIGENCE.CHECK OUT THE PHOTOS`
 
 Another file we downloaded was called `program.deb`. We can see that we are most likely on the right path. 
 
@@ -103,7 +96,32 @@ From the above clue about checking out the photos, we can conclude that the flag
 
 ![[PicoCTF Trivial Flag Transfer Protocol 7.png]]
 
+>[!warning] Passphrase required
+>To extract the flag hidden using [[Stegseek]], we must provide a passphrase. It seems like we have not been provided with any. Of course, we can use tools like Stegseek or Stegcracker to brute-force the passphrase.
+>
+>However, thankfully, upon further inspection, we were actually given the passphrase. 
+>
+>`I USED THE PROGRAM AND HID IT WITH-DUEDILIGENCE.CHECK OUT THE PHOTOS`
+>
+>With reference to the message above, the passphrase to extract hidden files in the pictures is `DUEDILIGENCE`. Sneaky.
+
+Let's run the following command on the 3 `.bmp` photos we have downloaded:
+```bash
+steghide extract -sf < file-name > -p DUEDILIGENCE
+```
+- `-sf`: Specifies name of the stego file
+- `-p`: Specifies passphrase
+
+[[Steghide]] was unable to extract any data from `picture1.bmp` and `picture2.bmp`, but for `picture3.bmp`, a file called `flag.txt` was extracted.
+
+When we `cat` this file, we will be able to see the flag. 
+
+
+>[!NOTE] Flag
+>picoCTF{h1dd3n_1n_pLa1n_51GHT_18375919}
 
 #### References
 - _What is TFTP? | Spiceworks_. (2018, April 23). IT Articles. https://www.spiceworks.com/it-articles/what-is-tftp/
 - _Trivial File Transfer Protocol_. (2024, July 8). Wikipedia. https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol
+- How to inspect and validate a deb package before installation? (n.d.). Ask Ubuntu. https://askubuntu.com/questions/642665/how-to-inspect-and-validate-a-deb-package-before-installation
+- Alim, A. (2022b, January 24). Steganography — Crack password protected message! - System Weakness. _Medium_. https://systemweakness.com/steganography-crack-password-protected-message-2d91830ba90c
