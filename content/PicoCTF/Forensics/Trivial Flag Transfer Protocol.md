@@ -10,7 +10,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-03T13:35:38+08:00
+modified: 2024-09-03T13:45:30+08:00
 ---
 ## Challenge Description 
 ![[PicoCTF Trivial Flag Transfer Protocol.png]]
@@ -81,18 +81,21 @@ With the added spaces, the message becomes:
 
 Another file we downloaded was called `program.deb`. We can see that we are most likely on the right path. 
 
-However, since it is generally not advisable to install `.deb` files directly, I will not do that. Instead, I will be used this command:
+However, since it is generally not advisable to install `.deb` files directly, I will not do that. Instead, I will be used this command I found on [StackOverflow](https://askubuntu.com/questions/642665/how-to-inspect-and-validate-a-deb-package-before-installation):
 
 ```bash
-dpkg-deb --info <file-name>
+dpkg-deb --info < file-name >
 ```
 
 The command `dpkg-deb --info <file-name>` is used to display information about the contents of a `.deb` package without actually installing it. This can be helpful to check what files the package will install and where they will be placed, as well as other metadata about the package.
 
 ![[PicoCTF Trivial Flag Transfer Protocol 6.png]]
-As seen above, we see a chunk of text under "_Description_" which states that Steghide is [[Steganography]] program which hides bits of a data file in some of the least significant bits of another file in such a way that the existence of the data file is not visible and cannot be proven.
+As seen above, we see a chunk of text under "Description" which states that Steghide is [[Steganography]] program which hides bits of a data file in some of the least significant bits of another file in such a way that the existence of the data file is not visible and cannot be proven.
 
 From the above clue about checking out the photos, we can conclude that the flag has been hidden in the photos using [[Steghide]]. 
+
+>[!faq] PicoCTF Hint: What are some other ways to hide data?
+>Well, seems like the answer was [[Steganography]].
 
 ![[PicoCTF Trivial Flag Transfer Protocol 7.png]]
 
@@ -103,7 +106,7 @@ From the above clue about checking out the photos, we can conclude that the flag
 >
 >`I USED THE PROGRAM AND HID IT WITH-DUEDILIGENCE.CHECK OUT THE PHOTOS`
 >
->With reference to the message above, the passphrase to extract hidden files in the pictures is `DUEDILIGENCE`. Sneaky.
+>With reference to the message above, the passphrase to extract hidden files in the pictures is `DUEDILIGENCE`. Sneaky!
 
 Let's run the following command on the 3 `.bmp` photos we have downloaded:
 ```bash
