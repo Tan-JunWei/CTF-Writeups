@@ -10,7 +10,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-03T13:00:28+08:00
+modified: 2024-09-03T13:13:25+08:00
 ---
 ## Challenge Description 
 ![[PicoCTF Trivial Flag Transfer Protocol.png]]
@@ -60,7 +60,8 @@ TFTPDOESNTENCRYPTOURTRAFFICSOWEMUSTDISGUISEOURFLAGTRANSFER.FIGUREOUTAWAYTOHIDETH
 The guess was spot on. By adding spaces in between the words, we can make out this message: 
 
 ```
-TFTP DOESNT ENCRYPT OUR TRAFFIC SO WE MUST DISGUISE OUR FLAG TRANSFER. FIGURE OUT A WAY TO HIDE THE FLAG AND I WILL CHECK BACK FOR THE PLAN
+TFTP DOESNT ENCRYPT OUR TRAFFIC SO WE MUST DISGUISE OUR FLAG TRANSFER. 
+FIGURE OUT A WAY TO HIDE THE FLAG AND I WILL CHECK BACK FOR THE PLAN
 ```
 We can see that they are trying to hide the flag from plain sight. 
 
@@ -86,6 +87,22 @@ I USED THE PROGRAM AND HID IT WITH-DUEDILIGENCE.CHECK OUT THE PHOTOS
 ```
 
 Another file we downloaded was called `program.deb`. We can see that we are most likely on the right path. 
+
+However, since it is generally not advisable to install `.deb` files directly, I will not do that. Instead, I will be used this command:
+
+```bash
+dpkg-deb --info <file-name>
+```
+
+The command `dpkg-deb --info <file-name>` is used to display information about the contents of a `.deb` package without actually installing it. This can be helpful to check what files the package will install and where they will be placed, as well as other metadata about the package.
+
+![[PicoCTF Trivial Flag Transfer Protocol 6.png]]
+As seen above, we see a chunk of text under "_Description_" which states that Steghide is [[Steganography]] program which hides bits of a data file in some of the least significant bits of another file in such a way that the existence of the data file is not visible and cannot be proven.
+
+From the above clue about checking out the photos, we can conclude that the flag has been hidden in the photos using [[Steghide]]. 
+
+![[PicoCTF Trivial Flag Transfer Protocol 7.png]]
+
 
 #### References
 - _What is TFTP? | Spiceworks_. (2018, April 23). IT Articles. https://www.spiceworks.com/it-articles/what-is-tftp/
