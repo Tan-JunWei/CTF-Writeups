@@ -12,7 +12,7 @@ modified: 2024-08-19T15:26:00
 ## Challenge Description
 ![[PicoCTF Packets Primer.png]]
 
-Seems like a typical network forensics challenge. After downloading the pcap file using `wget`, we can use [[WIreshark]] to get the flag. 
+Seems like a typical network forensics challenge. After downloading the pcap file using `wget`, we can use [[Wireshark]] to get the flag. 
 
 ### Wireshark
 ![[PicoCTF Packets Primer 2.png]]
