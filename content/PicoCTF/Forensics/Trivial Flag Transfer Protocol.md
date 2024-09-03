@@ -10,7 +10,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-03T12:54:24+08:00
+modified: 2024-09-03T13:00:28+08:00
 ---
 ## Challenge Description 
 ![[PicoCTF Trivial Flag Transfer Protocol.png]]
@@ -64,6 +64,29 @@ TFTP DOESNT ENCRYPT OUR TRAFFIC SO WE MUST DISGUISE OUR FLAG TRANSFER. FIGURE OU
 ```
 We can see that they are trying to hide the flag from plain sight. 
 
+>[!tip] Recall
+>One of the files downloaded was called `plan`. Could it be what they are hinting at?
+
+I proceeded to test this hypothesis. The contents of `plan` is: 
+
+```
+VHFRQGURCEBTENZNAQUVQVGJVGU-QHRQVYVTRAPR.PURPXBHGGURCUBGBF
+```
+
+It looks like it has been encoded in the same way. Using the same command, we get another clue: 
+
+```
+IUSEDTHEPROGRAMANDHIDITWITH-DUEDILIGENCE.CHECKOUTTHEPHOTOS
+```
+
+With added spaces, the message becomes this:
+
+```
+I USED THE PROGRAM AND HID IT WITH-DUEDILIGENCE.CHECK OUT THE PHOTOS
+```
+
+Another file we downloaded was called `program.deb`. We can see that we are most likely on the right path. 
 
 #### References
 - _What is TFTP? | Spiceworks_. (2018, April 23). IT Articles. https://www.spiceworks.com/it-articles/what-is-tftp/
+- _Trivial File Transfer Protocol_. (2024, July 8). Wikipedia. https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol
