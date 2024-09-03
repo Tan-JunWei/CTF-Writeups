@@ -6,7 +6,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-19T15:26:05+08:00
+modified: 2024-09-03T20:22:30+08:00
 ---
 ## Challenge Description
 ![[PicoCTF Lookey Here.png]]
@@ -19,7 +19,7 @@ Indeed, running `cat <file-name>` here displays a large block of text in the ter
 
 >[!question] PicoCTF Hint: Download the file and search for the flag based on the known prefix.
 
-Based on the hint, it seems like we will have to search for the flag using `grep pico`, since the common flag format for PicoCTF challenges is picoCTF{}.
+Based on the hint, it seems like we will have to search for the flag using `grep pico`, since the common flag format for PicoCTF challenges is `picoCTF{...}`.
 
 ![[PicoCTF Lookey here 2.png]]
 

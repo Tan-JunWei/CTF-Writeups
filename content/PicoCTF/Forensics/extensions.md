@@ -3,11 +3,13 @@ tags:
   - Forensics
   - medium
   - Image
+  - hexedit
+  - filetypes
 Creation Date: 
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-29T13:06:35+08:00
+modified: 2024-09-03T20:31:48+08:00
 ---
 ## Challenge Description
 
