@@ -7,13 +7,13 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-19T15:25:55+08:00
+modified: 2024-09-03T20:18:42+08:00
 ---
 ## Challenge Description
 
 ![[PicoCTF hideme.png]]
 
-The `hideme` challenge name already suggests that the flag is hidden from plain sight. We shall explore. 
+The `hideme` challenge name already suggests that the flag is hidden from plain sight. We shall try to explore. 
 
 ### Trying `binwalk`
 ![[PicoCTF hideme 2.png]]

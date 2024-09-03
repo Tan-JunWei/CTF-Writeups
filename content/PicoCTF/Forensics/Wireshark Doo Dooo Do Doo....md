@@ -3,11 +3,13 @@ tags:
   - Forensics
   - medium
   - Wireshark
+  - pcap
+  - ROT13
 Creation Date: 
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-22T21:08:50+08:00
+modified: 2024-09-03T20:29:34+08:00
 ---
 ## Challenge Description
 
@@ -42,7 +44,7 @@ After filtering the packets by using the`tcp`filter, I went to check the `TCP st
 ### Retrieving the flag
 ![[PicoCTF Wireshark doo do dooo dooo... 3.png]]
 
-Since I did not intuitively realise which cipher was used to encrypt the flag, I headed over to [this](https://www.dcode.fr/cipher-identifier) website to do the job for me.
+Since I did not intuitively realise which cipher was used to encrypt the flag, I used a [Cipher Identifier](https://www.dcode.fr/cipher-identifier) to do the job for me.
 
 ![[PicoCTF Wireshark doo dooo do doo... 4.png]]
 
