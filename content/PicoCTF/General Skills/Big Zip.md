@@ -8,7 +8,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-04T14:44:12+08:00
+modified: 2024-09-04T16:55:54+08:00
 ---
 ## Challenge Description
 ![[PicoCTF big_zip.png]]
@@ -17,14 +17,15 @@ As usual, we begin by downloading the file using `wget <link>`. For this challen
 
 ### The overwhelming number of directories and files
 ![[PicoCTF big zip 2.png]]
-I ran `tree -f big-zip-files` to check the number of files and directories that were present in this folder. As observed. there were 358 directories and 8732 files. I tried to use  pipe ("`|`") to grep "flag" or "pico" from the contents of the output of the `tree` command. However, the `.txt` files were randomly named for this challenge. An example is `ireiagcarkzcmosqzqlvrh.txt`.
+I ran `tree -f big-zip-files` to check the number of files and directories that were present in this folder. As observed. there were 358 directories and 8732 files. I tried to use  pipe ("`|`") to grep "flag" or "pico" from the contents of the output of the `tree` command. However, since the `.txt` files were randomly named for this challenge, this approach was ineffective. An example file name is `ireiagcarkzcmosqzqlvrh.txt`.
 
 >[!faq] PicoCTF Hint: Can grep be instructed to look at every file in a directory and its subdirectories?
 >
 >After checking various online sources, I came across this post on StackOverflow: 
 >[How to perform grep operation on all files in a directory?](https://stackoverflow.com/questions/15286947/how-to-perform-grep-operation-on-all-files-in-a-directory)
 
-With the help of that post, I realised that the following command can be used.
+With the help of this page, I realised the following command can be used.
+
 ```bash
 grep -r "search-term" *
 ```
@@ -33,9 +34,8 @@ grep -r "search-term" *
 
 I ran the above command twice, first time with the search term being "flag" and the second time with "pico" as the search term. 
 
-Although there were many files with words containing "flag", this was not useful as I did not manage to get the flag for submission.
-
-### Successfuly `grep`
+There were many files with words containing "flag", but all of them were not what I was looking for.  
+### Successful `grep`
 
 ![[PicoCTF big zip 3.png]]
 

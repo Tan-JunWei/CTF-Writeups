@@ -7,19 +7,19 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-04T13:43:25+08:00
+modified: 2024-09-04T16:59:23+08:00
 ---
 ## Challenge Description
 ![[PicoCTF Time Machine.png]]
 
-Hmmmm.... the challenge description hints that we will be following a `Forensics` approach. However, this challenge is categorised under `General Skills`. We shall explore.
+Hmmmm.... the challenge description hints that we will be following a [[PicoCTF Writeups#Forensics|Forensics]] approach. However, this challenge is categorised under `General Skills`. We shall explore!
 
 We first download the file given using `wget <link>`.
 
 ### Downloaded file
 ![[PicoCTF Time Machine 2.png]]
 
-The downloaded file is called `challenge.zip`. When we `unzip` the file, many directories and files are created in a directory called `drop-in`. Specifically, most files were created under a [.git folder](https://stackoverflow.com/questions/29217859/what-is-the-git-folder).
+The downloaded file is called `challenge.zip`. When we `unzip` the file, many directories and files are created in a directory called `drop-in`. Most files were created under a [.git folder](https://stackoverflow.com/questions/29217859/what-is-the-git-folder). This gives us a clue that our flag may be associated with [Git](https://git-scm.com/), which is used in version control. 
 
 There is also a file called `message.txt` in the `drop-in` directory. 
 ### Contents
