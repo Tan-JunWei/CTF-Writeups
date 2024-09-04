@@ -9,7 +9,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-04T15:17:56+08:00
+modified: 2024-09-04T22:21:30+08:00
 ---
 ## Challenge Description
 ![[PicoCTF First FInd .png]]
