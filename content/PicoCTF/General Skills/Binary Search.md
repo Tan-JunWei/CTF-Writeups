@@ -8,7 +8,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-04T13:24:49+08:00
+modified: 2024-09-04T13:50:20+08:00
 ---
 ## Challenge Description
 
@@ -17,7 +17,7 @@ As the name suggests, this challenge will be about binary search.
 
 >[!tip] What is binary search? 
 >
->From the [GeeksforGeeks Binary Search Algorithm](https://www.geeksforgeeks.org/binary-search/) page, the _Binary Search Algorithm_ is a [searching algorithm](https://www.geeksforgeeks.org/searching-algorithms/) used in a sorted array by repeatedly dividing the search interval in half**. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N).
+>From the [GeeksforGeeks Binary Search Algorithm](https://www.geeksforgeeks.org/binary-search/) page, the _Binary Search Algorithm_ is a [searching algorithm](https://www.geeksforgeeks.org/searching-algorithms/) used in a sorted array by **repeatedly dividing the search interval in half**. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N).
 
 For this challenge, we will have to guess a number between 1 and 1000. This number is randomly generated every time a user connects to the SSH server. We will only be given the flag is we guess the number. 
 
