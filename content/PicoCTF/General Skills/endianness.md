@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-04T22:04:58+08:00
+modified: 2024-09-04T22:10:57+08:00
 ---
 ## Challenge Description
 ![[PicoCTF endianness.png]]
@@ -24,7 +24,7 @@ Honestly, I did not have much knowledge about endianness and what exactly is Big
 >  Basically, endianness refers to the order in which bytes are arranged in computer memory. 
 >  In a Big-Endian system, the most significant byte (MSB) is stored at the smallest memory address, and the least significant byte (LSB) at the largest. A Little-Endian system is of course the opposite, with the LSB at the smallest memory address and the MSB at the largest. 
 >  
->  >[!example]+ MSB
+>  >[!abstract]+ MSB
 >  >![[PicoCTF endianness MSB.png]]
 >  >
 >  >The above image from the GeeksforGeeks source mentioned earlier clarifies the difference between LSB and MSB. 
