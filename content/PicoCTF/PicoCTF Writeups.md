@@ -1,5 +1,5 @@
 ---
-modified: 2024-09-04T12:57:17+08:00
+modified: 2024-09-04T14:30:18+08:00
 ---
 <!-- ### Forensics
 
@@ -154,4 +154,6 @@ modified: 2024-09-04T12:57:17+08:00
 	- [[Binary Search]]
 	- [[Time Machine]]
 	- [[Super SSH]]
+	- [[endianness]]
+	- [[Big Zip]]
 - medium
