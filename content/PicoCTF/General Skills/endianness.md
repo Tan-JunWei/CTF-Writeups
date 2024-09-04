@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-04T21:30:19+08:00
+modified: 2024-09-04T21:55:36+08:00
 ---
 ## Challenge Description
 ![[PicoCTF endianness.png]]
@@ -23,10 +23,30 @@ Honestly, I did not have much knowledge about endianness and what exactly is Big
 >  
 >  Basically, endianness refers to the order in which bytes are arranged in computer memory. 
 >  In a Big-Endian system, the most significant byte (MSB) is stored at the smallest memory address, and the least significant byte (LSB) at the largest. A Little-Endian system is of course the opposite, with the LSB at the smallest memory address and the MSB at the largest. 
+>  
+>  >[!example] MSB
+>  >![[PicoCTF endianness MSB.png]]
+>  >
+>  >The above image from the GeeksforGeeks source mentioned earlier clarifies the difference between LSB and MSB. 
+>  >
+>  >Basically, of the 2 endian systems, big-endian is closer to the way we read words in English, from left to right.
 
 ### Little endian and big endian representations of a word
 
-I first downloaded the provided file, which was a program written in `C` programming language.
+I first downloaded the provided file, which was a program written in `C` programming language. I ran `cat` to examine the code. 
+
+After reading the code, I realised that a user will be given a string of random characters ( which they call a "word"), and our task is to return the little-endian and big-endian representations of the "word". We will be given the flag only if both representations are correct.
+
+>[!faq] PicoCTF Hint: You might want to check the ASCII table to first find the hexadecimal representation of characters before finding the endianness.
+>
+>We know that in ASCII encoding, 1 character corresponds to a single byte (8 bits). In the hexadecimal or base-16 system, 2 characters represent 1 byte. In the ASCII table, we can easily convert a character into its hexadecimal value. From there. we can easily derive the little endian and big endian representations of the "word" given. I'll provide a brief walkthrough below.
+>
+>Suppose that we have a string "`abc`". Using the ASCII table, the hexadecimal values of `a`,`b` and `c` are 61, 62 and 63 respectively. 
+>
+>In the little-endian system, the LSB is at the smallest memory address, and the MSB is at the largest. So, the little-endian representation of the string will be `636261`. You can think of it as reading in reverse, starting at the back.
+>
+>The big-endian representation is the opposite of the one in the little-endian system. In this case, the big-endian representation if `616263`, just like how we are used to reading from left to right in English.
+
 
 ![[PicoCTF endianness 2.png]]
 
