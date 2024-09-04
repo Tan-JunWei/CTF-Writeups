@@ -1,5 +1,5 @@
 ---
-modified: 2024-09-03T16:03:45+08:00
+modified: 2024-09-04T12:57:17+08:00
 ---
 <!-- ### Forensics
 
@@ -148,3 +148,10 @@ modified: 2024-09-03T16:03:45+08:00
 	- [[Flags]]
 	- [[john_pollard]]
 	- [[Tapping]]
+
+### General Skills
+- easy
+	- [[Binary Search]]
+	- [[Time Machine]]
+	- [[Super SSH]]
+- medium
