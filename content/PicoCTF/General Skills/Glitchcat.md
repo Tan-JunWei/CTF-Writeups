@@ -6,7 +6,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-05T21:57:36+08:00
+modified: 2024-09-05T22:39:44+08:00
 ---
 ## Challenge Description
 ![[PicoCTF GlitchCat.png]]
@@ -23,7 +23,7 @@ Running `nc saturn.picoctf.net 53781` displayed the following string:
 ```
 
 >[!tip] What does `chr()` do?
->From a previous challenge, [[PW Crack 2]], I learnt that the `chr()` function in Python returns the character that represents the specified unicode.
+>From a previous challenge ([[PW Crack 2]]), I learnt that the `chr()` function in Python returns the character that represents the specified unicode.
 >
 >For example, chr(97) allows us to get the character that represents the unicode 97.
 

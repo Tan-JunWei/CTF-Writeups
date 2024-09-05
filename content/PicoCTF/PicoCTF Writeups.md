@@ -1,5 +1,5 @@
 ---
-modified: 2024-09-05T21:42:29+08:00
+modified: 2024-09-05T22:51:23+08:00
 ---
 <!-- ### Forensics
 
@@ -165,4 +165,6 @@ modified: 2024-09-05T21:42:29+08:00
 	- [[runme.py]]
 	- [[Glitchcat]]
 	- [[Tab, Tab, Attack]]
+	- [[strings it]]
+	- [[Bases]]
 - medium
