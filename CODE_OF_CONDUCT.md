@@ -6,7 +6,7 @@ A primary goal of the Quartz community is to be inclusive to the largest number 
 
 This code of conduct outlines our expectations for all those who participate in our community, as well as the consequences for unacceptable behavior.
 
-We invite all those who participate in the Quartz community to help us create safe and positive experiences for everyone.
+We invite all those who participate in the Quartz community to help us create safe and positive experiences for everyone. 
 
 ## 2. Open [Source/Culture/Tech] Citizenship
 
