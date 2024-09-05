@@ -4,6 +4,11 @@ Welcome to my Capture The Flag (CTF) writeup repository! Here you'll find detail
 > Click &#9733; if you like this project! Really appreciate it!
 
 ## Contents
+
+<div align="center">
+  <img align="center" width="700" src="content\Assets\Readme Challenge Example.png" alt="Challenge Example" />
+</div>
+
 -  **Challenges**: Organized by category (e.g., Forensics, Cryptography, OSINT, Web Exploitation), each challenge writeup includes a step-by-step guide on how to approach and solve the problem. These writeups cover the thought process, tools used, methodologies applied, and lessons learned.
 -  **Useful Tools**: Highlights some of the tools that proved helpful in solving challenges. Note that only the most useful or commonly used tools are included in this section, not every tool used.
 -  **Fundamental Knowledge**: Gives more in-depth, technical insights to important concepts that are required or beneficial for solving challenges. These are incorporated in the challenge writeups.
@@ -12,7 +17,7 @@ Welcome to my Capture The Flag (CTF) writeup repository! Here you'll find detail
 ## Graph View Visualization
 
 <div align="center">
-  <img align="center" width="500" src="content/Assets/Readme%20Graph%20View.png" alt="Graph View" />
+  <img align="center" width="600" src="content/Assets/Readme%20Graph%20View.png" alt="Graph View" />
 </div>
 
 The **Graph View** provides an interactive way to explore the relationships between challenges, concepts, tools, and techniques. It offers a visual map that can help you see how different components are connected:
@@ -28,10 +33,7 @@ Visit this [website](https://tan-junwei.github.io/CTF-Writeups/).
 
 ### Navigation
 
-<p align="left">
-  <img src="content\Assets\Readme PicoCTF Icon.png" width="20" />
-  <span style="font-size: 20px; vertical-align: middle;">PicoCTF</span>
-</p>
+#### PicoCTF
 - [All Writeups](https://tan-junwei.github.io/CTF-Writeups/PicoCTF/PicoCTF-Writeups)
 - [Forensics](https://tan-junwei.github.io/CTF-Writeups/PicoCTF/Forensics/)
 - [Cryptography](https://tan-junwei.github.io/CTF-Writeups/PicoCTF/Cryptography/)

@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-05T13:59:18+08:00
+modified: 2024-09-05T17:34:34+08:00
 ---
 ## Challenge Description
 ![[PW Crack 2.png]]
@@ -27,6 +27,7 @@ After downloading the file using `wget`, I proceed to `cat` its contents. It can
 
 Since this is a python function, we can just display the correct password by running `nano` and adding a single line of code. 
 
+### Modifying the given script
 ![[PicoCTF PW Crack 2 3.png]]
 
 I simply added this line `print(chr(0x64) + chr(0x65) + chr(0x37) + chr(0x36))` before the program asks me for the input, so that I can copy the correct password and enter it to get my flag. I've attached the full code below as well.
