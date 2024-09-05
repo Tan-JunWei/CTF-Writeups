@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-04T21:07:11+08:00
+modified: 2024-09-05T12:53:36+08:00
 ---
 ## Challenge Description
 
@@ -32,5 +32,5 @@ Once I connected to the server, I was greeted with this line:
 `Welcome ctf-player, here's your flag: picoCTF{s3cur3_c0nn3ct10n_07a987ac}`
 
 > [!NOTE] Flag
-> picoCTF{s3cur3_c0nn3ct10n_07a987ac}`
+> picoCTF{s3cur3_c0nn3ct10n_07a987ac}
 
