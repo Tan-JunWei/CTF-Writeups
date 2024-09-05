@@ -32,7 +32,6 @@ Visit this [website](https://tan-junwei.github.io/CTF-Writeups/).
   <img src="content\Assets\Readme PicoCTF Icon.png" width="20" />
   <span style="font-size: 20px; vertical-align: middle;">PicoCTF</span>
 </p>
-
 - [All Writeups](https://tan-junwei.github.io/CTF-Writeups/PicoCTF/PicoCTF-Writeups)
 - [Forensics](https://tan-junwei.github.io/CTF-Writeups/PicoCTF/Forensics/)
 - [Cryptography](https://tan-junwei.github.io/CTF-Writeups/PicoCTF/Cryptography/)
