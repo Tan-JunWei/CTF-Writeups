@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-05T22:34:11+08:00
+modified: 2024-09-05T22:44:27+08:00
 ---
 ## Challenge Description
 
@@ -34,6 +34,9 @@ I tried to display the contents of the only file in extracted directory by doing
 ![[PicoCTF Tab. Tab. Attack 4.png]]
 
 Next, I tried using `strings` instead of `cat`, hoping for a clearer result. As expected, `strings` did reveal the flag, though it was buried within a large block of text. I reran the command, `strings <full-path-to-file>`, this time piping ("`|`") the output through `grep pico` to filter the relevant content. This allowed me to see the full flag easily.
+
+>[!todo] `strings` command
+>`strings` prints the strings of printable characters in files.
 
 
 > [!NOTE] Flag
