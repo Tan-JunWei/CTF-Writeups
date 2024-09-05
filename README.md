@@ -1,6 +1,3 @@
----
-modified: 2024-09-05T11:58:31+08:00
----
 # CTF Writeups
 Welcome to my Capture The Flag (CTF) writeup repository! Here you'll find detailed explanations and solutions to various CTF challenges I've tackled.
 
@@ -31,7 +28,7 @@ Visit this [website](https://tan-junwei.github.io/CTF-Writeups/).
 
 ### Navigation
 
-<p align="center">
+<p align="left">
   <img src="content\Assets\Readme PicoCTF Icon.png" width="20" />
   <span style="font-size: 20px; vertical-align: middle;">PicoCTF</span>
 </p>
