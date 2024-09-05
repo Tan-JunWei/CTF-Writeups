@@ -8,13 +8,14 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-05T21:40:41+08:00
+modified: 2024-09-05T21:45:46+08:00
 ---
 ## Challenge Description
 ![[PicoCTF HashingJobApp.png]]
 
 From the challenge description and name, we can tell that the challenge's about cryptographic [hash functions](https://en.wikipedia.org/wiki/List_of_hash_functions). But we don't know which. 
 
+### Understanding the challenge
 ![[PicoCTF HashingJobApp 2.png]]
 
 After I launched an instance, I was given this command to run:
