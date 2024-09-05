@@ -3,10 +3,17 @@ Welcome to my Capture The Flag (CTF) writeup repository! Here you'll find detail
 
 ## Contents
 -  **Challenges**: Organized by category (e.g., Forensics, Cryptography, OSINT, Web Exploitation), each challenge writeup includes a step-by-step guide on how to approach and solve the problem. These writeups cover the thought process, tools used, methodologies applied, and lessons learned.
--  **Useful Tools**: Features some of the tools which came in handy when solving challenges
--  **Fundamental Knowledge**: Gives more in-depth, technical insights to important concepts that are required or beneficial for solving challenges
+-  **Useful Tools**: Highlights some of the tools that proved helpful in solving challenges. Note that only the most useful or commonly used tools are included in this section, not every tool used.
+-  **Fundamental Knowledge**: Gives more in-depth, technical insights to important concepts that are required or beneficial for solving challenges. These are incorporated in the challenge writeups.
+-  **Relevant resources**: Provides further explanations of the concepts, tools, or techniques used to solve challenges. If applicable, sources are linked at the bottom of each challenge for personal reading.
 
 ## Graph View Visualization
+
+<div align="center">
+  <img align="center" width="500" src="content/Assets/Readme%20Graph%20View.png" alt="Graph View" />
+</div>
+
+
 The **Graph View** provides an interactive way to explore the relationships between challenges, concepts, tools, and techniques. It offers a visual map that can help you see how different components are connected:
 - **Circles (Nodes)**: Each circle represents a node, which can be a challenge, concept, tool, or tag. Tags allow easier navigation between similar challenges (E.g. Clicking the `#medium` tag allows you to browse challenges in that difficulty category.)
 - **Lines (Links)**: The lines between nodes present internal links, showcasing how these elements are interconnected. 
