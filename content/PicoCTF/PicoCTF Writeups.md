@@ -1,5 +1,5 @@
 ---
-modified: 2024-09-05T22:51:23+08:00
+modified: 2024-09-06T08:53:09+08:00
 ---
 <!-- ### Forensics
 
@@ -167,4 +167,6 @@ modified: 2024-09-05T22:51:23+08:00
 	- [[Tab, Tab, Attack]]
 	- [[strings it]]
 	- [[Bases]]
+	- [[Wave a flag]]
+	- [[Python Wrangling]]
 - medium
