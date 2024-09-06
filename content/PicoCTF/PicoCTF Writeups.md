@@ -1,5 +1,5 @@
 ---
-modified: 2024-09-06T08:53:09+08:00
+modified: 2024-09-06T09:22:37+08:00
 ---
 <!-- ### Forensics
 
@@ -169,4 +169,5 @@ modified: 2024-09-06T08:53:09+08:00
 	- [[Bases]]
 	- [[Wave a flag]]
 	- [[Python Wrangling]]
+	- [[Static ain't always noise]]
 - medium
