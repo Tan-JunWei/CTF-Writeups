@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-06T10:58:13+08:00
+modified: 2024-09-06T13:53:26+08:00
 ---
 ## Challenge Description
 ![[PicoCTF First Grep.png]]
