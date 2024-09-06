@@ -1,5 +1,5 @@
 ---
-modified: 2024-09-06T10:13:17+08:00
+modified: 2024-09-06T11:18:10+08:00
 ---
 <!-- ### Forensics
 
@@ -173,4 +173,6 @@ modified: 2024-09-06T10:13:17+08:00
 	- [[Nice netcat...]]
 	- [[Obedient Cat]]
 	- [[2Warm]]
+	- [[First Grep]]
+	- [[binhexa]]
 - medium
