@@ -83,5 +83,3 @@ if __name__ == "__main__":
 # number of ciphers is dependent on the length of the message.
 
 
-
-    
