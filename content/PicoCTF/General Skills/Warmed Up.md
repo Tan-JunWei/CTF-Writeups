@@ -4,7 +4,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-07T11:18:29+08:00
+modified: 2024-09-07T11:51:01+08:00
 ---
 ## Challenge Description
 ![[PicoCTF Warmed Up.png]]
