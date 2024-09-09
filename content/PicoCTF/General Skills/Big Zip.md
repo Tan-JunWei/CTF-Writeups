@@ -8,7 +8,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-04T16:55:54+08:00
+modified: 2024-09-09T10:46:41+08:00
 ---
 ## Challenge Description
 ![[PicoCTF big_zip.png]]

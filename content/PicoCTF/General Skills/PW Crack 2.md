@@ -3,14 +3,15 @@ tags:
   - GeneralSkills
   - easy
   - Python
+  - PWcrack
 Creation Date: 
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-05T17:34:34+08:00
+modified: 2024-09-09T11:19:42+08:00
 ---
 ## Challenge Description
-![[PW Crack 2.png]]
+![[PicoCTF PW Crack 2.png]]
 
 This challenge approach is really similar to that of the [[PW Crack 1]] challenge. We just have to input the correct password and we get our flag. There is only a minor modification in this challenge compared to the previous one.
 ### How does the password checker work in this challenge?
