@@ -1,6 +1,6 @@
 ---
 title: CTF Writeups
-modified: 2024-09-07T11:56:28+08:00
+modified: 2024-09-11T22:15:40+08:00
 ---
 
 ![[banner.jpg]]
@@ -13,7 +13,7 @@ modified: 2024-09-07T11:56:28+08:00
 Welcome to my Capture The Flag (CTF) writeups page! Here you'll find detailed explanations and solutions to various CTF challenges I've tackled. 
 ## The Ongoing Journey 💡
 
-As of **7 September 2024**, this CTF-writeups page has a total of **91** writeups across different topics. As I continue to explore and glean deeper insights, this project will remain a living document, constantly evolving and improving. Regular updates will be made to refine the content, introduce fresh perspectives, and integrate the latest knowledge. Stay tuned for ongoing enhancements!
+As of **11 September 2024**, this CTF-writeups page has a total of **98** writeups across different topics. As I continue to explore and glean deeper insights, this project will remain a living document, constantly evolving and improving. Regular updates will be made to refine the content, introduce fresh perspectives, and integrate the latest knowledge. Stay tuned for ongoing enhancements!
 ## Navigation 🗺️
 
 ### PicoCTF
