@@ -1,6 +1,3 @@
----
-modified: 2024-09-11T22:22:04+08:00
----
 # CTF Writeups
 Welcome to my Capture The Flag (CTF) writeup repository! Here you'll find detailed explanations and solutions to various CTF challenges I've tackled.
 
@@ -9,7 +6,8 @@ Welcome to my Capture The Flag (CTF) writeup repository! Here you'll find detail
 ## Contents
 
 <div align="center">
-  <img align="center" width="700" src="content\Assets\Readme Contest.png" alt="Home Page Example" />
+  <img align="center" width="700" src="content\Assets\Readme Contents.png" alt="Home Page Example" />
+  <h4>Landing Page</h4>
 </div>
 
 -  **Challenges**: Organized by category (e.g., Forensics, Cryptography, OSINT, Web Exploitation), each challenge writeup includes a step-by-step guide on how to approach and solve the problem. These writeups cover the thought process, tools used, methodologies applied, and lessons learned.
@@ -21,6 +19,14 @@ Welcome to my Capture The Flag (CTF) writeup repository! Here you'll find detail
   <img align="center" width="700" src="content\Assets\Readme Challenge Example.png" alt="Challenge Example" />
   <h4>Challenge Example</h4>
 </div>
+
+
+Each challenge will feature a set of tags at the top, highlighting categories like "Forensics." These tags serve to offer a clear indication of the challenge's focus area, and also aid in navigation between challenges, which will be explained below. 
+
+The writeup contents are purposefully separated into bite-sized, digestible sections, which will be listed in the **Table of Contents** by the side. It also effectively illustrates the entire thought process for addressing the challenge.
+
+> [!IMPORTANT]\
+> The estimated reading time for each challenge writeup is provided at the top as an indicator of how long the content will take to read. This helps to set clear expectations about the duration of the content.
 
 ## Graph View Visualization
 
@@ -37,7 +43,7 @@ By using this visualization, you can gain a deeper understanding of the strategi
 As I continue to explore and glean deeper insights, this project will remain a living document, constantly evolving and improving. Regular updates will be made to refine the content, introduce fresh perspectives, and integrate the latest knowledge. Stay tuned for ongoing enhancements!
 
 ## Explore
-Visit this [website](https://tan-junwei.github.io/CTF-Writeups/).
+Visit this [website](https://tan-junwei.github.io/CTF-Writeups/) to check out this project!
 
 ### Navigation
 
@@ -48,7 +54,7 @@ Visit this [website](https://tan-junwei.github.io/CTF-Writeups/).
 - [General Skills](https://tan-junwei.github.io/CTF-Writeups/tags/GeneralSkills) 
 
 ## Contributions
-Contribution are always welcome! If you'd like the suggest improvements, feel free to submit a pull request or open an issue. 
+Contribution are always welcome! If you'd like the suggest improvements, feel free to submit a pull request or open an issue. I'd love to hear feedback and improvements about my work!
 
 ## License
 This repository is licensed under the MIT License. Feel free to use, modify, and distribute the content with proper attribution.
