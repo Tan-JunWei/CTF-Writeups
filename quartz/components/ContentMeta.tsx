@@ -24,37 +24,84 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
   const options: ContentMetaOptions = { ...defaultOptions, ...opts }
 
   function ContentMetadata({ cfg, fileData, displayClass }: QuartzComponentProps) {
-    const text = fileData.text
-
+    const text = fileData.text;
+  
     if (text) {
-      const segments: (string | JSX.Element)[] = []
-
+      const segments: JSX.Element[] = [];
+  
       if (fileData.dates) {
-        const formattedDate = `Last updated on ${formatDate(getDate(cfg, fileData)!, cfg.locale)}`
-        segments.push(formattedDate)
-        // segments.push(formatDate(getDate(cfg, fileData)!, cfg.locale)) Changed so that it shows "Last updated on"
+        const formattedDate = (
+          <div key="date">
+            Last updated on {formatDate(getDate(cfg, fileData)!, cfg.locale)}
+          </div>
+        );
+        segments.push(formattedDate);
       }
-
-      // Display reading time if enabled
+  
       if (options.showReadingTime) {
-        const { minutes, words: _words } = readingTime(text)
-        const displayedTime = i18n(cfg.locale).components.contentMeta.readingTime({
-          minutes: Math.ceil(minutes),
-        })
-        segments.push(displayedTime)
+        const { minutes, words: _words } = readingTime(text);
+
+        const wordAndTime = (
+          <div key="wordAndTime">
+            <span>{_words} words, </span>
+            <span>{i18n(cfg.locale).components.contentMeta.readingTime({
+              minutes: Math.ceil(minutes),
+            })}</span>
+          </div>
+        );
+  
+        segments.push(wordAndTime);
       }
-
-      const segmentsElements = segments.map((segment) => <span>{segment}</span>)
-
+  
       return (
-        <p show-comma={options.showComma} class={classNames(displayClass, "content-meta")}>
-          {segmentsElements}
-        </p>
-      )
+        <div className={classNames(displayClass, "content-meta")}>
+          {segments}
+        </div>
+      );
     } else {
-      return null
+      return null;
     }
-  }
+  }  
+
+  // function ContentMetadata({ cfg, fileData, displayClass }: QuartzComponentProps) {
+  //   const text = fileData.text
+
+  //   if (text) {
+  //     const segments: (string | JSX.Element)[] = []
+
+  //     if (fileData.dates) {
+  //       const formattedDate = (
+  //         <div key="date">
+  //           Last updated on {formatDate(getDate(cfg, fileData)!, cfg.locale)}
+  //         </div>
+  //       );
+  //       // const formattedDate = `Last updated on ${formatDate(getDate(cfg, fileData)!, cfg.locale)}`
+
+  //       segments.push(formattedDate)
+  //       // segments.push(formatDate(getDate(cfg, fileData)!, cfg.locale)) Changed so that it shows "Last updated on"
+  //     }
+
+  //     if (options.showReadingTime) {
+  //       const { minutes, words: _words } = readingTime(text)
+  //       const displayedTime = i18n(cfg.locale).components.contentMeta.readingTime({
+  //         minutes: Math.ceil(minutes),
+  //       })
+  //       const wordCount = `${_words} words, `;  // Changed so that it shows the word count
+
+  //       segments.push(wordCount, displayedTime)
+  //     }
+
+  //     const segmentsElements = segments.map((segment) => <span>{segment}</span>)
+
+  //     return (
+  //       <p show-comma={options.showComma} class={classNames(displayClass, "content-meta")}>
+  //         {segmentsElements}
+  //       </p>
+  //     )
+  //   } else {
+  //     return null
+  //   }
+  // }
 
   ContentMetadata.css = style
 
