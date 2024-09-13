@@ -16,7 +16,7 @@ modified: 2024-08-22T15:03:05+08:00
 We will first download and extract the compressed disk image using `wget <link>` and `gunzip <file-name>` respectively. We will then need to use [[The Sleuth Kit (TSK)]] commands for disk image analysis.
 
 >[!info] Linux File System
->Having a basic knowledge about the [[Linux File System]] will be helpful for this challenge.
+>Having a basic knowledge about the [[Linux Directory Structure]] will be helpful for this challenge.
 ### `mmls` command
 ![[PicoCTF Sleuthkit Apprentice 2.png]]
 Next, we run `mmls` to display the partition layout of a volume system (partition tables). This will provide us with the offset address for each partition on the image, which will be useful later. 

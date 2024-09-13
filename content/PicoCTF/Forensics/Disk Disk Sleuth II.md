@@ -16,7 +16,7 @@ modified: 2024-08-22T15:02:28+08:00
 Another disk forensics challenge! As usual, we first download the file using `wget <link>`. We will have to run `gunzip <file-name>` as well to expand the file. 
 
 >[!info] Linux File System
->Having a basic knowledge of  the [[Linux File System]] will be beneficial for this challenge.
+>Having a basic knowledge of  the [[Linux Directory Structure]] will be beneficial for this challenge.
 ### `mmls` command
 ![[PicoCTF Disk Disk Sleuth II 2.png]]
 

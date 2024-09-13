@@ -1,8 +1,8 @@
 ---
-modified: 2024-09-05T12:04:07+08:00
+modified: 2024-09-13T22:44:13+08:00
 draft: true
 ---
-[[File System Structure]]
+Related: [[File System Structure]]
 
 In Linux and many other operating systems, directories can be structured in a tree-like hierarchy. The Linux directory structure is well defined and documented in the [Linux Filesystem Hierarchy Standard](http://www.pathname.com/fhs/) (FHS).
 ## Linux Directory Structure
@@ -19,7 +19,7 @@ The image below shows the filesystem hierarchy. All files and directories appear
 >	- This is the top-level directory of the file system. It contains all the files required to boot the Linux system before other filesystems are mounted. It must also contain all required executables and libraries required to boot the remaining filesystems. 
 >
 >`/bin` : contains essential & ready to run binaries
->	- This directory contains _binaries_, which are some of the applications and programs a user can run. These are also known as user executable files.
+>	- This directory contains _binaries_, which are some of the applications and programs a user can run. These are also known as user executable files, and are available to all users.
 >	- These include common Linux commands such as `cat`, `rm` and `mv`.
 >
 >`/boot` : contains bootloader files
@@ -35,9 +35,10 @@ The image below shows the filesystem hierarchy. All files and directories appear
 >	- This is a directory that contains users' personal files. It is the entry point for any login user on the Linux system. 
 >	- The directories and files in the `/home` directory is specific to an individual user. 
 >	  
->`/lib` : contains libraries
+>`/lib` : contains libraries (essential for basic system functionality)
 >	- The `/lib` directory contains shared library images required in the `/bin` or `/sbin` directories. These are essential libraries required by the system to boot and run normally.
 >	- Libraries are files containing code that applications can use. 
+>	- Kernel modules are also located here.
 >
 >`/mnt` : temp mounted FS
 >	- This directory provides a temporary mount point on which removal media such as CDROMs can be mounted. 
@@ -48,6 +49,11 @@ The image below shows the filesystem hierarchy. All files and directories appear
 >	- Each of these applications has its own subdirectory which contains all essential files required for it to run.
 >	- When you install a software package from a third-party repository, or compile software binaries yourself, the files are stored in the `/opt` directory.
 >	- Applications are stored in the `/opt/bin` directory, while libraries are stored in `/opt/lib`.
+>
+>`/tmp` : temporary files
+>	- Temporary files created by the system and users are stored in this directory. These files are usually placed there by applications that are running, often containing data that an application need in future (not currently).
+>	- These files are typically a few kilobytes (KB) in size and usually deleted when a system is rebooted (without prior notice)
+>	- Users can store their own temporary files in this directory. This is one of the few directories that users can interact with without becoming superuser.
 >
 >`/proc` : process info
 >
