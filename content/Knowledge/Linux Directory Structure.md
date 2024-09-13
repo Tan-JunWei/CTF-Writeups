@@ -1,6 +1,6 @@
 ---
-modified: 2024-09-13T22:44:13+08:00
-draft: true
+modified: 2024-09-13T23:22:28+08:00
+draft: false
 ---
 Related: [[File System Structure]]
 
@@ -56,10 +56,17 @@ The image below shows the filesystem hierarchy. All files and directories appear
 >	- Users can store their own temporary files in this directory. This is one of the few directories that users can interact with without becoming superuser.
 >
 >`/proc` : process info
+>	- The `/proc` directory (also called the `proc` file system) is a virtual/ pseudo filesystem that provides information about running processes as well as the kernel's current state. 
+>	- The proc directory is a peculiar directory as it is not a real filesystem and ceases to exist once the system is powered off.
+>	- Under Linux, all data are stored as files and users should be familiar with 2 primary categories of files, text and binary. This directory contains a different type of file: a virtual file. 
 >
 >`/root` : home directory for root
+>	- This is **not** the root (`/`) file system. It is the home directory for the root user.
+>	- This directory stores the configuration files for the root account, in the same way each individual user's home directory contains configuration files and regular files for that user.
 >
 >`/sbin` : system binaries that are run by the root
+>	- The `/sbin` directory is similar to `/bin`, but this directory contains applications/ executables that only the superuser will require. These are privileged commands used for system administration.
+>	- Regular users are able to use these applications with the `sudo` command.
 
 
 
@@ -79,4 +86,5 @@ The image below shows the filesystem hierarchy. All files and directories appear
 - _Filesystem Hierarchy Standard_. (2024, August 28). Wikipedia. https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
 - _3.9. /lib : Essential shared libraries and kernel modules_. (n.d.). https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s09.html#:~:text=The%20%2Flib%20directory%20contains%20those,in%20%2Fbin%20and%20%2Fsbin%20.
 - BasuMallick, C. (2022, October 12). _9 Types of Device Drivers and Their Applications - Spiceworks Inc_. Spiceworks Inc. https://www.spiceworks.com/tech/devops/articles/what-is-device-driver/
+- _Chapter 5. The proc File System | Red Hat Product Documentation_. (n.d.). https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/4/html/reference_guide/ch-proc#s1-proc-virtual
 
