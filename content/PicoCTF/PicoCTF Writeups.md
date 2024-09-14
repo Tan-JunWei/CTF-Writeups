@@ -1,7 +1,9 @@
 ---
-modified: 2024-09-14T16:36:56+08:00
+modified: 2024-09-14T16:41:49+08:00
 ---
-[picoCTF](https://picoctf.org/) gamifies learning hacking with capture-the-flag puzzles created by trusted computer security and privacy experts at [Carnegie Mellon University](https://cmu.edu/) (_picoCTF - CMU Cybersecurity Competition_, n.d.). The challenges are categorised into 6 different categories: `Web Exploitation`, `Cryptography`, `Reverse Engineering`, `Forensics`, `General Skills` and `Binary Exploitation`.
+[picoCTF](https://picoctf.org/) gamifies learning hacking with capture-the-flag puzzles created by trusted computer security and privacy experts at [Carnegie Mellon University](https://cmu.edu/) (_picoCTF - CMU Cybersecurity Competition_, n.d.). 
+
+The challenges are categorised into 6 categories: `Web Exploitation`, [[PicoCTF Writeups#Cryptography|Cryptography]], `Reverse Engineering`, [[PicoCTF Writeups#Forensics|Forensics]], [[PicoCTF Writeups#General Skills|General Skills]] and `Binary Exploitation`.
 
 ### Forensics
 - easy
@@ -111,6 +113,8 @@ modified: 2024-09-14T16:36:56+08:00
 	- [[Plumbing]]
 	- [[PW Crack 4]]
 	- [[PW Crack 5]]
+
+
 
 #### References
 - _picoCTF - CMU Cybersecurity Competition_. (n.d.). https://picoctf.org/
