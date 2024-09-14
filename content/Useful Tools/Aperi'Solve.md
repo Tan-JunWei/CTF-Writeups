@@ -1,8 +1,8 @@
 ---
-modified: 2024-09-02T21:30:09+08:00
+modified: 2024-09-14T16:25:09+08:00
 ---
 >[!info] What is Aperi'Solve?
->Aperi'Solve is an online platform which performs layer analysis on image. The platform also uses [[zsteg]], [[Steghide]], `outguess`, `exiftool`, `binwalk`, `foremost` and `strings` for deeper steganography analysis. The platform supports the following images format: .png, .jpg, .gif, .bmp, .jpeg, .jfif, .jpe, .tiff...
+>Aperi'Solve is an online platform which performs layer analysis on image. The platform also uses [[zsteg]], [[Steghide]], `outguess`, `exiftool`, `binwalk`, `foremost` and `strings` for deeper steganography analysis. The platform supports the following images format: `png`, `jpg`, `jpeg`, `gif`, `bmp`, `jfif`, `jpe`, `tiff`...
 
 Aperi'Solve has been created in order to have an "easy to use" platform which performs common steganalysis tests such as LSB or `steghide`. 
 
