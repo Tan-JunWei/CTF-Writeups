@@ -9,7 +9,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-19T15:58:51+08:00
+modified: 2024-09-19T15:59:56+08:00
 ---
 ## Challenge Description
 
@@ -78,3 +78,6 @@ The command reads the hexadecimal data from `res/color/flag.txt` using `cat`, pa
 
 > [!NOTE] Flag
 > picoCTF{ax8mC0RU6ve_NX85l4ax8mCl_52a5e2de}
+
+#### References
+- _Conversion hex string into ascii in bash command line_. (n.d.). Stack Overflow. https://stackoverflow.com/questions/13160309/conversion-hex-string-into-ascii-in-bash-command-line

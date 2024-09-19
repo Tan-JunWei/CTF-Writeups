@@ -7,12 +7,12 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-04T22:10:57+08:00
+modified: 2024-09-19T18:32:32+08:00
 ---
 ## Challenge Description
 ![[PicoCTF endianness.png]]
 
-Honestly, I did not have much knowledge about endianness and what exactly is Big-Endian and Little-Endian before this challenge. Thus this challenge was a good introduction to the concept for me. 
+Honestly, I did not have much knowledge about endianness and what exactly is Big-Endian and Little-Endian before this challenge. This challenge was a good introduction to the concept for me. 
 
 >[!todo] What is endianness? 
 >
