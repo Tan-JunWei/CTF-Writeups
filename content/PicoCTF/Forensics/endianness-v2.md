@@ -8,7 +8,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-19T20:49:47+08:00
+modified: 2024-09-19T20:50:38+08:00
 ---
 ## Challenge Description
 ![[PicoCTF endianness-v2.png]]
@@ -91,3 +91,6 @@ After creating the `solved.jpg` file, we can open it to claim the flag.
 
 > [!NOTE] Flag
 > picoCTF{cert!f1Ed_iNd!4n_s0rrY_3nDian_188d7b8c}
+
+#### References
+- Wikipedia contributors. (2024, August 30). _List of file signatures_. Wikipedia. https://en.wikipedia.org/wiki/List_of_file_signatures
