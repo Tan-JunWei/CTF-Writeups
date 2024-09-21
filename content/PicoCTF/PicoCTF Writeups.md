@@ -118,7 +118,7 @@ The challenges are categorised into 6 categories: `Web Exploitation`, [[PicoCTF 
 	- [[PW Crack 4]]
 	- [[PW Crack 5]]
 	- [[useless]]
-	- [[based]]
+	- [[Based]]
 
 
 
