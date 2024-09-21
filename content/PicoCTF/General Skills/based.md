@@ -8,8 +8,8 @@ tags:
 Creation Date: 
 Last Date: 
 References: 
-draft: true
-modified: 2024-09-21T22:32:07+08:00
+draft: false
+modified: 2024-09-21T22:51:12+08:00
 ---
 ## Challenge Description
 
@@ -25,6 +25,8 @@ To do this, we run the command given in the challenge:
 nc jupiter.challenges.picoctf.org 15130
 ```
 
+### What do we need to do?
+
 >[!info] How does the challenge work?
 >
 >We are first tasked to convert a **binary (base-2) representation** of a word to the original word. There is a time limit of 45 seconds for us to submit to correct answer.
@@ -33,11 +35,13 @@ nc jupiter.challenges.picoctf.org 15130
 >
 >The final stage will require us to decode the **base64 representation** of a word. After which, the answer submitted is correct, we will be awarded with the flag.
 
-I created a few python scripts to do the conversion for me:
+### Conversion
+
+I created a couple of python scripts to aid me in the conversion:
 
 >[!abstract]+ Python scripts used for conversions
 >
->**Binary Conversion**
+>Stage 1: **Binary Conversion**
 >
 >```python
 ># Binary conversion
@@ -52,7 +56,7 @@ I created a few python scripts to do the conversion for me:
 >print(f"The word is '{word}'.")
 >```
 >
->**Octal Conversion**
+>Stage 2: **Octal Conversion**
 >
 >```python
 ># Octal conversion
@@ -67,7 +71,7 @@ I created a few python scripts to do the conversion for me:
 >print(f"The word is '{word}'.")
 >```
 >
->**Hex conversion**
+>Stage 3: **Hex Conversion**
 >
 >```python
 ># Hex conversion
