@@ -1,5 +1,5 @@
 ---
-modified: 2024-09-14T16:41:49+08:00
+modified: 2024-09-21T22:02:58+08:00
 ---
 [picoCTF](https://picoctf.org/) gamifies learning hacking with capture-the-flag puzzles created by trusted computer security and privacy experts at [Carnegie Mellon University](https://cmu.edu/) (_picoCTF - CMU Cybersecurity Competition_, n.d.). 
 
@@ -40,6 +40,8 @@ The challenges are categorised into 6 categories: `Web Exploitation`, [[PicoCTF 
 	- [[Operation Orchid]]
 	- [[Trivial Flag Transfer Protocol]]
 	- [[WhitePages]]
+	- [[Mob psycho]]
+	- [[endianness-v2]]
 ### Cryptography
 -  easy
 	- [[Mod 26]]
@@ -69,6 +71,8 @@ The challenges are categorised into 6 categories: `Web Exploitation`, [[PicoCTF 
 	- [[Flags]]
 	- [[john_pollard]]
 	- [[Tapping]]
+	- [[ReadMyCert]]
+	- [[Custom encryption]]
 
 ### General Skills
 - easy
@@ -113,6 +117,8 @@ The challenges are categorised into 6 categories: `Web Exploitation`, [[PicoCTF 
 	- [[Plumbing]]
 	- [[PW Crack 4]]
 	- [[PW Crack 5]]
+	- [[useless]]
+	- [[based]]
 
 
 
