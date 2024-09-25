@@ -8,7 +8,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-09-03T20:20:33+08:00
+modified: 2024-09-25T22:19:15+08:00
 ---
 ## Challenge Description
 ![[PicoCTF St3g0.png]]
@@ -16,6 +16,8 @@ modified: 2024-09-03T20:20:33+08:00
 We shall start off by following the instructions. I ran `wget <link>` to download the file. I also opened the file in GUI, but as the challenge name suggests, this is a [[Steganography]] challenge, so there was no useful information there. 
 
 >[!question]  PicoCTF Hint: We know the end sequence of the message will be `$t3g0`.
+>
+>Great! Let's look out for that.
 
 ### How pico.flag.png looks like
 

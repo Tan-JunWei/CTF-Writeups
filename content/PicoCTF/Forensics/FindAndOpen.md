@@ -7,7 +7,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-19T15:23:40+08:00
+modified: 2024-09-25T22:17:26+08:00
 ---
 ## Challenge Description 
 
@@ -36,7 +36,9 @@ Of the 5 strings, I zoomed into string 3 first. It seems like a [[Base64]] encod
 
 All I got was gibberish. However, I noticed that this string has a length of 70.
 
->[!important] During encoding, the [[Base64]] algorithm replaces each three bytes with four bytes and, if necessary, adds padding characters, so the result will always be a multiple of four (_What Is Base64? | Learn | Base64_, n.d.). 
+>[!important] How the [[Base64]] encoding process works
+>
+>During encoding, the [[Base64]] algorithm replaces each three bytes with four bytes and, if necessary, adds padding characters, so the result will always be a multiple of four (_What Is Base64? | Learn | Base64_, n.d.). 
 
 This meant that I will have to delete 2 characters from the input string. I first tried to remove 2 characters from the front. 
 

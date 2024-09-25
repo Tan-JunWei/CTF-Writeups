@@ -8,7 +8,7 @@ Creation Date:
 Last Date: 
 References: 
 draft: 
-modified: 2024-08-23T10:13:37+08:00
+modified: 2024-09-25T22:28:02+08:00
 ---
 ## Challenge Description
 
@@ -23,7 +23,10 @@ From the description and hint provided, we can infer that this challenge will li
 After running `file enc_flag`, we realise that this file contains ASCII text. `cat enc_flag` displays a string of characters.
 
 >[!tip]
->Since the string ends with 2 `=` characters, this string is likely [[Base64]] encoded. 
+>Since the string ends with 2 `=` characters, this string is likely [[Base64]] encoded, because the special character "`=`" is used in its encoding process.
+>
+>How does Base64 encoding work? 
+>Check this out: [[Base64#Base64 Encoding|Base64 Encoding]]
 
 ### The decoding process
 ![[PicoCTF interencdec 3.png]]
@@ -36,7 +39,7 @@ We now have an output that looks slightly off from the picoCTF flag format `pico
 
 ![[PicoCTF interencdec 5.png]]
 
-I played around with the caesar cipher values, starting with `ROT13`. Changing the value to 19 reveals the flag. 
+I played around with the caesar cipher values, starting with `ROT13`. Changing the shift value to 19 reveals the flag. 
 
 > [!NOTE] Flag
 >picoCTF{caesar_d3cr9pt3d_b204adc6}

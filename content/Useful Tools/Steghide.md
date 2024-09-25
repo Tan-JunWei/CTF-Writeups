@@ -1,5 +1,5 @@
 ---
-modified: 2024-09-02T22:11:49+08:00
+modified: 2024-09-25T22:18:01+08:00
 ---
 >[!info] What is Steghide and why is it used?
 >Steghide is a steganography program that helps in hiding data in various kinds of image and audio files. In this process, the color- respectivly sample-frequencies are not changed thus making the embedding resistant against first-order statistical tests.
@@ -13,7 +13,7 @@ modified: 2024-09-02T22:11:49+08:00
 >```
 >
 >
->>[!tip] Extract data
+>>[!example] Extract data
 >>
 >>Of course, it can also do the reverse and extract the data from these files. The most basic command is:
 >>
