@@ -2,7 +2,6 @@ import os
 import glob
 import yaml
 
-# Adjust this to point at your Quartz content folder
 CONTENT_DIR = "content"
 
 def extract_tags_from_file(path):
@@ -23,11 +22,10 @@ def extract_tags_from_file(path):
                         return [tags]
             except Exception as e:
                 print(f"⚠️ YAML parse error in {path}: {e}")
-    return []   # always return a list, not None
+    return []   
 
 def main():
     tag_counts = {}
-    # Scan all markdown files
     for filepath in glob.glob(os.path.join(CONTENT_DIR, "**", "*.md"), recursive=True):
         tags = extract_tags_from_file(filepath)
         for tag in tags:
