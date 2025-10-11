@@ -1,3 +1,46 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+code {
+    background: rgba(79, 197, 197, 0.25);
+}
+
+article img {
+    transition: all 0.3s ease-in-out;
+    transform-origin: center center;  
+    cursor: zoom-in;
+    max-width: 100%;
+    position: relative;
+}
+
+/* Zoom effect */
+.zoom-active {
+    overflow: hidden;
+}
+
+.zoom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--lighterLight);
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 5;
+    cursor: zoom-out;
+}
+
+.zoomed-img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--secondary);
+}
+
+.zoom-active .zoom-overlay {
+    opacity: 1;
+}

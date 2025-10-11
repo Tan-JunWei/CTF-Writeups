@@ -8,7 +8,6 @@ tags:
 Creation Date: 
 Last Date: 
 References: 
-draft: true
 modified: 2024-09-25T14:53:45+08:00
 ---
 ## Challenge Description
