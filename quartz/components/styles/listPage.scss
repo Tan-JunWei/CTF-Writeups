@@ -8,6 +8,8 @@ ul.section-ul {
 
 li.section-li {
   margin-bottom: 1em;
+  padding: 1em;
+  border-bottom: 0.1px solid var(--dark);
 
   & > .section {
     display: grid;
