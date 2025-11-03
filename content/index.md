@@ -22,6 +22,9 @@ As of **11 October 2025**, this CTF-writeups page has a total of **105** writeup
 - [Cryptography](https://tan-junwei.github.io/CTF-Writeups/PicoCTF/Cryptography/)
 - [General Skills](https://tan-junwei.github.io/CTF-Writeups/PicoCTF/General-Skills/) 
 
+### Challenge Creation (CTF Challenges I've Created)
+- 
+
 ## Contributions 
 
 Contribution are always welcome! If you'd like the suggest improvements, feel free to submit a pull request or open an issue on [GitHub](https://github.com/Tan-JunWei/CTF-Writeups). 

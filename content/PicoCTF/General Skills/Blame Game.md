@@ -13,7 +13,7 @@ modified: 2024-09-06T15:08:45+08:00
 
 ![[PicoCTF Blame Game.png]]
 
-Another challenge about version control using Git. This time, as the description mentions, it's about commits made by someone.
+Another challenge about version control using Git. This time, the description suggests that it's about commits made by someone.
 
 To begin, download the file using `wget` and unzip it. Unzipping the `challenge.zip` file will extract many `git` files and directories, which will all be stored in a directory called `drop-in`.
 

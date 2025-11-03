@@ -24,7 +24,7 @@ After downloading the files using `wget`, I ran `file static` to check the file 
 I then ran nano `ltdis.sh`, which was the bash script file provided in the challenge. 
 
 ```bash
-──(kali㉿kali)-[~/Desktop/picoCTF/general_skills/static_aint_always_noise]
+┌──(kali㉿kali)-[~/Desktop/picoCTF/general_skills/static_aint_always_noise]
 └─$ cat ltdis.sh 
 #!/bin/bash
 

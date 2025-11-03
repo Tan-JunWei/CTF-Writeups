@@ -7,6 +7,8 @@ The challenges are categorised into 6 categories: `Web Exploitation`, [[PicoCTF 
 
 ## Forensics
 
+
+
 ### Easy
 - [[Verify]]
 - [[Scan Surprise]]

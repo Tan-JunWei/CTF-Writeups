@@ -28,6 +28,6 @@
   "file-recovery": true,
   "publish": false,
   "sync": false,
-  "bases": false,
+  "bases": true,
   "webviewer": false
 }
