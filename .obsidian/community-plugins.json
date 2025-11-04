@@ -1,4 +1,6 @@
 [
   "templater-obsidian",
-  "slash-commander"
+  "slash-commander",
+  "dataview",
+  "dataview-serializer"
 ]
