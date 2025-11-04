@@ -7,7 +7,7 @@ import { GlobalConfiguration } from "../cfg"
 export type SortFn = (f1: QuartzPluginData, f2: QuartzPluginData) => number
 
 const hash32 = (s: string) => {
-  let h = 0x811c9dc5 >>> 0
+  let h = 0x811c9d5 >>> 0
   for (let i = 0; i < s.length; i++) {
     h ^= s.charCodeAt(i)
     h = Math.imul(h, 0x01000193) >>> 0

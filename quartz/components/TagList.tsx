@@ -28,7 +28,7 @@ const hueFromString = (s: string) => {
 }
 
 const compensatedLightness = (h: number) => {
-  let L = 55; // baseline midpoint
+  let L = 55; 
 
   const H = ((h % 360) + 360) % 360;
 
