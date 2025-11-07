@@ -1,5 +1,5 @@
 
-| Challenge                                     | Tags                                                               |
+| <div style="width: 320px;">Challenge</div>    | Tags                                                      |
 | --------------------------------------------- | ------------------------------------------------------------------ |
 | [[HNF 2025 - 23summit46]]                     | #Cryptography, #easy, #ChallengeCreation, #base64                  |
 | [[HNF 2025 - Academy 1]]                      | #InfraHacking, #hard, #ChallengeCreation, #SSH, #FileUploadBypass  |

@@ -44,3 +44,9 @@ article img {
 .zoom-active .zoom-overlay {
     opacity: 1;
 }
+
+td {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
+}
