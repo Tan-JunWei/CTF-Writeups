@@ -6,3 +6,5 @@ tsconfig.tsbuildinfo
 .obsidian/workspace.json
 !/.obsidian/snippets/
 organise.txt
+organise.py
+listtags.py

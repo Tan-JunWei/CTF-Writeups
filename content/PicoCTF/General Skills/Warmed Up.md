@@ -1,12 +1,15 @@
 ---
-tags: 
-Creation Date: 
-Last Date: 
-References: 
-draft: 
+tags:
+  - GeneralSkills
+  - easy
+Creation Date:
+Last Date:
+References:
+draft:
 modified: 2024-09-07T11:51:01+08:00
 ---
 ## Challenge Description
+
 ![[PicoCTF Warmed Up.png]]
 
 This is an easy challenge where we are tasked to convert 0x3D (hexadecimal representation) to base10 (decimal representation). This can be done in many ways, such as using an online conversion tool or writing a script.

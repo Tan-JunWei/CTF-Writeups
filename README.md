@@ -11,6 +11,7 @@ Welcome to my Capture The Flag (CTF) writeup repository! Here you'll find detail
 </div>
 
 -  **Challenges**: Organized by category (e.g., Forensics, Cryptography, OSINT, Web Exploitation), each challenge writeup includes a step-by-step guide on how to approach and solve the problem. These writeups cover the thought process, tools used, methodologies applied, and lessons learned.
+	- I've also recently started documenting some original challenges that I've created! You can find them here: [Original Challenges](https://tan-junwei.github.io/CTF-Writeups/Challenge-Creation/CTF-Challenges-I've-Created)
 -  **Useful Tools**: Highlights some of the tools that proved helpful in solving challenges. Note that only the most useful or commonly used tools are included in this section, not every tool used.
 -  **Fundamental Knowledge**: Gives more in-depth, technical insights to important concepts that are required or beneficial for solving challenges. These are incorporated in the challenge writeups.
 -  **Relevant resources**: Provides further explanations of the concepts, tools, or techniques used to solve challenges. If applicable, sources are linked at the bottom of each challenge for personal reading.
@@ -52,6 +53,9 @@ Visit this [website](https://tan-junwei.github.io/CTF-Writeups/) to check out th
 - [Forensics](https://tan-junwei.github.io/CTF-Writeups/PicoCTF/Forensics/)
 - [Cryptography](https://tan-junwei.github.io/CTF-Writeups/PicoCTF/Cryptography/)
 - [General Skills](https://tan-junwei.github.io/CTF-Writeups/tags/GeneralSkills) 
+
+### Challenge Creation (CTF Challenges I've Created)
+- [CTF Challenges I've Created](https://tan-junwei.github.io/CTF-Writeups/Challenge-Creation/CTF-Challenges-I've-Created)
 
 ## Contributions
 Contribution are always welcome! If you'd like the suggest improvements, feel free to submit a pull request or open an issue. I'd love to hear feedback and improvements about my work!
