@@ -1,11 +1,12 @@
 
 ## Infra Hacking
 
-### Easy
+### Hard
 
 | <div style="width: 320px;">Challenge</div>          | Category       | Tags                                    |
 | ---------------------------------- | -------------- | ---------------------------------------|
-| [[HNF 2025 - KerbeREP Roasting]]   | #InfraHacking  | #easy, #ChallengeCreation, #ASREProasting |
+| [[HNF 2025 - Academy 1]]           | #InfraHacking  | #hard, #ChallengeCreation, #SSH, #FileUploadBypass |
+| [[HNF 2025 - Academy 2]]           | #InfraHacking  | #hard, #ChallengeCreation, #GTFOBins    |
 
 ### Medium
 
@@ -13,12 +14,11 @@
 | ---------------------------------- | -------------- | ---------------------------------------|
 | [[HNF 2025 - Friendly Butler]]     | #InfraHacking  | #medium, #ChallengeCreation, #Jenkins   |
 
-### Hard
+### Easy
 
 | <div style="width: 320px;">Challenge</div>          | Category       | Tags                                    |
 | ---------------------------------- | -------------- | ---------------------------------------|
-| [[HNF 2025 - Academy 1]]           | #InfraHacking  | #hard, #ChallengeCreation, #SSH, #FileUploadBypass |
-| [[HNF 2025 - Academy 2]]           | #InfraHacking  | #hard, #ChallengeCreation, #GTFOBins    |
+| [[HNF 2025 - KerbeREP Roasting]]   | #InfraHacking  | #easy, #ChallengeCreation, #ASREProasting |
 
 ## Forensics
 

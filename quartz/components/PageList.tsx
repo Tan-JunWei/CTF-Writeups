@@ -189,8 +189,8 @@ PageList.css = `
 }
 
 a.internal.tag-link {
-  --tag-color: hsl(190 60% 35% / 1);     /* fallback */
-  --tag-bg:    hsl(190 60% 35% / 0.12);  /* fallback */
+  --tag-color: hsl(184 62.3% 44.5% / 1);     /* fallback */
+  --tag-bg:    hsl(184 62.3% 44.5% / 0.12);  /* fallback */
 
   color: var(--tag-color);
   background-color: var(--tag-bg);
