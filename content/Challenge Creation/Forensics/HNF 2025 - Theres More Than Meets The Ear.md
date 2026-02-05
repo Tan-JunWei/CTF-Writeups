@@ -29,6 +29,6 @@ modified: 2024-09-04T14:19:43+08:00
 
 > The submissions for this challenge were strangely interesting, although my peers and I thought this was a relatively easy challenge and the flag was easy to read.
 > 
-> But after reviewing the flags people actually submitted and the avalanche of tickets (+ DMs) I got just for this one challenge, I’m starting to suspect some of you were reading hieroglyphics instead of the flag. Either that, or the flag grew legs and ran away.
+> But after reviewing the flags people actually submitted and the avalanche of tickets (+ DMs) I got just for this one challenge, I’m starting to suspect some of you were reading hieroglyphics instead of the flag. Either that, or the flag grew legs and ran away. 😆
 
 Flag: `HNF25{h1dd3n_in_audi0}`

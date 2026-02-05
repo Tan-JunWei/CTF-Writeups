@@ -23,8 +23,8 @@ modified: 2024-09-04T14:19:43+08:00
 ![[Home.png]]
 
 2. The users may manually click through the buttons that redirect them to the page that shows the corresponding letter. The screenshot below shows an example.
-![[trial.png]]
 
+![[trial.png]]
 
 3. Of course, this is not the best way to solve the challenge. Instead, we can use a Python script that checks for the flag format `HNF25{}` on every page, out of the 52 possibilities.
 

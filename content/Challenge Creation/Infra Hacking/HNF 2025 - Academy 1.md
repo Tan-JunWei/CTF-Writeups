@@ -13,7 +13,7 @@ modified: 2024-09-04T14:19:43+08:00
 >
 >Triton Academy appears unremarkable at first glance, just another corner of the web with tidy pages and familiar promises. Some pages do not end where they should. Certain words repeat, faint echoes tucked into forgotten archives, and the academy’s silence feels strangely watchful.
 >
-Hidden in its structure is a secret waiting to be uncovered. Those who wander too far notice that the academy sometimes answers back. Patterns >emerge, and paths (that were never meant to be followed) unfold.
+>Hidden in its structure is a secret waiting to be uncovered. Those who wander too far notice that the academy sometimes answers back. Patterns >emerge, and paths (that were never meant to be followed) unfold.
 >
 >NOTE: Academy is a multi-part challenge. This is part ONE of the Academy challenge, where you are tasked to submit the USER flag.
 >

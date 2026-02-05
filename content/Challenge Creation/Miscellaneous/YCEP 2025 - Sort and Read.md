@@ -33,11 +33,9 @@ They are all accompanied by a respective line number.
 
 ![[Sort-and-Read-2.png]]
 
-To sort them, we can run `sort -n file.txt`.
+To sort them, we can run `sort -n file.txt`. Alternatively, participants can (and are encouraged to) explore scripting to display the flag in a single line.
 
 ![[Sort-and-Read-3.png]]
-
-Alternatively, participants can (and should) explore scripting to display the flag in a single line.
 
 Example python script:
 

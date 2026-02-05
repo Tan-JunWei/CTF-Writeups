@@ -2,5 +2,6 @@
   "templater-obsidian",
   "slash-commander",
   "dataview",
-  "dataview-serializer"
+  "dataview-serializer",
+  "file-explorer-note-count"
 ]
