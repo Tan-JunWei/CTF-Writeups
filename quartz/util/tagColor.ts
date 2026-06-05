@@ -51,8 +51,7 @@ export const colorForTag = (tag: string) => {
   const inAvoid = (h: number) =>
     avoidStart <= avoidEnd ? h >= avoidStart && h <= avoidEnd : h >= avoidStart || h <= avoidEnd
 
-  let h = hueFromString(tag)
-  h = norm(h + (Math.random() - 0.5) * 20)
+  let h = norm(hueFromString(tag))
   if (inAvoid(h)) {
     const distToStart = (h - avoidStart + 360) % 360
     const distToEnd = (avoidEnd - h + 360) % 360

@@ -331,7 +331,7 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                 }
 
                 tag = slugTag(tag)
-                if (file.data.frontmatter) {
+                if (file.data.frontmatter && file.data.frontmatter.showTags !== false) {
                   const noteTags = file.data.frontmatter.tags ?? []
                   file.data.frontmatter.tags = [...new Set([...noteTags, tag])]
                 }
