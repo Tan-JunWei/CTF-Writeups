@@ -6,110 +6,110 @@ showTags: false
 
 ### Hard
 
-| <div style="width: 320px;">Challenge</div>          | Category       | Tags                                    |
-| ---------------------------------- | -------------- | ---------------------------------------|
-| [[HNF 2025 - Academy 1]]           | #InfraHacking  | #hard, #ChallengeCreation, #SSH, #FileUploadBypass |
-| [[HNF 2025 - Academy 2]]           | #InfraHacking  | #hard, #ChallengeCreation, #GTFOBins    |
+| Challenge | Tags |
+| --- | --- |
+| [[HNF 2025 - Academy 1]] | #InfraHacking, #hard, #ChallengeCreation, #SSH, #FileUploadBypass |
+| [[HNF 2025 - Academy 2]] | #InfraHacking, #hard, #ChallengeCreation, #GTFOBins |
 
 ### Medium
 
-| <div style="width: 320px;">Challenge</div>         | Category       | Tags                                    |
-| ---------------------------------- | -------------- | ---------------------------------------|
-| [[HNF 2025 - Friendly Butler]]     | #InfraHacking  | #medium, #ChallengeCreation, #Jenkins   |
+| Challenge | Tags |
+| --- | --- |
+| [[HNF 2025 - Friendly Butler]] | #InfraHacking, #medium, #ChallengeCreation, #Jenkins |
 
 ### Easy
 
-| <div style="width: 320px;">Challenge</div>          | Category       | Tags                                    |
-| ---------------------------------- | -------------- | ---------------------------------------|
-| [[HNF 2025 - KerbeREP Roasting]]   | #InfraHacking  | #easy, #ChallengeCreation, #ASREProasting |
+| Challenge | Tags |
+| --- | --- |
+| [[HNF 2025 - KerbeREP Roasting]] | #InfraHacking, #easy, #ChallengeCreation, #ASREProasting |
 
 ## Forensics
 
 ### Hard
 
-| <div style="width: 320px;">Challenge</div>          | Category       | Tags                                    |
-| ---------------------------------- | -------------- | ---------------------------------------|
-| [[YCEP 2025 - Stealth Mode Activated]] | #Forensics  | #hard, #ChallengeCreation, #Sleuthkit  |
+| Challenge | Tags |
+| --- | --- |
+| [[YCEP 2025 - Stealth Mode Activated]] | #Forensics, #hard, #ChallengeCreation, #Sleuthkit |
 
 ### Medium
 
-| <div style="width: 320px;">Challenge</div>          | Category       | Tags                                    |
-| ---------------------------------- | -------------- | ---------------------------------------|
-| [[HNF 2025 - Beaconing]]           | #Forensics     | #medium, #ChallengeCreation, #pcap     |
-| [[YCEP 2025 - Riding WAVes]]       | #Forensics     | #medium, #Steganography, #Steghide, #ChallengeCreation |
+| Challenge | Tags |
+| --- | --- |
+| [[HNF 2025 - Beaconing]] | #Forensics, #medium, #ChallengeCreation, #pcap |
+| [[YCEP 2025 - Riding WAVes]] | #Forensics, #medium, #ChallengeCreation, #Steganography, #Steghide |
 
 ### Easy
 
-| <div style="width: 320px;">Challenge</div>          | Category       | Tags                                    |
-| ---------------------------------- | -------------- | ---------------------------------------|
-| [[HNF 2025 - Flag Transfer Protocol]] | #Forensics   | #easy, #ChallengeCreation, #pcap       |
-| [[HNF 2025 - Theres More Than Meets The Ear]] | #Forensics | #easy, #ChallengeCreation, #AudioForensics |
-| [[YCEP 2025 (Training) - Calming]] | #Forensics     | #easy, #binwalk, #ChallengeCreation    |
-| [[YCEP 2025 (Training) - Logo]]    | #Forensics     | #easy, #ChallengeCreation               |
-| [[YCEP 2025 - Sum Checker]]        | #Forensics     | #easy, #Checksum, #ChallengeCreation   |
+| Challenge | Tags |
+| --- | --- |
+| [[HNF 2025 - Flag Transfer Protocol]] | #Forensics, #easy, #ChallengeCreation, #pcap |
+| [[HNF 2025 - Theres More Than Meets The Ear]] | #Forensics, #easy, #ChallengeCreation, #AudioForensics |
+| [[YCEP 2025 (Training) - Calming]] | #Forensics, #easy, #ChallengeCreation, #binwalk |
+| [[YCEP 2025 (Training) - Logo]] | #Forensics, #easy, #ChallengeCreation |
+| [[YCEP 2025 - Sum Checker]] | #Forensics, #easy, #ChallengeCreation, #Checksum |
 
 ## OSINT
 
 ### Hard
 
-| <div style="width: 320px;">Challenge</div>          | Category       | Tags                                    |
-| ---------------------------------- | -------------- | ---------------------------------------|
-| [[YCEP 2025 - Etched in memory]]   | #OSINT         | #hard, #ChallengeCreation               |
+| Challenge | Tags |
+| --- | --- |
+| [[YCEP 2025 - Etched in memory]] | #OSINT, #hard, #ChallengeCreation |
 
 ### Medium
 
-| <div style="width: 320px;">Challenge</div>          | Category       | Tags                                    |
-| ---------------------------------- | -------------- | ---------------------------------------|
-| [[YCEP 2025 - Snips and Sips]]     | #OSINT         | #medium, #ChallengeCreation             |
+| Challenge | Tags |
+| --- | --- |
+| [[YCEP 2025 - Snips and Sips]] | #OSINT, #medium, #ChallengeCreation |
 
 ### Easy
 
-| <div style="width: 320px;">Challenge</div>          | Category       | Tags                                    |
-| ---------------------------------- | -------------- | ---------------------------------------|
-| [[YCEP 2025 - Breaking Records]]   | #OSINT         | #easy, #ChallengeCreation               |
-| [[YCEP 2025 - Vanished Whispers]]  | #OSINT         | #easy, #ChallengeCreation               |
+| Challenge | Tags |
+| --- | --- |
+| [[YCEP 2025 - Breaking Records]] | #OSINT, #easy, #ChallengeCreation |
+| [[YCEP 2025 - Vanished Whispers]] | #OSINT, #easy, #ChallengeCreation |
 
 ## Miscellaneous
 
 ### Medium
 
-| <div style="width: 320px;">Challenge</div>          | Category       | Tags                                    |
-| ---------------------------------- | -------------- | ---------------------------------------|
-| [[YCEP 2025 - Extensions]]         | #Miscellaneous | #medium, #ChallengeCreation, #filetypes |
+| Challenge | Tags |
+| --- | --- |
+| [[YCEP 2025 - Extensions]] | #Miscellaneous, #medium, #ChallengeCreation, #filetypes |
 
 ### Easy
 
-| <div style="width: 320px;">Challenge</div>          | Category       | Tags                                    |
-| ---------------------------------- | -------------- | ---------------------------------------|
-| [[HNF 2025 - Git Commitment Issues]] | #Miscellaneous | #easy, #Git, #ChallengeCreation        |
-| [[YCEP 2025 - Can I have the Tab]] | #Miscellaneous | #easy, #ChallengeCreation               |
-| [[YCEP 2025 - Grab Flag]]          | #Miscellaneous | #easy, #ChallengeCreation               |
-| [[YCEP 2025 - Sort and Read]]      | #Miscellaneous | #easy, #ChallengeCreation               |
+| Challenge | Tags |
+| --- | --- |
+| [[HNF 2025 - Git Commitment Issues]] | #Miscellaneous, #easy, #ChallengeCreation, #Git |
+| [[YCEP 2025 - Can I have the Tab]] | #Miscellaneous, #easy, #ChallengeCreation |
+| [[YCEP 2025 - Grab Flag]] | #Miscellaneous, #easy, #ChallengeCreation |
+| [[YCEP 2025 - Sort and Read]] | #Miscellaneous, #easy, #ChallengeCreation |
 
 ## Web Exploitation
 
 ### Easy
 
-| <div style="width: 320px;">Challenge</div>          | Category        | Tags                                    |
-| ---------------------------------- | ---------------| ---------------------------------------|
-| [[HNF 2025 - Kokomelon]]            | #WebExploitation | #easy, #ChallengeCreation, #DirectoryEnumeration |
+| Challenge | Tags |
+| --- | --- |
+| [[HNF 2025 - Kokomelon]] | #WebExploitation, #easy, #ChallengeCreation, #DirectoryEnumeration |
 
 ### Beginner
 
-| <div style="width: 320px;">Challenge</div>          | Category        | Tags                                    |
-| ---------------------------------- | ---------------| ---------------------------------------|
-| [[HNF 2025 - Disallow Robots]]      | #WebExploitation | #beginner, #ChallengeCreation         |
+| Challenge | Tags |
+| --- | --- |
+| [[HNF 2025 - Disallow Robots]] | #WebExploitation, #beginner, #ChallengeCreation |
 
 ## Cryptography
 
 ### Medium
 
-| <div style="width: 320px;">Challenge</div>          | Category       | Tags                                    |
-| ---------------------------------- | -------------- | ---------------------------------------|
-| [[YCEP 2025 - French Frenzy]]      | #Cryptography  | #medium, #Vigenere, #ChallengeCreation |
+| Challenge | Tags |
+| --- | --- |
+| [[YCEP 2025 - French Frenzy]] | #Cryptography, #medium, #ChallengeCreation, #Vigenere |
 
 ### Easy
 
-| <div style="width: 320px;">Challenge</div>          | Category       | Tags                                    |
-| ---------------------------------- | -------------- | ---------------------------------------|
-| [[HNF 2025 - 23summit46]]          | #Cryptography  | #easy, #ChallengeCreation, #base64     |
+| Challenge | Tags |
+| --- | --- |
+| [[HNF 2025 - 23summit46]] | #Cryptography, #easy, #ChallengeCreation, #base64 |
