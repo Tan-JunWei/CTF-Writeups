@@ -81,7 +81,7 @@ With the added spaces, the message becomes:
 
 Another file we downloaded was called `program.deb`. We can see that we are most likely on the right path. 
 
-However, since it is generally not advisable to install `.deb` files directly, I will not do that. Instead, I will be used this command I found on [StackOverflow](https://askubuntu.com/questions/642665/how-to-inspect-and-validate-a-deb-package-before-installation):
+However, since it is generally not advisable to install `.deb` files directly, I will not do that. Instead, I will use this command I found on [StackOverflow](https://askubuntu.com/questions/642665/how-to-inspect-and-validate-a-deb-package-before-installation):
 
 ```bash
 dpkg-deb --info < file-name >
@@ -122,6 +122,9 @@ When we `cat` this file, we will be able to see the flag.
 
 >[!NOTE] Flag
 >picoCTF{h1dd3n_1n_pLa1n_51GHT_18375919}
+
+#### Similar
+- [[HNF 2025 - Flag Transfer Protocol]]: challenge creation writeup about FTP (also an unencrypted file transfer protocol)
 
 #### References
 - _What is TFTP? | Spiceworks_. (2018, April 23). IT Articles. https://www.spiceworks.com/it-articles/what-is-tftp/

@@ -37,7 +37,7 @@ The clue seems to be hinting us to check the metadata of the picture. We shall d
 
 
 
-From the metadeta, we realise a suspicious string of characters shown for the `Atrribution URL`. It looks like it is `base64 encoded`. We shall try decoding it using [[CyberChef]]. 
+From the metadata, we realise a suspicious string of characters shown for the `Attribution URL`. It looks like it is `base64 encoded`. We shall try decoding it using [[CyberChef]]. 
 
 
 ### CyberChef output
@@ -47,3 +47,7 @@ Aha! There's our flag.
 
 > [!NOTE] Flag
 >picoCTF{ME74D47A_HIDD3N_4dabddcb}
+
+#### Similar
+- [[So Meta]]: flag hidden in image metadata (`Artist` field)
+- [[information]]: flag hidden in image metadata (`License` field), base64-encoded

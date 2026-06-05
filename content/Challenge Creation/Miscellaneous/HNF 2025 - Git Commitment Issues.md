@@ -21,7 +21,7 @@ modified: 2024-09-04T14:19:43+08:00
 
 ## Git Commitment Issues - Solution
 
-As the challenge name suggests, this challenges revolves around the usage of Git.
+As the challenge name suggests, this challenge revolves around the usage of Git.
 
 1. For this challenge, we are provided with a zip file called `calc.zip`. The first step is to unzip this file, which should show many git-related files being extracted.
 

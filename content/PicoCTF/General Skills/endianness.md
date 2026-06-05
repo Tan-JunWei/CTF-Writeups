@@ -66,6 +66,10 @@ The little-endian representation is `64656B676B` and the big-endian representati
 
 > [!NOTE] Flag
 > picoCTF{3ndi4n_sw4p_su33ess_d58517b6}
+
+#### Similar
+- [[endianness-v2]]: harder endianness challenge, requires byte-swapping a raw file's header to identify its type
+
 #### References 
 - _Endianness_. (2024, July 7). Wikipedia. https://en.wikipedia.org/wiki/Endianness
 - GeeksforGeeks. (2024c, May 23). _What is Endianness? BigEndian & LittleEndian_. GeeksforGeeks. https://www.geeksforgeeks.org/little-and-big-endian-mystery/

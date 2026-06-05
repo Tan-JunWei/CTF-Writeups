@@ -24,7 +24,14 @@ This seems like a straightforward [[The Sleuth Kit (TSK)]] challenge. As per nor
 >
 >It can also handle raw disk images and other file system-specific data structures, which are common in forensic investigations.
 
-Running `srch_strings <file-name> | grep "pico` successfully gives us our flag. 
+Running `srch_strings <file-name> | grep "pico"` successfully gives us our flag. 
 
 > [!NOTE] Flag
 > picoCTF{f0r3ns1c4t0r_n30phyt3_a69a712c}
+
+#### Similar
+- [[Disk Disk Sleuth II]]: harder version, uses `fls` and `icat` to locate a specific file in a disk image
+- [[Sleuthkit Intro]]: introductory Sleuth Kit challenge using `mmls`
+- [[Sleuthkit Apprentice]]: uses `mmls`, `fls`, and `icat` for disk image analysis
+- [[Operation Oni]]: uses `fls` and `icat` to extract an SSH key from a disk image
+- [[Operation Orchid]]: uses `fls` and `icat` to find and decrypt an encrypted flag file

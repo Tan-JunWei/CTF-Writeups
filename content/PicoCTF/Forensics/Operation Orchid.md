@@ -162,6 +162,13 @@ The `-d` option tells OpenSSL to decrypt the contents of the input file. This co
 
 > [!NOTE] Flag
 >picoCTF{h4un71ng_p457_1d02081e}
+#### Similar
+- [[Sleuthkit Intro]]: introductory Sleuth Kit challenge using `mmls`
+- [[Sleuthkit Apprentice]]: uses `mmls`, `fls`, and `icat` for disk image analysis
+- [[Disk Disk Sleuth]]: uses `srch_strings` to search a disk image for the flag
+- [[Disk Disk Sleuth II]]: uses `fls` and `icat` to locate a specific file in a disk image
+- [[Operation Oni]]: similar disk forensics challenge, involves extracting an SSH key from a disk image
+
 #### References
 - _Salt (cryptography)_. (2024, August 26). Wikipedia. https://en.wikipedia.org/wiki/Salt_(cryptography)
 - _Rainbow table_. (2024, June 23). Wikipedia. https://en.wikipedia.org/wiki/Rainbow_table

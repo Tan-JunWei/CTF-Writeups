@@ -25,7 +25,7 @@ Next, we attempt `mmls <file-name>`, just to get a general overview of how the v
 >[!question] PicoCTF Challenge Description Clue
 >The file with the flag is named `down-at-the-bottom.txt`.
 
-Running `fls -o -r 048 <file-name>` shows the contents of countless files and directories. So we will need to pair this with `grep down-at-the-bottom.txt` to find the inode of the `down-at-the-bottom.txt` file. 
+Running `fls -o 2048 -r <file-name>` shows the contents of countless files and directories. So we will need to pair this with `grep down-at-the-bottom.txt` to find the inode of the `down-at-the-bottom.txt` file. 
 
 >[!important] `-r` argument
 >The `-r` argument for `fls` command allows us to recursively display directories as well as the files within them, which will be helpful in our search for the flag.
@@ -37,3 +37,9 @@ After finding the inode of the `down-at-the-bottom.txt` file, we can simply do `
 > [!NOTE] Flag
 >picoCTF{f0r3ns1c4t0r_n0v1c3_82489dbf}
 
+#### Similar
+- [[Disk Disk Sleuth]]: easier version, uses `srch_strings` to search a disk image for the flag
+- [[Sleuthkit Intro]]: introductory Sleuth Kit challenge using `mmls`
+- [[Sleuthkit Apprentice]]: uses `mmls`, `fls`, and `icat` for disk image analysis
+- [[Operation Oni]]: uses `fls` and `icat` to extract an SSH key from a disk image
+- [[Operation Orchid]]: uses `fls` and `icat` to find and decrypt an encrypted flag file

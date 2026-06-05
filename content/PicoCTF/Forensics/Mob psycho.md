@@ -31,7 +31,7 @@ We first download the file using `wget <link>`. The downloaded file is named `mo
 ### Extracted contents
 ![[PicoCTF Mob psycho 3.png]]
 
-There were many files and directories extracted from the `apk` file provided. Running `ls` shows a couple of new files such as `classes.dex`, `classes2.dex`, `classes3.dex` and 2 directories, `META-INT`and `res`.
+There were many files and directories extracted from the `apk` file provided. Running `ls` shows a couple of new files such as `classes.dex`, `classes2.dex`, `classes3.dex` and 2 directories, `META-INT` and `res`.
 
 ### Checking contents of the `dex` files
 ![[PicoCTF Mob psycho 2.png]]

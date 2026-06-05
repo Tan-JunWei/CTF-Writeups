@@ -20,7 +20,7 @@ We first begin by downloading the 2 files, `enc_flag` and `custom_encryption.py`
 
 ![[PicoCTF Custom encryption 2.png]]
 
-I proceeding to use `cat` to display the contents of `enc_flag` file:
+I proceeded to use `cat` to display the contents of `enc_flag` file:
 
 ```
 a = 97

@@ -95,6 +95,7 @@ const TagList: QuartzComponent = ({ fileData, displayClass }: QuartzComponentPro
   const tags = fileData.frontmatter?.tags
   const baseDir = pathToRoot(fileData.slug!)
   if (!tags || tags.length === 0) return null
+  if (fileData.frontmatter?.showTags === false) return null
 
   return (
     <ul class={classNames(displayClass, "tags")}>

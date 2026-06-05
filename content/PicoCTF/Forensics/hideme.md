@@ -36,3 +36,6 @@ There are a total of 4 files/directories in the `_file.png.extracted` directory.
 
 > [!NOTE] Flag
 > picoCTF{Hiddinng_An_imag3_within_@n_ima9e_cda72af0}
+
+#### Similar
+- [[Matryoshka doll]]: also uses `binwalk -e` to recursively extract embedded files from an image

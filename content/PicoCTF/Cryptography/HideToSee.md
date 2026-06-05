@@ -48,3 +48,7 @@ We can simply use an online Atbash Cipher tool to decrypt the flag. I used [this
 
 > [!NOTE] Flag
 >picoCTF{atbash_crack_7142fde9}
+
+#### Similar
+- [[St3g0]]: steganography challenge solved with `zsteg`
+- [[What Lies Within]]: steganography challenge, flag hidden using LSB encoding in a PNG

@@ -25,7 +25,7 @@ modified: 2024-09-04T14:19:43+08:00
 
 ![[23summit46-base64.png]]
 
-2. There are many ways to solve this challenge. We can use CyberChef are repeatedly decode from Base64. Alternatively, we can use scripts to automate this. 2 solve scripts (Python and bash) are attached below. 
+2. There are many ways to solve this challenge. We can use CyberChef to repeatedly decode from Base64. Alternatively, we can use scripts to automate this. 2 solve scripts (Python and bash) are attached below. 
 
 > These solve scripts were developed based on the prior knowledge that the string has undergone 32 rounds of base64 encoding.
 > 

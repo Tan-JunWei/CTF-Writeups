@@ -42,4 +42,7 @@ A final `binwalk -e` on `4_c.jpg` extracted a `_4_c.jpg extracted` directory, bu
 >A `flag.txt` was present in this directory. Using `cat` revealed the flag in plaintext.
 
 > [!NOTE] Flag
->picoCTF{ac0072c423ee13bfc0b166af72e25b61} 
+>picoCTF{ac0072c423ee13bfc0b166af72e25b61}
+
+#### Similar
+- [[hideme]]: also uses `binwalk -e` to extract a hidden image embedded inside another image

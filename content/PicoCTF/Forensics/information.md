@@ -34,5 +34,6 @@ Indeed, we managed to get the flag instantly!
 
 
 #### Similar
-- [[CanYouSee]]
+- [[CanYouSee]]: flag hidden in image metadata (`Attribution URL`), base64-encoded
+- [[So Meta]]: flag hidden in image metadata (`Artist` field)
 

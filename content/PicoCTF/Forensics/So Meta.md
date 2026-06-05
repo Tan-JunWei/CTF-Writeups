@@ -24,3 +24,6 @@ Indeed, our flag is in the 'Artist' section of the file metadata.
 > [!NOTE] Flag
 >picoCTF{s0_m3ta_eb36bf44}
 
+#### Similar
+- [[CanYouSee]]: flag hidden in image metadata (`Attribution URL`)
+- [[information]]: flag hidden in image metadata (`License` field), base64-encoded

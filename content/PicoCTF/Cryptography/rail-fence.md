@@ -22,7 +22,7 @@ This was an interesting challenge that involves a message encoded using the rail
 
 ### Ciphertext
 ![[PicoCTF rail-fence 2.png]]
-We begin by download the file `message.txt` using `wget`, followed by running `cat` to see the ciphertext that we need to decode:
+We begin by downloading the file `message.txt` using `wget`, followed by running `cat` to see the ciphertext that we need to decode:
 ```
 Ta _7N6D49hlg:W3D_H3C31N__A97ef sHR053F38N43D7B i33___N6
 ```

@@ -67,7 +67,7 @@ Yep, this bash script `ltdis.sh` is a bash script that attempts to disassemble a
 
 I figured that running the bash script will likely be equivalent to running `strings` for the purpose of acquiring the flag, since they both work by displaying only the printable strings in `static`.
 
-Indeed, running `strings static | grep -C 5 "pico"` displayed the flag in the terminal. I used the `-C 5` argument to display the5  lines of **context** before and after the matching line that contains the flag, but this is optional.
+Indeed, running `strings static | grep -C 5 "pico"` displayed the flag in the terminal. I used the `-C 5` argument to display the 5 lines of **context** before and after the matching line that contains the flag, but this is optional.
 
 > [!NOTE] Flag
 > picoCTF{d15a5m_t34s3r_f6c48608}

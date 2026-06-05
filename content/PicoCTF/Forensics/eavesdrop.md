@@ -20,7 +20,7 @@ For this challenge, not much clue was given in the description. However, a hint 
 >
 >We'll have to keep that in mind when we analyse the packets in [[Wireshark]].
 
-We begin by downloading the file using `wget <link>`. Opening the `pcapnp` file in Wireshark showed that there are only 75 packets in total. 
+We begin by downloading the file using `wget <link>`. Opening the `pcapng` file in Wireshark showed that there are only 75 packets in total. 
 
 ### Protocol Hierarchy
 ![[PicoCTF Eavesdrop 2.png]]

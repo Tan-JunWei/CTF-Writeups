@@ -55,7 +55,7 @@ We realise that this username is found at line 378. So we will display the 378th
 sed -n "378p" passwords.txt
 ```
 - `-n`: Suppresses the default output behavior of `sed`
-- `"387p"`: Prints only the 378th line
+- `"378p"`: Prints only the 378th line
 
 >[!info] `sed`
 >`sed` is a stream editor for filtering and transforming text. It can be used to edit text files, with its most common use being to replace occurrences of words in a files. This is extremely helpful in situations where a configuration file has a lot of instances of the same word that needs replacing throughout the file.
@@ -74,5 +74,10 @@ Alternatively, we can use tools like [[CyberChef]] to decode this string.
 
  >[!NOTE] Flag
 >picoCTF{C7r1F_54V35_71M3}
+#### Similar
+- [[13]]: ROT13 on a provided ciphertext string
+- [[Mod 26]]: ROT13 on a provided ciphertext string
+- [[rotation]]: Caesar cipher (ROT18) decryption
+
 #### References
 - _TAR File Extension_. (2023, June 15). https://fileinfo.com/extension/tar

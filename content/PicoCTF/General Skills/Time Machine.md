@@ -33,7 +33,7 @@ This is what I was working on, but I'd need to look at my commit history to know
 
 Interesting... Let's `cd` into the `.git` folder to check its contents. There are a few files and directories within this folder, such as `COMMIT_EDITMSG`, `index` and `branches`.
 
-I first checked `COMMIT_EDITMSG` by running `cat`, and the file was indeed present in it. 
+I first checked `COMMIT_EDITMSG` by running `cat`, and the flag was indeed present in it. 
 
 > [!NOTE] Flag
 > picoCTF{t1m3m@ch1n3_5cde9075}

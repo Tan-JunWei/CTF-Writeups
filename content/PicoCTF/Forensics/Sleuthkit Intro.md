@@ -25,3 +25,9 @@ Based on the directions given, we will just have to `wget <link to file>` then r
 > [!NOTE] Flag
 > picoCTF{mm15_f7w!}
 
+#### Similar
+- [[Sleuthkit Apprentice]]: uses `mmls`, `fls`, and `icat` for disk image analysis
+- [[Disk Disk Sleuth]]: uses `srch_strings` to search a disk image for the flag
+- [[Disk Disk Sleuth II]]: uses `fls` and `icat` to locate and read a file in a disk image
+- [[Operation Oni]]: uses `fls` and `icat` to extract an SSH key from a disk image
+- [[Operation Orchid]]: uses `fls` and `icat` to find and decrypt an encrypted flag file

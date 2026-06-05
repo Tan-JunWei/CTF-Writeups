@@ -1,3 +1,6 @@
+---
+showTags: false
+---
 
 ## Infra Hacking
 

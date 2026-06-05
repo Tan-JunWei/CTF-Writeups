@@ -24,7 +24,7 @@ modified: 2024-09-04T14:19:43+08:00
 
 To solve this challenge, run `binwalk -e` on the given image. This challenge will be gone through during the workshop.
 
-```bash]
+```bash
 binwalk -e calming.jpg
 ```
 

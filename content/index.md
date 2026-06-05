@@ -27,4 +27,4 @@ As of **6 February 2026**, this CTF-writeups page has a total of **131** writeup
 
 ## Contributions 
 
-Contribution are always welcome! If you'd like the suggest improvements, feel free to submit a pull request or open an issue on [GitHub](https://github.com/Tan-JunWei/CTF-Writeups). 
+Contributions are always welcome! If you'd like to suggest improvements, feel free to submit a pull request or open an issue on [GitHub](https://github.com/Tan-JunWei/CTF-Writeups). 

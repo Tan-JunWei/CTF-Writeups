@@ -24,7 +24,7 @@ We are given a string of hexadecimal values, where each value corresponds to an 
 
 ![[PicoCTF ASCII Numbers 2.png]]
 
-Using the 'From Hex' function in [[CyberChef]] shows the full flag as the ouput.
+Using the 'From Hex' function in [[CyberChef]] shows the full flag as the output.
 
 ### Acquiring the flag using a Python script
 

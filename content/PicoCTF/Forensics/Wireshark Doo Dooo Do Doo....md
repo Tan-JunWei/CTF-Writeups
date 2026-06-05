@@ -53,3 +53,7 @@ Since it highlighted that the string may have been encrypted using [ROT13](https
 > [!NOTE] Flag
 > picoCTF{p33kab00_1_s33_u_deadbeef}
 
+#### Similar
+- [[13]]: ROT13 on a provided ciphertext string
+- [[Mod 26]]: ROT13 on a provided ciphertext string
+- [[credstuff]]: ROT13 used to decode a retrieved password

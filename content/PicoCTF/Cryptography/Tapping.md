@@ -64,4 +64,4 @@ We can either decode morse code using an online morse code translator, or write 
 >However, since the curly braces `{}` are not regarded as morse characters (and therefore are not translated), they are replaced with hashtags "`#`" instead by the translator. Thus we will have to manually replace the hashtags '`#`' with curly braces '`{}`' accordingly to get the correct flag.
 
 >[!NOTE] Flag
->PICOCTF{M0RS3C0D31SFUN2683824610#}
+>PICOCTF{M0RS3C0D31SFUN2683824610}

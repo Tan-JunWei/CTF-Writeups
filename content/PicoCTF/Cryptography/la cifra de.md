@@ -39,7 +39,7 @@ Merqlsu’x deityd htzkrje avupaxjo it 1555 fd a itytosfaznzn uk ehk ktryy. Ehk 
 >With this clue, I tried searching the years mentioned in the above text (1508, 1467, 1553, 1555). This led to the [Wikipedia page for the Vigènere cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher). Indeed, some of these dates were mentioned again the "History" section of this page.
 ### Getting the flag
 
-Since the key is not provided, we can use a tool like [this](https://www.guballa.de/vigenere-solver)to break the Vigenère cipher without knowing the key. 
+Since the key is not provided, we can use a tool like [this](https://www.guballa.de/vigenere-solver) to break the Vigenère cipher without knowing the key. 
 
 Using the above tool will allow us to obtain this decrypted block of text:
 
@@ -65,3 +65,6 @@ We can retrieve the flag from the above text.
 
 >[!NOTE] Flag
 >picoCTF{b311a50_0r_v1gn3r3_c1ph3ra966878a}
+
+#### Similar
+- [[Vigenere]]: Vigenère cipher with the key provided directly

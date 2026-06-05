@@ -1,5 +1,6 @@
 ---
 modified: 2024-09-21T22:02:58+08:00
+showTags: false
 ---
 [picoCTF](https://picoctf.org/) gamifies learning hacking with capture-the-flag puzzles created by trusted computer security and privacy experts at [Carnegie Mellon University](https://cmu.edu/) (_picoCTF - CMU Cybersecurity Competition_, n.d.). 
 

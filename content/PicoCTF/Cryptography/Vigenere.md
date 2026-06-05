@@ -24,3 +24,6 @@ To decode, I used [[CyberChef]] and entered the key provided `CYLAB`, and from t
 
 > [!NOTE] Flag
 >picoCTF{D0NT_US3_V1G3N3R3_C1PH3R_2951a89h}
+
+#### Similar
+- [[la cifra de]]: Vigenère cipher without a provided key, must use an automated solver

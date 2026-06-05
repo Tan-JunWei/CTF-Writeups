@@ -25,3 +25,8 @@ Further analysis (or trial and error) tells us that the caesar cipher input valu
 
 > [!NOTE] Flag
 >picoCTF{r0tat1on_d3crypt3d_555957f3}
+
+#### Similar
+- [[13]]: ROT13 on a provided ciphertext string
+- [[Mod 26]]: ROT13 on a provided ciphertext string
+- [[credstuff]]: ROT13 used to decode a retrieved password

@@ -43,7 +43,7 @@ modified: 2024-09-04T14:19:43+08:00
 - SSH bruteforcing to gain access to user accounts
 - GTFOBins for privilege escalation
 
-"Academy 2" tests on the the final skill, which is privilege escalation. As such, only the steps taken to obtain the `root` flag will be demonstrated in the writeup below. 
+"Academy 2" tests on the final skill, which is privilege escalation. As such, only the steps taken to obtain the `root` flag will be demonstrated in the writeup below. 
 
 The true difficulty in this challenge is probably (**horizontal**) privilege escalation, as most CTF-style rooms/boxes typically follows the same flow: Get initial foothold on machine (through web vulnerability, plaintext credentials somewhere, etc.), and run automated privilege escalation scripts in order to escalate our privileges vertically (to `root`) and access the `/root` folder. There is usually an obvious path for rooting the machine. 
 

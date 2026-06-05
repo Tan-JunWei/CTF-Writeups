@@ -233,7 +233,7 @@ student
 > [!IMPORTANT]  
 > We have previously established that there was a "Team Triton" page featuring students and team members. This stage proves that all `sysadmins` have an account on this target machine, with the naming convention of `<first-initial><last-name>` for their usernames.
 
-18. It is likely that we need to take this information and perform some SSH password bruteforce attempts with the suggest wordlist.
+18. It is likely that we need to take this information and perform some SSH password bruteforce attempts with the suggested wordlist.
 
 We can first try this against the `athompson` user:
 

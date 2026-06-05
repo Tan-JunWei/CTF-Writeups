@@ -17,7 +17,7 @@ As usual, we begin by downloading the file using `wget <link>`. For this challen
 
 ### The overwhelming number of directories and files
 ![[PicoCTF big zip 2.png]]
-I ran `tree -f big-zip-files` to check the number of files and directories that were present in this folder. As observed. there were 358 directories and 8732 files. I tried to use  pipe ("`|`") to grep "flag" or "pico" from the contents of the output of the `tree` command. However, since the `.txt` files were randomly named for this challenge, this approach was ineffective. An example file name is `ireiagcarkzcmosqzqlvrh.txt`.
+I ran `tree -f big-zip-files` to check the number of files and directories that were present in this folder. As observed, there were 358 directories and 8732 files. I tried to use  pipe ("`|`") to grep "flag" or "pico" from the contents of the output of the `tree` command. However, since the `.txt` files were randomly named for this challenge, this approach was ineffective. An example file name is `ireiagcarkzcmosqzqlvrh.txt`.
 
 >[!faq] PicoCTF Hint: Can grep be instructed to look at every file in a directory and its subdirectories?
 >

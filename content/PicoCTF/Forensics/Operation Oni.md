@@ -70,3 +70,10 @@ After changing the file permissions, we can successfully connect to the SSH serv
 
 > [!NOTE] Flag
 > picoCTF{k3y_5l3u7h_339601ed}
+
+#### Similar
+- [[Sleuthkit Intro]]: introductory Sleuth Kit challenge using `mmls`
+- [[Sleuthkit Apprentice]]: uses `mmls`, `fls`, and `icat` for disk image analysis
+- [[Disk Disk Sleuth]]: uses `srch_strings` to search a disk image for the flag
+- [[Disk Disk Sleuth II]]: uses `fls` and `icat` to locate a specific file in a disk image
+- [[Operation Orchid]]: similar disk forensics challenge, involves decrypting an encrypted flag file

@@ -53,3 +53,9 @@ I then ran `fls -o 360448 -r disk.flag.img | grep flag` and found 2 `.txt` files
 > [!NOTE] Flag
 >picoCTF{by73_5urf3r_3497ae6b}
 
+#### Similar
+- [[Sleuthkit Intro]]: introductory Sleuth Kit challenge using `mmls`
+- [[Disk Disk Sleuth]]: uses `srch_strings` to search a disk image for the flag
+- [[Disk Disk Sleuth II]]: uses `fls` and `icat` to locate and read a file in a disk image
+- [[Operation Oni]]: uses `fls` and `icat` to extract an SSH key from a disk image
+- [[Operation Orchid]]: uses `fls` and `icat` to find and decrypt an encrypted flag file

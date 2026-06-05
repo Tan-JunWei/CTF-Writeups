@@ -27,7 +27,7 @@ It seems like this file only had 1 line, which is a string of random characters.
 ### What does the script do?
 ![[PicoCTF codebook 2.png]]
 
-I ran `nano codebook.txt` to check what how the Python script works. 
+I ran `nano codebook.txt` to check how the Python script works. 
 
 It seems like this script XOR-decrypts an encrypted flag (`flag_enc`) using a password derived from specific characters in a file called `codebook.txt`. The `str_xor` function performs the XOR operation between the flag and the password to reveal the original flag.
 
