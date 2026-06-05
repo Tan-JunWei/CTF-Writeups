@@ -22,7 +22,8 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import ReadingProgress from "./ReadingProgress"
 import BackToTop from "./BackToTop"
-
+import PrevNextNav from "./PrevNextNav"
+import CodeLanguageLabel from "./CodeLanguageLabel"
 export {
   ArticleTitle,
   Content,
@@ -48,4 +49,6 @@ export {
   Comments,
   ReadingProgress,
   BackToTop,
+  PrevNextNav,
+  CodeLanguageLabel,
 }

@@ -5,7 +5,7 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [Component.BackToTop()],
+  afterBody: [Component.PrevNextNav(), Component.BackToTop(), Component.CodeLanguageLabel()],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/Tan-JunWei/CTF-Writeups",
