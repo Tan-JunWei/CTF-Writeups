@@ -16,6 +16,7 @@ import { toHast } from "mdast-util-to-hast"
 import { toHtml } from "hast-util-to-html"
 import { PhrasingContent } from "mdast-util-find-and-replace/lib"
 import { capitalize } from "../../util/lang"
+import { colorForTag } from "../../util/tagColor"
 import { PluggableList } from "unified"
 
 export interface Options {
@@ -335,12 +336,14 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                   file.data.frontmatter.tags = [...new Set([...noteTags, tag])]
                 }
 
+                const { text, bg } = colorForTag(tag)
                 return {
                   type: "link",
                   url: base + `/tags/${tag}`,
                   data: {
                     hProperties: {
                       className: ["tag-link"],
+                      style: `--tag-color:${text};--tag-bg:${bg}`,
                     },
                   },
                   children: [
