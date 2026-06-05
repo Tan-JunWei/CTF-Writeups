@@ -59,6 +59,12 @@ button#toc {
       &.in-view {
         opacity: 0.75;
       }
+
+      &.active-toc {
+        opacity: 1;
+        color: var(--secondary);
+        font-weight: 600;
+      }
     }
   }
 

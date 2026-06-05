@@ -14,6 +14,28 @@ const observer = new IntersectionObserver((entries) => {
   }
 })
 
+function updateActiveTocLink() {
+  const headers = Array.from(
+    document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]"),
+  ) as HTMLElement[]
+
+  let activeId: string | null = null
+  for (const header of headers) {
+    if (header.getBoundingClientRect().top <= 80) {
+      activeId = header.id
+    }
+  }
+
+  document.querySelectorAll("a[data-for]").forEach((a) => {
+    a.classList.remove("active-toc")
+  })
+
+  if (activeId) {
+    const activeLink = document.querySelector(`a[data-for="${activeId}"]`)
+    activeLink?.classList.add("active-toc")
+  }
+}
+
 function toggleToc(this: HTMLElement) {
   this.classList.toggle("collapsed")
   this.setAttribute(
@@ -46,4 +68,9 @@ document.addEventListener("nav", () => {
   observer.disconnect()
   const headers = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]")
   headers.forEach((header) => observer.observe(header))
+
+  // active section tracking via scroll
+  updateActiveTocLink()
+  window.addEventListener("scroll", updateActiveTocLink, { passive: true })
+  window.addCleanup(() => window.removeEventListener("scroll", updateActiveTocLink))
 })

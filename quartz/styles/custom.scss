@@ -50,3 +50,56 @@ td {
   word-break: break-word;
   white-space: normal;
 }
+
+/* Reading Progress Bar */
+#reading-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--secondary);
+  z-index: 1000;
+  border-radius: 0 2px 2px 0;
+  transition: width 0.05s linear;
+  pointer-events: none;
+}
+
+/* Back to Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  color: var(--light);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.2s ease;
+  z-index: 99;
+  pointer-events: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  &:hover {
+    background-color: var(--tertiary);
+  }
+
+  & > svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    stroke: var(--light);
+  }
+}
