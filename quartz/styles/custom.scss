@@ -56,6 +56,8 @@ pre > code > [data-line]::before {
 .table-container > table {
   table-layout: fixed;
   width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 
   th:first-child,
   td:first-child {
