@@ -3,9 +3,6 @@ tags:
   - Forensics
   - medium
   - pcap
-Creation Date: 
-Last Date: 
-draft: 
 modified: 2024-09-25T22:21:14+08:00
 ---
 ### Challenge Description

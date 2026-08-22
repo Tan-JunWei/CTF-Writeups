@@ -4,10 +4,6 @@ tags:
   - medium
   - Python
   - XOR
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-20T11:42:05+08:00
 ---
 ## Challenge Description

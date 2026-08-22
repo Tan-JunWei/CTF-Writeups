@@ -3,10 +3,6 @@ tags:
   - GeneralSkills
   - easy
   - Endianness
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-19T18:32:32+08:00
 ---
 ## Challenge Description

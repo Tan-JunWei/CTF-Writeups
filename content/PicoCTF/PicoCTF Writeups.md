@@ -1,5 +1,5 @@
 ---
-modified: 2024-09-21T22:02:58+08:00
+modified: 2026-08-22T09:33:17+08:00
 showTags: false
 ---
 [picoCTF](https://picoctf.org/) gamifies learning hacking with capture-the-flag puzzles created by trusted computer security and privacy experts at [Carnegie Mellon University](https://cmu.edu/) (_picoCTF - CMU Cybersecurity Competition_, n.d.). 
@@ -83,7 +83,7 @@ The challenges are categorised into 6 categories: `Web Exploitation`, [[PicoCTF 
 | [[Tapping]] | #Cryptography, #medium, #MorseCode, #Python |
 | [[Vigenere]] | #Cryptography, #medium, #Vigenere |
 | [[transposition-trial]] | #Cryptography, #medium, #Transposition |
-| [[flags]] | #Cryptography, #medium, #Substitution |
+| [[Flags]] | #Cryptography, #medium, #Substitution |
 
 ### Easy
 

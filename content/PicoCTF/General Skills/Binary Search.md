@@ -4,10 +4,6 @@ tags:
   - BinarySearch
   - SSH
   - easy
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-04T13:50:20+08:00
 ---
 ## Challenge Description

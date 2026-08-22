@@ -5,10 +5,6 @@ tags:
   - apk
   - zip
   - tree
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-19T15:59:56+08:00
 ---
 ## Challenge Description

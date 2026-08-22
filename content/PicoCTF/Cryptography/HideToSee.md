@@ -3,10 +3,6 @@ tags:
   - Cryptography
   - Steganography
   - medium
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-08-23T15:18:45+08:00
 ---
 ## Challenge Description

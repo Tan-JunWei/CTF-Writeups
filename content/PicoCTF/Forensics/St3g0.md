@@ -4,10 +4,6 @@ tags:
   - medium
   - Steganography
   - zsteg
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-25T22:19:15+08:00
 ---
 ## Challenge Description

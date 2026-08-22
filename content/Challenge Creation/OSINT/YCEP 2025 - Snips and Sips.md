@@ -3,7 +3,7 @@ tags:
   - OSINT
   - medium
   - ChallengeCreation
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -53,4 +53,5 @@ By performing a quick Google search, we can verify that our results are correct 
 
 ![[Snips-and-Sips-5.png]]
 
-Flag: `YCEP25{lopburi_kyotoshicafe}`
+> [!NOTE] Flag
+> YCEP25{lopburi_kyotoshicafe}

@@ -29,25 +29,26 @@
   --callout-icon-quote: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>');
   --callout-icon-fold: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpolyline points="6 9 12 15 18 9"%3E%3C/polyline%3E%3C/svg%3E');
 
+  // darkened variants of the colours in the dark-mode block below, for contrast on light backgrounds
   &[data-callout] {
-    --color: #448aff;
-    --border: #448aff44;
-    --bg: #448aff10;
+    --color: #0562ff;
+    --border: #0562ff44;
+    --bg: #0562ff10;
     --callout-icon: var(--callout-icon-note);
   }
 
   &[data-callout="abstract"] {
-    --color: #00b0ff;
-    --border: #00b0ff44;
-    --bg: #00b0ff10;
+    --color: #0076ac;
+    --border: #0076ac44;
+    --bg: #0076ac10;
     --callout-icon: var(--callout-icon-abstract);
   }
 
   &[data-callout="info"],
   &[data-callout="todo"] {
-    --color: #00b8d4;
-    --border: #00b8d444;
-    --bg: #00b8d410;
+    --color: #007b8e;
+    --border: #007b8e44;
+    --bg: #007b8e10;
     --callout-icon: var(--callout-icon-info);
   }
 
@@ -56,39 +57,39 @@
   }
 
   &[data-callout="tip"] {
-    --color: #00bfa5;
-    --border: #00bfa544;
-    --bg: #00bfa510;
+    --color: #007e6d;
+    --border: #007e6d44;
+    --bg: #007e6d10;
     --callout-icon: var(--callout-icon-tip);
   }
 
   &[data-callout="success"] {
-    --color: #09ad7a;
-    --border: #09ad7144;
-    --bg: #09ad7110;
+    --color: #077f5a;
+    --border: #077f5a44;
+    --bg: #077f5a10;
     --callout-icon: var(--callout-icon-success);
   }
 
   &[data-callout="question"] {
-    --color: #dba642;
-    --border: #dba64244;
-    --bg: #dba64210;
+    --color: #91681c;
+    --border: #91681c44;
+    --bg: #91681c10;
     --callout-icon: var(--callout-icon-question);
   }
 
   &[data-callout="warning"] {
-    --color: #db8942;
-    --border: #db894244;
-    --bg: #db894210;
+    --color: #a55e20;
+    --border: #a55e2044;
+    --bg: #a55e2010;
     --callout-icon: var(--callout-icon-warning);
   }
 
   &[data-callout="failure"],
   &[data-callout="danger"],
   &[data-callout="bug"] {
-    --color: #db4242;
-    --border: #db424244;
-    --bg: #db424210;
+    --color: #d62a2a;
+    --border: #d62a2a44;
+    --bg: #d62a2a10;
     --callout-icon: var(--callout-icon-failure);
   }
 
@@ -109,12 +110,72 @@
 
   &[data-callout="quote"] {
     --color: var(--secondary);
-    --border: var(--lightgray);
     --callout-icon: var(--callout-icon-quote);
   }
 
   &.is-collapsed > .callout-title > .fold-callout-icon {
     transform: rotateZ(-90deg);
+  }
+}
+
+:root[saved-theme="dark"] .callout {
+  &[data-callout] {
+    --color: #448aff;
+    --border: #448aff44;
+    --bg: #448aff10;
+  }
+
+  &[data-callout="abstract"] {
+    --color: #00b0ff;
+    --border: #00b0ff44;
+    --bg: #00b0ff10;
+  }
+
+  &[data-callout="info"],
+  &[data-callout="todo"] {
+    --color: #00b8d4;
+    --border: #00b8d444;
+    --bg: #00b8d410;
+  }
+
+  &[data-callout="tip"] {
+    --color: #00bfa5;
+    --border: #00bfa544;
+    --bg: #00bfa510;
+  }
+
+  &[data-callout="success"] {
+    --color: #09ad7a;
+    --border: #09ad7144;
+    --bg: #09ad7110;
+  }
+
+  &[data-callout="question"] {
+    --color: #dba642;
+    --border: #dba64244;
+    --bg: #dba64210;
+  }
+
+  &[data-callout="warning"] {
+    --color: #db8942;
+    --border: #db894244;
+    --bg: #db894210;
+  }
+
+  // nudged lighter than #db4242 for contrast
+  &[data-callout="failure"],
+  &[data-callout="danger"],
+  &[data-callout="bug"] {
+    --color: #dd4b4b;
+    --border: #dd4b4b44;
+    --bg: #dd4b4b10;
+  }
+
+  // lightened from the light-mode value above for contrast on dark
+  &[data-callout="example"] {
+    --color: #9668c7;
+    --border: #9668c744;
+    --bg: #9668c710;
   }
 }
 

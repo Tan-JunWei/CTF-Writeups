@@ -4,10 +4,6 @@ tags:
   - medium
   - Python
   - CaesarCipher
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-08-26T22:00:50+08:00
 ---
 ## Challenge Description

@@ -4,10 +4,6 @@ tags:
   - easy
   - metadata
   - base64
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-03T20:18:00+08:00
 ---
 ## Challenge Description

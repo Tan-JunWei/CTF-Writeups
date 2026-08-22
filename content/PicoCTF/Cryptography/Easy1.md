@@ -3,11 +3,7 @@ tags:
   - Cryptography
   - medium
   - OneTImePad
-Creation Date: 
-Last Date: 
-draft: 
-References: 
-modified: 2024-08-26T14:57:18+08:00
+modified: 2026-08-22T09:33:17+08:00
 ---
 ## Challenge Description
 ![[PicoCTF Easy1.png]]
@@ -54,6 +50,8 @@ With the encrypted flag `UFJKXQZQUNB` and the key `SOLVECRYPTO`, we have all we 
 >This is to reverse the encryption process shown below.
 >![[PicoCTF easy1 2.png|450]]
 
+> [!NOTE] Flag
+> picoCTF{CRYPTOISFUN}
 
 #### References
 - _One Time Pad Cipher_. (n.d.). https://www.tutorialspoint.com/cryptography_with_python/cryptography_with_python_one_time_pad_cipher.htm

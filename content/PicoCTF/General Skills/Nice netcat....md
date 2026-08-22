@@ -3,10 +3,6 @@ tags:
   - GeneralSkills
   - easy
   - Netcat
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-06T09:58:36+08:00
 ---
 ## Challenge Description
@@ -14,7 +10,7 @@ modified: 2024-09-06T09:58:36+08:00
 
 I'll begin by running the command given in the description to understand how I can proceed. After connecting to the server, I was greeted with an overwhelming number of numbers, as shown below.
 
-```bash
+```console
 ┌──(kali㉿kali)-[~/Desktop/picoCTF/general_skills/nice_netcat...]
 └─$ nc mercury.picoctf.net 35652
 112 

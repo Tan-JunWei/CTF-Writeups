@@ -5,7 +5,7 @@ tags:
   - ChallengeCreation
   - SSH
   - FileUploadBypass
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -277,4 +277,5 @@ From there, we are able to get the user flag in a file called `flag.txt`! The fu
 
 That's it! Quite a long challenge, with a lot of tasks to do to get the user flag. Once again, the key takeaway of this challenge is to keep finding for information that may help us progress, no matter how trivial it may be!
 
-User flag: `HNF25{S5H_brut3forc1ng_1s_pr3t1y_n34t}`
+> [!NOTE] User Flag
+> HNF25{S5H_brut3forc1ng_1s_pr3t1y_n34t}

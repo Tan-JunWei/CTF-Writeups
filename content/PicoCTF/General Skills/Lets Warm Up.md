@@ -4,10 +4,6 @@ tags:
   - easy
   - Hex
   - ASCII
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-07T11:54:20+08:00
 ---
 ## Challenge Description

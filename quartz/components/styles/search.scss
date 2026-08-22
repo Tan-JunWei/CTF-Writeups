@@ -82,7 +82,7 @@
         font-family: var(--bodyFont);
         color: var(--dark);
         font-size: 1.1em;
-        border: 1px solid var(--lightgray);
+        border: 1px solid var(--border);
 
         &:focus {
           outline: none;
@@ -92,7 +92,7 @@
       & > #search-layout {
         display: none;
         flex-direction: row;
-        border: 1px solid var(--lightgray);
+        border: 1px solid var(--border);
         flex: 0 0 100%;
         box-sizing: border-box;
 
@@ -112,7 +112,7 @@
 
             & > div {
               &:first-child {
-                border-right: 1px solid var(--lightgray);
+                border-right: 1px solid var(--border);
                 border-top-right-radius: unset;
                 border-bottom-right-radius: unset;
               }
@@ -176,7 +176,7 @@
             padding: 1em;
             cursor: pointer;
             transition: background 0.2s ease;
-            border-bottom: 1px solid var(--lightgray);
+            border-bottom: 1px solid var(--border);
             width: 100%;
             display: block;
             box-sizing: border-box;

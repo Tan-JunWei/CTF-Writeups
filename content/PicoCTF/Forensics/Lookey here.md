@@ -2,10 +2,6 @@
 tags:
   - Forensics
   - medium
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-03T20:22:30+08:00
 ---
 ## Challenge Description

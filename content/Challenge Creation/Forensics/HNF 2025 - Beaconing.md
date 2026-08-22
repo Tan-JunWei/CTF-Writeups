@@ -4,7 +4,7 @@ tags:
   - medium
   - ChallengeCreation
   - pcap
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -54,4 +54,5 @@ For this challenge, participants are given a file called `capture.pcap`. There a
 
 The beacon interval should be 53 seconds.
 
-Flag: `HNF25{93.184.216.34_53}`
+> [!NOTE] Flag
+> HNF25{93.184.216.34_53}

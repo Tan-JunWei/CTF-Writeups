@@ -3,10 +3,6 @@ tags:
   - Cryptography
   - medium
   - MorseCode
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-08-28T15:32:26+08:00
 ---
 ## Challenge Description

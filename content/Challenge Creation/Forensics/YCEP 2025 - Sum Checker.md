@@ -4,7 +4,7 @@ tags:
   - Checksum
   - easy
   - ChallengeCreation
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -52,4 +52,5 @@ We can cat the flag28.txt to obtain the flag.
 
 ![[Sum-Checker-2.png]]
 
-Flag: `YCEP25{UNPR3D1CT4BL3_0UTPUT}`
+> [!NOTE] Flag
+> YCEP25{UNPR3D1CT4BL3_0UTPUT}

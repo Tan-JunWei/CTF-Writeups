@@ -4,10 +4,6 @@ tags:
   - medium
   - Wireshark
   - aircrack-ng
-Creation Date: 2024-08-28
-Last Date: 2024-08-28
-References: 
-draft: 
 modified: 2024-09-04T13:23:53+08:00
 ---
 ## Challenge Description
@@ -39,7 +35,7 @@ aircrack-ng -w < path-to-word-list > < file-name >
 
 Using this command, I was able to successfully crack the password. The output is displayed below:
 
-```bash
+```console
 ┌──(kali㉿kali)-[~/Desktop/picoCTF/forensics/wpa-ing_out]
 └─$ aircrack-ng -w ../../../../../../usr/share/wordlists/rockyou.txt wpa-ing_out.pcap
 Reading packets, please wait...

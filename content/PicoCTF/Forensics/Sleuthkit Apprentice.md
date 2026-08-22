@@ -3,10 +3,6 @@ tags:
   - Forensics
   - medium
   - Sleuthkit
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-08-22T15:03:05+08:00
 ---
 ### Challenge Description

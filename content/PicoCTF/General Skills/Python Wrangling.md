@@ -3,10 +3,6 @@ tags:
   - GeneralSkills
   - easy
   - Python
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-06T09:08:36+08:00
 ---
 ## Challenge Description

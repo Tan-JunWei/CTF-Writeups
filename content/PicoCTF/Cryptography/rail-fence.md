@@ -4,11 +4,7 @@ tags:
   - medium
   - Transposition
   - RailFence
-Creation Date: 
-Last Date: 
 modified: 2024-08-25T13:17:41+08:00
-References: 
-draft: 
 ---
 ## Challenge Description 
 ![[PicoCTF rail-fence.png]]

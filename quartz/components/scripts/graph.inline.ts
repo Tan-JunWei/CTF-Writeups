@@ -141,7 +141,7 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
     .data(graphData.links)
     .join("line")
     .attr("class", "link")
-    .attr("stroke", "var(--lightgray)")
+    .attr("stroke", "var(--border)")
     .attr("stroke-width", 1)
 
   // svg groups
@@ -269,7 +269,7 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
         .selectAll(".link")
         .filter((d: any) => d.source.id === currentId || d.target.id === currentId)
 
-      linkNodes.transition().duration(200).attr("stroke", "var(--lightgray)")
+      linkNodes.transition().duration(200).attr("stroke", "var(--border)")
 
       const parent = this.parentNode as HTMLElement
       d3.select<HTMLElement, NodeData>(parent)

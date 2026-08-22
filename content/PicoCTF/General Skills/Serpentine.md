@@ -3,10 +3,6 @@ tags:
   - GeneralSkills
   - medium
   - Python
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-08T11:51:21+08:00
 ---
 ## Challenge Description

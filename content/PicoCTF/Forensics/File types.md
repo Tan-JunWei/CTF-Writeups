@@ -3,10 +3,6 @@ tags:
   - Forensics
   - medium
   - filetypes
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-08-20T09:58:18+08:00
 ---
 ## Challenge Description

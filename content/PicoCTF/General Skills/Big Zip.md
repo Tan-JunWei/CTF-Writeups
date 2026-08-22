@@ -4,10 +4,6 @@ tags:
   - zip
   - easy
   - grep
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-09T10:46:41+08:00
 ---
 ## Challenge Description

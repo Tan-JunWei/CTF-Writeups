@@ -2,9 +2,6 @@
 tags:
   - Forensics
   - easy
-Creation Date: 
-Last Date: 
-draft: 
 modified: 2024-08-28T16:30:36+08:00
 ---
 ## Challenge Description

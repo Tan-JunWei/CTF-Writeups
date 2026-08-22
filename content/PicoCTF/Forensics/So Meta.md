@@ -3,10 +3,6 @@ tags:
   - Forensics
   - medium
   - metadata
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-08-21T15:11:42+08:00
 ---
 ## Challenge Description

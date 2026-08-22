@@ -4,7 +4,7 @@ tags:
   - medium
   - Vigenere
   - ChallengeCreation
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -123,11 +123,12 @@ with open("enc.txt", "r") as f:
             break
 ```
 
-```bash
+```
 Key: ElGamal
 Flag found: YCEP25{1s_th1s_4_r34lly_s3cur3_3ncrypt10n_a1g0r1thm}
 ```
 
 The random key that was used to encrypt the plaintext flag was `ElGamal`. As long as the decryption scripts that the participants create themselves work, they should be able to retrieve the flag.
 
-Flag: `YCEP25{1s_th1s_4_r34lly_s3cur3_3ncrypt10n_a1g0r1thm}`
+> [!NOTE] Flag
+> YCEP25{1s_th1s_4_r34lly_s3cur3_3ncrypt10n_a1g0r1thm}

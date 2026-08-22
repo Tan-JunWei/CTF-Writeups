@@ -3,10 +3,6 @@ tags:
   - GeneralSkills
   - easy
   - Netcat
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-07T11:25:29+08:00
 ---
 ## Challenge Description

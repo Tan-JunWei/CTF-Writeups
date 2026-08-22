@@ -233,13 +233,13 @@ a {
 
 .footnotes {
   margin-top: 2rem;
-  border-top: 1px solid var(--lightgray);
+  border-top: 1px solid var(--border);
 }
 
 input[type="checkbox"] {
   transform: translateY(2px);
   color: var(--secondary);
-  border: 1px solid var(--lightgray);
+  border: 1px solid var(--border);
   border-radius: 3px;
   background-color: var(--light);
   position: relative;
@@ -350,7 +350,7 @@ figure[data-rehype-pretty-code-figure] {
     font-family: var(--codeFont);
     font-size: 0.9rem;
     padding: 0.1rem 0.5rem;
-    border: 1px solid var(--lightgray);
+    border: 1px solid var(--border);
     width: max-content;
     border-radius: 5px;
     margin-bottom: -0.5rem;
@@ -367,7 +367,7 @@ pre {
   padding: 0 0.5rem;
   border-radius: 5px;
   overflow-x: auto;
-  border: 1px solid var(--lightgray);
+  border: 1px solid var(--border);
   position: relative;
 
   &:has(> code.mermaid) {
@@ -465,7 +465,7 @@ td {
 }
 
 tr {
-  border-bottom: 1px solid var(--lightgray);
+  border-bottom: 1px solid var(--border);
   &:last-child {
     border-bottom: none;
   }
@@ -487,7 +487,7 @@ hr {
   margin: 2rem auto;
   height: 1px;
   border: none;
-  background-color: var(--lightgray);
+  background-color: var(--border);
 }
 
 audio,

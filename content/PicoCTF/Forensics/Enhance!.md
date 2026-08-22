@@ -3,10 +3,6 @@ tags:
   - Forensics
   - medium
   - strings
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-03T20:25:22+08:00
 ---
 ## Challenge Description 

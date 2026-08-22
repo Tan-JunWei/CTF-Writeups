@@ -3,10 +3,6 @@ tags:
   - GeneralSkills
   - medium
   - SSH
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-20T21:36:15+08:00
 ---
 ## Challenge Description
@@ -23,7 +19,7 @@ As expected, there's a file named `useless` within this directory. In fact, it w
 
 I proceeded to read the script:
 
-```bash
+```console
 picoplayer@challenge:~$ cat useless
 #!/bin/bash
 # Basic mathematical operations via command-line arguments
@@ -82,7 +78,7 @@ else
 
 The following output is displayed when I ran `man useless`:
 
-```bash
+```console
 picoplayer@challenge:~$ man useless 
 
 useless

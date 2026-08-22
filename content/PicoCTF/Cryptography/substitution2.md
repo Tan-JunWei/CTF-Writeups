@@ -3,10 +3,6 @@ tags:
   - Cryptography
   - medium
   - Substitution
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-08-24T23:04:15+08:00
 ---
 ## Challenge Description

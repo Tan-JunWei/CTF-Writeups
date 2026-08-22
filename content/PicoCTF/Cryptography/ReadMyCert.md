@@ -3,10 +3,6 @@ tags:
   - Cryptography
   - medium
   - base64
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-19T22:43:14+08:00
 ---
 ## Challenge Description
@@ -71,7 +67,7 @@ This command decodes a base64-encoded string found in `request.txt` and outputs 
 
 Running this command displays this:
 
-```bash
+```
 0��0��0<1&0$U
              picoCTF{read_mycert_41d1c74c}10U)
 �0�     *�H��                                   ctfPlayer0�"0

@@ -3,10 +3,6 @@ tags:
   - Forensics
   - medium
   - base64
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-25T22:17:26+08:00
 ---
 ## Challenge Description 

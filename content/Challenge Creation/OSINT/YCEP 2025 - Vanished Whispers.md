@@ -3,7 +3,7 @@ tags:
   - OSINT
   - easy
   - ChallengeCreation
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -52,4 +52,5 @@ We can make use of the Google Maps Live View feature to verify whether our findi
 
 ![[Vanished-Whispers-5.png]]
 
-Flag: `YCEP25{THEANNAMDICKERSONPARK}`
+> [!NOTE] Flag
+> YCEP25{THEANNAMDICKERSONPARK}

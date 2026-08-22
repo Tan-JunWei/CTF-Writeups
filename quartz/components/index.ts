@@ -24,6 +24,8 @@ import ReadingProgress from "./ReadingProgress"
 import BackToTop from "./BackToTop"
 import PrevNextNav from "./PrevNextNav"
 import CodeLanguageLabel from "./CodeLanguageLabel"
+import ExplorerToggle from "./ExplorerToggle"
+import DynamicDate from "./DynamicDate"
 export {
   ArticleTitle,
   Content,
@@ -51,4 +53,6 @@ export {
   BackToTop,
   PrevNextNav,
   CodeLanguageLabel,
+  ExplorerToggle,
+  DynamicDate,
 }

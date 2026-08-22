@@ -3,10 +3,6 @@ tags:
   - Cryptography
   - medium
   - ROT13
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-08-27T10:12:10+08:00
 ---
 ## Challenge Description

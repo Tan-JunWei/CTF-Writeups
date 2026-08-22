@@ -4,10 +4,6 @@ tags:
   - medium
   - Sleuthkit
   - SSH
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-03T20:22:53+08:00
 ---
 ## Challenge Description

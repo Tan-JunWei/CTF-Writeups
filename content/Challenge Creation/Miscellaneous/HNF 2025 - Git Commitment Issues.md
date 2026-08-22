@@ -4,7 +4,7 @@ tags:
   - easy
   - Git
   - ChallengeCreation
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -33,7 +33,7 @@ As the challenge name suggests, this challenge revolves around the usage of Git.
 
 3. Since there are no other files (or branches actually), we probably need to look at the git commit history. We can do this using the command `git log --all --oneline`.
 
-```bash
+```console
 ┌──(nepz㉿nepz)-[~/safe-calculator]
 └─$ git log --all --oneline
 14bafe0 (HEAD -> main, origin/main, origin/HEAD) add help command
@@ -74,10 +74,11 @@ We see that in the commit `8ed3fc5 - HNF25{g1t_15_4w3s0m3}`, the `flag.txt` file
 
 So, we can simply use a `git show` command to display the contents of the `flag.txt` file when it was added in the commit with the commit hash of `8ed3fc5`.
 
-```bash
+```console
 ┌──(nepz㉿nepz)-[~/safe-calculator]
 └─$ git show 8ed3fc5:flag.txt
 HNF25{v3rs10n_c0ntr01_w1th_g1t_c4n_b3_m3s5y}
 ```
 
-Flag: `HNF25{v3rs10n_c0ntr01_w1th_g1t_c4n_b3_m3s5y}`
+> [!NOTE] Flag
+> HNF25{v3rs10n_c0ntr01_w1th_g1t_c4n_b3_m3s5y}

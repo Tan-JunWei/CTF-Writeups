@@ -1,6 +1,5 @@
 ---
 modified: 2024-09-13T23:22:28+08:00
-draft: false
 ---
 Related: [[File System Structure]]
 

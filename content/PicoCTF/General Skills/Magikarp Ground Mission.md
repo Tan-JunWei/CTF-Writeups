@@ -3,10 +3,6 @@ tags:
   - GeneralSkills
   - easy
   - SSH
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-07T10:57:39+08:00
 ---
 ## Challenge Description

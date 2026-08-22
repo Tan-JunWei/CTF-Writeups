@@ -3,7 +3,7 @@ tags:
   - WebExploitation
   - beginner
   - ChallengeCreation
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -46,4 +46,5 @@ Disallow: /f1ag_h3r3_n0w_th3_r0b0ts_path
 >[!tip] Quick shortcut
 >In any web CTF, checking `/robots.txt` and viewing the page source (`Ctrl + U`) should be among your first steps. They frequently reveal hidden paths, comments, or credentials.
 
-Flag: `HNF25{s0uRc3_c0d3_anD_r0b0ts_m4tt3r_s0m3t1m3s!}`
+> [!NOTE] Flag
+> HNF25{s0uRc3_c0d3_anD_r0b0ts_m4tt3r_s0m3t1m3s!}

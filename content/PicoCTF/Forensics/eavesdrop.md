@@ -5,9 +5,6 @@ tags:
   - pcap
   - Wireshark
   - Cryptography
-Creation Date: 
-Last Date: 
-References: 
 modified: 2024-09-25T14:53:45+08:00
 ---
 ## Challenge Description

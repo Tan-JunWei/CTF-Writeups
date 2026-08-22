@@ -4,7 +4,7 @@ tags:
   - medium
   - ChallengeCreation
   - filetypes
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -54,4 +54,7 @@ Lastly, the last file (`file3.gif`) is a GIF video. The last part of the flag `t
 
 ![[Extensions-5.png]]
 
-After getting all 3 parts of the flag, we can now piece them together. The full flag should be `YCEP25{3xp3rt_4t_3xt3n510ns}`.
+After getting all 3 parts of the flag, we can now piece them together.
+
+> [!NOTE] Flag
+> YCEP25{3xp3rt_4t_3xt3n510ns}

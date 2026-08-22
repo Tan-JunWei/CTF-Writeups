@@ -3,10 +3,6 @@ tags:
   - Cryptography
   - medium
   - CaesarCipher
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-08-27T17:04:27+08:00
 ---
 ## Challenge Description

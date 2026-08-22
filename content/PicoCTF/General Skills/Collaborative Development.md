@@ -3,10 +3,6 @@ tags:
   - Git
   - GeneralSkills
   - easy
-Creation Date:
-Last Date:
-References:
-draft:
 modified: 2024-09-06T14:25:10+08:00
 ---
 ## Challenge Description

@@ -3,7 +3,7 @@ tags:
   - Miscellaneous
   - easy
   - ChallengeCreation
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -30,12 +30,13 @@ The file given contains a very long story. To filter for the flag, simply use th
 
 The flag is stated within a paragraph that looks like this:
 
-```bash
+```console
 ┌──(nepz㉿nepz)-[~]
 └─$ cat story.txt | grep YCEP
 The attackers, with access to the Databanks, launched an assault on the Central Core. Their primary objective was clear: steal the kingdom’s master encryption key, "YCEP25{gr3p_1s_c00l}", which was the only key capable of unlocking the most sacred and secretive data stored within the Core. The Dark Netra's best hacker, known only as "NullDread," led the charge.
 ```
 
-Flag: YCEP25{gr3p_1s_c00l}
+> [!NOTE] Flag
+> YCEP25{gr3p_1s_c00l}
 
 

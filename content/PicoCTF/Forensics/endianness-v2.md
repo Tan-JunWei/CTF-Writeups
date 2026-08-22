@@ -4,10 +4,6 @@ tags:
   - medium
   - Endianness
   - Python
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-19T20:50:38+08:00
 ---
 ## Challenge Description

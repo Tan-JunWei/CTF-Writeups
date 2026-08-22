@@ -10,6 +10,13 @@ article img {
     cursor: zoom-in;
     max-width: 100%;
     position: relative;
+    border: 1px solid var(--border);
+    // shadow helps images stand out in light mode, not needed in dark mode
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+:root[saved-theme="dark"] article img {
+    box-shadow: none;
 }
 
 .zoom-active {
@@ -99,13 +106,13 @@ pre > code > [data-line]::before {
     display: flex;
     flex-direction: column;
     gap: 0;
-    border: 1px solid var(--lightgray);
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 0.7rem 1rem;
     transition: border-color 0.2s ease, background-color 0.2s ease;
 
     &:last-child {
-      border-bottom: 1px solid var(--lightgray);
+      border-bottom: 1px solid var(--border);
     }
 
     &:hover {
@@ -146,7 +153,7 @@ figure.has-language-header {
   gap: 0.38rem;
   padding: 0.28rem 0.65rem;
   background-color: color-mix(in srgb, var(--lightgray) 60%, var(--light));
-  border: 1px solid var(--lightgray);
+  border: 1px solid var(--border);
   border-bottom: none;
   border-radius: 5px 5px 0 0;
 

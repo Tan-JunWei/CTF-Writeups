@@ -4,10 +4,6 @@ tags:
   - medium
   - MorseCode
   - Python
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-08-28T16:12:31+08:00
 ---
 ## Challenge Description

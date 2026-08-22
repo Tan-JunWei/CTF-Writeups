@@ -4,7 +4,7 @@ tags:
   - easy
   - ChallengeCreation
   - DirectoryEnumeration
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -57,4 +57,5 @@ As shown below, the flag was found using the script. The secret letter was `W`.
 
 ![[kokomelon.png]]
 
-Flag: `HNF25{i_l0v3_c0c0m3l0n!}`
+> [!NOTE] Flag
+> HNF25{i_l0v3_c0c0m3l0n!}

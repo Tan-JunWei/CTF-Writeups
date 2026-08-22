@@ -5,10 +5,6 @@ tags:
   - Wireshark
   - pcap
   - ROT13
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-03T20:29:34+08:00
 ---
 ## Challenge Description

@@ -244,6 +244,7 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                           width,
                           height,
                           alt,
+                          loading: "lazy",
                         },
                       },
                     }
@@ -336,14 +337,14 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                   file.data.frontmatter.tags = [...new Set([...noteTags, tag])]
                 }
 
-                const { text, bg } = colorForTag(tag)
+                const { hue, lightL, darkL } = colorForTag(tag)
                 return {
                   type: "link",
                   url: base + `/tags/${tag}`,
                   data: {
                     hProperties: {
                       className: ["tag-link"],
-                      style: `--tag-color:${text};--tag-bg:${bg}`,
+                      style: `--tag-hue:${hue};--tag-light-l:${lightL}%;--tag-dark-l:${darkL}%`,
                     },
                   },
                   children: [

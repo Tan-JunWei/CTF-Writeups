@@ -4,10 +4,6 @@ tags:
   - medium
   - ASCII
   - Hex
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-07T12:21:36+08:00
 ---
 ## Challenge Description

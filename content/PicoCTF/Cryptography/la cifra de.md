@@ -3,10 +3,6 @@ tags:
   - Cryptography
   - medium
   - Vigenere
-Creation Date: 
-Last Date: 
-draft: 
-References: 
 modified: 2024-08-26T15:30:09+08:00
 ---
 ## Challenge Description

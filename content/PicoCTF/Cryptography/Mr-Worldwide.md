@@ -3,10 +3,6 @@ tags:
   - Cryptography
   - medium
   - Geography
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-08-27T10:54:43+08:00
 ---
 ## Challenge Description

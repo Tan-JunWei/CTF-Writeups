@@ -4,7 +4,7 @@ tags:
   - easy
   - ChallengeCreation
   - pcap
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -40,7 +40,8 @@ modified: 2024-09-04T14:19:43+08:00
 
 ![[solve.png]]
 
-Flag: `HNF25{FTP_15_UN3CRYPT3D}`
+> [!NOTE] Flag
+> HNF25{FTP_15_UN3CRYPT3D}
 
 #### Similar
 - [[Trivial Flag Transfer Protocol]]: PicoCTF challenge involving TFTP (Trivial FTP), another unencrypted file transfer protocol

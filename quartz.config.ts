@@ -15,7 +15,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "https://tan-junwei.github.io/cybersecurity-blog",
+    baseUrl: "tan-junwei.github.io/CTF-Writeups",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -33,7 +33,8 @@ const config: QuartzConfig = {
           light: "#f5f6f9",
           lightgray: "#e1e1e1",
           // gray: "#b8b8b8",
-          gray: "#9e9e9e",
+          // gray: "#9e9e9e",
+          gray: "#656565",
           // darkgray: "#4e4e4e",
           darkgray: "#404040",
           dark: "#2b2b2b",
@@ -43,6 +44,7 @@ const config: QuartzConfig = {
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#fff23688",
           lighterLight: "rgba(245, 246, 249, 0.8)", // For image zoom background
+          border: "#b0b1b8", // divider/frame color, lightgray is too subtle for borders
         },
         darkMode: {
           // light: "#161618",
@@ -61,6 +63,7 @@ const config: QuartzConfig = {
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#b3aa0288",
           lighterLight: "rgba(14, 19, 25, 0.8)", // For image zoom background
+          border: "#474547", // matches lightgray
         },
       },
     },
@@ -69,12 +72,12 @@ const config: QuartzConfig = {
     transformers: [
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
-        priority: ["git","filesystem","frontmatter"],
+        priority: ["frontmatter", "git", "filesystem"],
       }),
       Plugin.SyntaxHighlighting({
         theme: {
-          light: "github-light",
-          dark: "github-dark",
+          light: "light-plus",
+          dark: "dark-plus",
         },
         keepBackground: false,
       }),

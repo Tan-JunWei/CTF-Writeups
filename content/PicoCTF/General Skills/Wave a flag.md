@@ -3,10 +3,6 @@ tags:
   - GeneralSkills
   - easy
   - strings
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-06T08:38:25+08:00
 ---
 ## Challenge Description

@@ -2,10 +2,6 @@
 tags:
   - GeneralSkills
   - medium
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-08T20:35:28+08:00
 ---
 ## Challenge Description

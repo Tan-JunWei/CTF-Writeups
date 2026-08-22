@@ -6,10 +6,6 @@ tags:
   - Steganography
   - Steghide
   - filetypes
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-03T13:45:30+08:00
 ---
 ## Challenge Description 
@@ -51,7 +47,7 @@ GSGCQBRFAGRAPELCGBHEGENSSVPFBJRZHFGQVFTHVFRBHESYNTGENAFSRE.SVTHERBHGNJNLGBUVQRGU
 
 There are no numbers in this string. Maybe it was encoded using Caesar cipher. My first instinct was to use ROT13. The following shows the output: 
 
-```bash
+```console
 ┌──(kali㉿kali)-[~/Desktop/picoCTF/forensics/trivial_flag_transfer_protocol]
 └─$ echo "$(cat instructions.txt)" | rot13 
 TFTPDOESNTENCRYPTOURTRAFFICSOWEMUSTDISGUISEOURFLAGTRANSFER.FIGUREOUTAWAYTOHIDETHEFLAGANDIWILLCHECKBACKFORTHEPLAN

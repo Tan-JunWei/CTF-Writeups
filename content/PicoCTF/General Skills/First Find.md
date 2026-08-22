@@ -5,10 +5,6 @@ tags:
   - zip
   - grep
   - tree
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-04T22:21:30+08:00
 ---
 ## Challenge Description

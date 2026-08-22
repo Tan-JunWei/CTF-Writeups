@@ -5,7 +5,12 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [Component.PrevNextNav(), Component.BackToTop(), Component.CodeLanguageLabel()],
+  afterBody: [
+    Component.PrevNextNav(),
+    Component.BackToTop(),
+    Component.CodeLanguageLabel(),
+    Component.DynamicDate(),
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/Tan-JunWei/CTF-Writeups",
@@ -23,12 +28,13 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: [
+    Component.ExplorerToggle(),
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Darkmode(),
     Component.Search(),
     // Component.RecentNotes({ title: "Recently Updated", limit: 2, showTags: false}),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.Explorer(),
   ],
   right: [
     Component.Graph(),
@@ -41,11 +47,12 @@ export const defaultContentPageLayout: PageLayout = {
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
+    Component.ExplorerToggle(),
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.Explorer(),
   ],
   right: [],
 }

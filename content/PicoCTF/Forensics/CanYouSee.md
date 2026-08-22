@@ -3,9 +3,6 @@ tags:
   - Forensics
   - easy
   - metadata
-Creation Date: 2024-08-15
-References: 
-draft: false
 modified: 2024-08-30T15:25:48+08:00
 ---
 ## Challenge Description

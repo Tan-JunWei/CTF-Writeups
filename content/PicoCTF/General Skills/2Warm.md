@@ -3,10 +3,6 @@ tags:
   - GeneralSkills
   - easy
   - Binary
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-06T10:16:27+08:00
 ---
 ## Challenge Description

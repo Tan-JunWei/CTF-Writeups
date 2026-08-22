@@ -13,12 +13,13 @@ const TagList: QuartzComponent = ({ fileData, displayClass }: QuartzComponentPro
     <ul class={classNames(displayClass, "tags")}>
       {tags.map((tag) => {
         const linkDest = baseDir + `/tags/${slugTag(tag)}`
-        const { text, bg } = colorForTag(tag)
-        // expose colors as CSS variables (global to the element), not inline 'color'
+        const { hue, lightL, darkL } = colorForTag(tag)
+        // expose hue + per-theme lightness as CSS variables, not inline 'color'
         const style = {
           // TSX: allow custom properties
-          ["--tag-color" as any]: text,
-          ["--tag-bg" as any]: bg,
+          ["--tag-hue" as any]: hue,
+          ["--tag-light-l" as any]: `${lightL}%`,
+          ["--tag-dark-l" as any]: `${darkL}%`,
         }
         return (
           <li>
@@ -55,8 +56,13 @@ TagList.css = `
 }
 
 a.internal.tag-link {
-  --tag-color: hsl(190 60% 35% / 1);     /* safe default */
-  --tag-bg:    hsl(190 60% 35% / 0.12);  /* safe default */
+  --tag-hue: 190;      /* safe default */
+  --tag-light-l: 28%;  /* safe default, light mode */
+  --tag-dark-l: 70%;   /* safe default, dark mode */
+  --tag-l: var(--tag-light-l);
+
+  --tag-color: hsl(var(--tag-hue) 62% var(--tag-l) / 1);
+  --tag-bg: hsl(var(--tag-hue) 62% var(--tag-l) / 0.14);
 
   color: var(--tag-color);
   border: 1px solid var(--tag-color);
@@ -65,6 +71,10 @@ a.internal.tag-link {
   border-radius: 8px;
   padding: 0.2rem 0.4rem;
   margin: 0 0.1rem;
+}
+
+:root[saved-theme="dark"] a.internal.tag-link {
+  --tag-l: var(--tag-dark-l);
 }
 `
 

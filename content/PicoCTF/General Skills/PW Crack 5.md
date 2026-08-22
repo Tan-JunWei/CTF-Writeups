@@ -4,10 +4,6 @@ tags:
   - medium
   - Python
   - PWcrack
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-09T12:03:37+08:00
 ---
 ## Challenge Description
@@ -84,7 +80,7 @@ Piping the contents through `head` will only display the first 10 lines of the f
 
 It seems that the passwords in this file all have a length of 4. In fact, if we run `cat dictionary.txt | tail` as well, we will see this output:
 
-```bash
+```console
 ┌──(kali㉿kali)-[~/Desktop/picoCTF/general_skills/PW_crack_5]
 └─$ cat dictionary.txt| tail     
 fff6
@@ -165,7 +161,7 @@ with open("dictionary.txt", "r") as pw_dict:
 
 I've attached the script above as well. Running the script will display which was the correct password out of the 65536 potential passwords, as well as the flag.
 
-```bash
+```console
 ┌──(kali㉿kali)-[~/Desktop/picoCTF/general_skills/PW_crack_5]
 └─$ python level5.py 
 Welcome back... your flag, user:

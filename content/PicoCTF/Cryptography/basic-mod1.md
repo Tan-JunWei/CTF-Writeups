@@ -4,10 +4,6 @@ tags:
   - medium
   - Mod
   - Python
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-08-25T15:02:06+08:00
 ---
 ## Challenge Description

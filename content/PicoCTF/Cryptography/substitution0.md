@@ -3,11 +3,7 @@ tags:
   - Cryptography
   - medium
   - Substitution
-Creation Date: 
-Last Date: 
 modified: 2024-08-24T22:54:53+08:00
-References: 
-draft: 
 ---
 ## Challenge Description
 ![[PicoCTF substitution 0.png]]

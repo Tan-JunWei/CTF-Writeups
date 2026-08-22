@@ -5,7 +5,7 @@ tags:
   - Steghide
   - medium
   - ChallengeCreation
-modified:
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -55,4 +55,5 @@ We can select any of them to see the full flag. Do note that this flag is case-s
 
 ![[Riding-WAVes-4.png]]
 
-Flag: `YCEP25{3mb3d_N_3xtract}`
+> [!NOTE] Flag
+> YCEP25{3mb3d_N_3xtract}

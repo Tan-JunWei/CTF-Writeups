@@ -4,7 +4,7 @@ tags:
   - easy
   - binwalk
   - ChallengeCreation
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -28,7 +28,7 @@ To solve this challenge, run `binwalk -e` on the given image. This challenge w
 binwalk -e calming.jpg
 ```
 
-```bash
+```console
 ┌──(nepz㉿nepz)-[~]
 └─$ binwalk -e calming.jpg
 
@@ -47,4 +47,5 @@ This file will contain the flag in plaintext, as shown below.
 
 ![[hidden.png]]
 
-Flag: `YCEP25{pr3tty_c00l_1m4ge_m4g1c}`
+> [!NOTE] Flag
+> YCEP25{pr3tty_c00l_1m4ge_m4g1c}

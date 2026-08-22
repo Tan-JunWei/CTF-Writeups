@@ -3,7 +3,7 @@ tags:
   - OSINT
   - easy
   - ChallengeCreation
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -33,4 +33,5 @@ The image should match the one in the following webpage. We can easily identify 
 
 The other search results should also provide similar information!
 
-Flag: `YCEP25{changchun_jilinprovince}`
+> [!NOTE] Flag
+> YCEP25{changchun_jilinprovince}

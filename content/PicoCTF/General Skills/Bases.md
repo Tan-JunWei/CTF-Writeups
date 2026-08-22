@@ -3,10 +3,6 @@ tags:
   - GeneralSkills
   - easy
   - base64
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-05T23:06:02+08:00
 ---
 ## Challenge Description

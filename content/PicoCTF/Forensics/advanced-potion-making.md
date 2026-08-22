@@ -5,10 +5,6 @@ tags:
   - Image
   - filetypes
   - hexedit
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-03T20:30:50+08:00
 ---
 ## Challenge Description

@@ -2,10 +2,6 @@
 tags:
   - Forensics
   - medium
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-08-20T23:19:45+08:00
 ---
 

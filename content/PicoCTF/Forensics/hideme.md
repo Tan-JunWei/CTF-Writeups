@@ -3,10 +3,6 @@ tags:
   - Forensics
   - medium
   - binwalk
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-25T22:15:55+08:00
 ---
 ## Challenge Description

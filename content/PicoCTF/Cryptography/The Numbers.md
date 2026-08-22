@@ -3,10 +3,6 @@ tags:
   - Cryptography
   - Python
   - easy
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-08-24T14:32:54+08:00
 ---
 ## Challenge Description

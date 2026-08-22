@@ -155,3 +155,53 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
   // remove default margin from li
   margin: 0;
 }
+
+#explorer-close {
+  display: none;
+}
+
+@media all and (max-width: $fullPageWidth) {
+  .explorer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: min(320px, 85vw);
+    height: 100dvh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5rem 1.5rem 2rem 1.5rem;
+    background-color: var(--light);
+    box-shadow: 4px 0 16px rgba(0, 0, 0, 0.15);
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+  }
+
+  body.explorer-open .explorer {
+    transform: translateX(0);
+  }
+
+  #explorer-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    color: var(--dark);
+
+    & svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      color: var(--tertiary);
+    }
+  }
+}

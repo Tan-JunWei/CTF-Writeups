@@ -4,7 +4,7 @@ tags:
   - easy
   - ChallengeCreation
   - base64
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -71,4 +71,5 @@ cat <<< "$text"
 
 ![[23summit46-solve.png]]
 
-Flag: `HNF{4ft3r_32_base64s}`
+> [!NOTE] Flag
+> HNF{4ft3r_32_base64s}

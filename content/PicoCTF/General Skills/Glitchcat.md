@@ -2,10 +2,6 @@
 tags:
   - GeneralSkills
   - easy
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-05T22:39:44+08:00
 ---
 ## Challenge Description

@@ -3,10 +3,6 @@ tags:
   - GeneralSkills
   - easy
   - strings
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-06T09:35:14+08:00
 ---
 ## Challenge Description
@@ -23,7 +19,7 @@ After downloading the files using `wget`, I ran `file static` to check the file 
 
 I then ran nano `ltdis.sh`, which was the bash script file provided in the challenge. 
 
-```bash
+```console
 ┌──(kali㉿kali)-[~/Desktop/picoCTF/general_skills/static_aint_always_noise]
 └─$ cat ltdis.sh 
 #!/bin/bash

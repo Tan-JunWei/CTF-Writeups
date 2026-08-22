@@ -5,10 +5,6 @@ tags:
   - Binary
   - Hex
   - Python
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-03T16:18:23+08:00
 ---
 ## Challenge Description

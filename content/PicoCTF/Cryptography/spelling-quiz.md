@@ -4,10 +4,6 @@ tags:
   - medium
   - Python
   - Substitution
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-08-26T14:40:25+08:00
 ---
 ## Challenge Description

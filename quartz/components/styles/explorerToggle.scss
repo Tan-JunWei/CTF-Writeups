@@ -1,0 +1,46 @@
+@use "../../styles/variables.scss" as *;
+
+.explorer-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  margin: 0;
+  flex-shrink: 0;
+  color: var(--dark);
+
+  & svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  &:hover {
+    color: var(--tertiary);
+  }
+
+  @media all and (max-width: $fullPageWidth) {
+    display: inline-flex;
+    margin-right: 0.9rem;
+  }
+}
+
+#explorer-backdrop {
+  display: none;
+}
+
+@media all and (max-width: $fullPageWidth) {
+  body.explorer-open #explorer-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+  }
+
+  body.explorer-open {
+    overflow: hidden;
+  }
+}

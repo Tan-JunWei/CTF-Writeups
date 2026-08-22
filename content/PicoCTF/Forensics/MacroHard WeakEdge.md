@@ -4,10 +4,6 @@ tags:
   - medium
   - zip
   - tree
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-03T20:26:24+08:00
 ---
 ## Challenge Description

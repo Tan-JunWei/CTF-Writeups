@@ -4,10 +4,6 @@ tags:
   - easy
   - Python
   - Binary
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-06T15:36:53+08:00
 ---
 ## Challenge Description

@@ -4,10 +4,6 @@ tags:
   - medium
   - pcap
   - Wireshark
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-09-03T20:32:25+08:00
 ---
 ## Challenge Description

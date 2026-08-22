@@ -4,7 +4,7 @@ tags:
   - Forensics
   - Sleuthkit
   - hard
-modified: 2024-09-03T12:34:49+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -92,4 +92,5 @@ icat -o 2048 disk.img 545 | base64 -d
 
 ![[Stealth-Mode-Activated-7.png]]
 
-Decoded flag: `YCEP25{d15k_d15k_h1d3}`
+> [!NOTE] Flag
+> YCEP25{d15k_d15k_h1d3}

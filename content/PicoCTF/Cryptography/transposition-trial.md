@@ -3,10 +3,6 @@ tags:
   - Cryptography
   - Transposition
   - medium
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 modified: 2024-08-24T14:27:04+08:00
 ---
 ## Challenge Description

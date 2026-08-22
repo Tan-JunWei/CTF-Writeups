@@ -3,7 +3,7 @@ tags:
   - OSINT
   - hard
   - ChallengeCreation
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -127,4 +127,7 @@ We have identified the musician as `Keyin`. However, this is not her musician st
 
 Her latest single should be "Turn It Up".
 
-Piecing everything together, the flag will be `YCEP25{keyinsaxophonist_turnitup}`.
+Piecing everything together, we get the flag.
+
+> [!NOTE] Flag
+> YCEP25{keyinsaxophonist_turnitup}

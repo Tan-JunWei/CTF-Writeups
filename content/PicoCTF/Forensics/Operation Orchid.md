@@ -5,10 +5,6 @@ tags:
   - Sleuthkit
   - OpenSSL
 modified: 2024-08-30T14:16:19+08:00
-Creation Date: 
-Last Date: 
-References: 
-draft: 
 ---
 ## Challenge Description 
 ![[PicoCTF Operation Orchid.png]]

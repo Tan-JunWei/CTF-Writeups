@@ -3,7 +3,7 @@ tags:
   - Miscellaneous
   - easy
   - ChallengeCreation
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -26,7 +26,7 @@ modified: 2024-09-04T14:19:43+08:00
 
 After unzipping the zip file, just tabcomplete and cat the `text.txt` file in `dir20`.
 
-```bash
+```console
 ┌──(nepz㉿nepz)-[~]
 └─$ unzip dir1.zip
 Archive:  dir1.zip
@@ -57,4 +57,5 @@ Archive:  dir1.zip
 YCEP25{put_th15_0n_my_tab}
 ```
 
-Flag: `YCEP25{put_th15_0n_my_tab}`
+> [!NOTE] Flag
+> YCEP25{put_th15_0n_my_tab}

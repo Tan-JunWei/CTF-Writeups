@@ -4,7 +4,7 @@ tags:
   - hard
   - ChallengeCreation
   - GTFOBins
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -85,4 +85,7 @@ Well, that's the intended solve of this challenge! During the CTF itself, I actu
 
 I guess it was my fault for using a slightly outdated Ubuntu OS version. But hey, it's still a valid solution! I love seeing unintended solutions on "infra hacking" challenges, like those on THM/HTB, as they truly highlight the fact that there is usually more than 1 way to solve a challenge. That also means that we shouldn't always assume that a system is invulnerable and impossible to compromise :)
 
-Anyways, here's the root flag: `HNF25{c0ll4tera1_d4m4g3_t0_r00t}`
+Anyways, here's the root flag:
+
+> [!NOTE] Root Flag
+> HNF25{c0ll4tera1_d4m4g3_t0_r00t}

@@ -9,6 +9,7 @@ export interface ColorScheme {
   highlight: string
   textHighlight: string
   lighterLight: string // For image zoom background
+  border: string // For visible dividers/frames (cards, code blocks, graph, tables)
 }
 
 interface Colors {
@@ -53,6 +54,7 @@ ${stylesheet.join("\n\n")}
   --highlight: ${theme.colors.lightMode.highlight};
   --textHighlight: ${theme.colors.lightMode.textHighlight};
   --lighterLight: ${theme.colors.lightMode.lighterLight};
+  --border: ${theme.colors.lightMode.border};
   --headerFont: "${theme.typography.header}", ${DEFAULT_SANS_SERIF};
   --bodyFont: "${theme.typography.body}", ${DEFAULT_SANS_SERIF};
   --codeFont: "${theme.typography.code}", ${DEFAULT_MONO};
@@ -69,6 +71,7 @@ ${stylesheet.join("\n\n")}
   --highlight: ${theme.colors.darkMode.highlight};
   --textHighlight: ${theme.colors.darkMode.textHighlight};
   --lighterLight: ${theme.colors.darkMode.lighterLight};
+  --border: ${theme.colors.darkMode.border};
 }
 `
 }

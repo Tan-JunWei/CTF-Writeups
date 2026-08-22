@@ -5,10 +5,6 @@ tags:
   - Binary
   - Hex
   - Octal
-Creation Date: 
-Last Date: 
-References: 
-draft: false
 modified: 2024-09-25T14:13:21+08:00
 ---
 ## Challenge Description

@@ -4,7 +4,7 @@ tags:
   - easy
   - ChallengeCreation
   - AudioForensics
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -42,4 +42,5 @@ Simply read the flag from the spectrogram image.
 > 
 > But after reviewing the flags people actually submitted and the avalanche of tickets (+ DMs) I got just for this one challenge, I’m starting to suspect some of you were reading hieroglyphics instead of the flag. Either that, or the flag grew legs and ran away. 😆
 
-Flag: `HNF25{h1dd3n_in_audi0}`
+> [!NOTE] Flag
+> HNF25{h1dd3n_in_audi0}

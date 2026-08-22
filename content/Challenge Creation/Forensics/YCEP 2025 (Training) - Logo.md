@@ -3,7 +3,7 @@ tags:
   - Forensics
   - easy
   - ChallengeCreation
-modified: 2024-09-04T14:19:43+08:00
+modified: 2026-08-22T08:25:37+08:00
 ---
 ## Challenge Description
 
@@ -23,7 +23,7 @@ modified: 2024-09-04T14:19:43+08:00
 
 Run strings on the provided file and the flag will be shown in the last line of the output.
 
-```bash
+```console
 ┌──(nepz㉿nepz)-[~]
 └─$ ls
 nullsec.png
@@ -348,4 +348,5 @@ IEND
 YCEP25{stringing_it}
 ```
 
-Flag: `YCEP25{stringing_it}`
+> [!NOTE] Flag
+> YCEP25{stringing_it}
