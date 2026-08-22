@@ -66,7 +66,7 @@ echo cvpbPGS{P7e1S_54I35_71Z3} | rot13
 
 The command `echo cvpbPGS{P7e1S_54I35_71Z3} | rot13` prints the string `cvpbPGS{P7e1S_54I35_71Z3}` using `echo`, then pipes (`|`) that output to the `rot13` command, which performs a ROT13 substitution cipher on the input string.
 
-Alternatively, we can use tools like [[CyberChef]] to decode this string.
+Alternatively, we can use tools like CyberChef to decode this string.
 
  >[!NOTE] Flag
 >picoCTF{C7r1F_54V35_71M3}

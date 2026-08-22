@@ -15,7 +15,7 @@ As the challenge name and hint suggest, the flag is probably encrypted using a c
 
 Running `cat encrypted.txt` displays a string `xqkwKBN{z0bib1wv_l3kzgxb3l_555957n3}`. Observing this string allows us to conclude that we will need to use caesar cipher to decrypt it, due to the presence of the familiar curly braces `{}`. 
 
-Further analysis (or trial and error) tells us that the caesar cipher input value should be _18_. From here, we can use [[CyberChef]] to decrypt the message.
+Further analysis (or trial and error) tells us that the caesar cipher input value should be _18_. From here, we can use CyberChef to decrypt the message.
 
 ![[PicoCTF rotation 3.png]]
 

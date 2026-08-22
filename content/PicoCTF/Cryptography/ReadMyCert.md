@@ -44,9 +44,9 @@ elZFzORDsCzlgD87NvBUMZWI8J5+9fZeaWAQQfhwEiZOVn8IcjLUxUraxt4rbI/h
 -----END CERTIFICATE REQUEST-----
 ```
 
-### [[Base64]]?
+### Base64?
 
-I found the output above very interesting, although it looked like gibberish. There was a familiar "`=`" at the end of the certificate request portion, and I instinctively thought of [[Base64]]. This is because the special character "`=`" is used for padding in [[Base64]] encoding. 
+I found the output above very interesting, although it looked like gibberish. There was a familiar "`=`" at the end of the certificate request portion, and I instinctively thought of Base64. This is because the special character "`=`" is used for padding in Base64 encoding. 
 
 Hence, I made another file named `request.txt`, which only contained the certificate request portion (without the begin and end). I also combined the lines to form a single line as such:
 

@@ -9,7 +9,7 @@ modified: 2024-08-30T14:16:19+08:00
 ## Challenge Description 
 ![[PicoCTF Operation Orchid.png]]
 
-Since this challenge provides a compressed disk image, we will probably have to use [[The Sleuth Kit (TSK)]] tools to assist us. 
+Since this challenge provides a compressed disk image, we will probably have to use The Sleuth Kit (TSK) tools to assist us. 
 
 We first download the file using `wget`, then run `gunzip <file-name>` to expand the compressed disk image file.
 ### Understanding the volume system
@@ -30,7 +30,7 @@ Running this command on the `2048` offset did not show anything suspicious. Howe
 I continued and tried to use `grep "flag"` to check if there is any file or directory that contains the word "flag" in its name. Indeed, running this command revealed 2 files, `flag.txt` and `flag.txt.enc`.
 ### Unallocated space
 >[!bug] `r/r * 1876(realloc): flag.txt`
->According to the official [[The Sleuth Kit (TSK)]] [fls command page](https://wiki.sleuthkit.org/index.php?title=Fls):
+>According to the official The Sleuth Kit (TSK) [fls command page](https://wiki.sleuthkit.org/index.php?title=Fls):
 >```
 >If the file name is in unallocated space of the directory, there will be a '*' between the file type(r/r)
 >and the metadata address.
@@ -57,8 +57,6 @@ I continued and tried to use `grep "flag"` to check if there is any file or dire
 >>[!tip] Conclusion
 >>
 >>`r/r * 1876(realloc): flag.txt` was displayed when we successfully used `grep` to find files with "flag" in their names. From the above excerpt, this indicates that the file name is in an unallocated state (meaning the file has been deleted or moved), but the metadata structure (the detailed information about the file) is still in an allocated state.
->
->See also: [[Unallocated space|Unallocated vs Allocated]]
 
 Hence, as expected, running `cat flag.txt` did not show anything special. 
 

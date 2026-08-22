@@ -15,7 +15,7 @@ For this challenge, not much clue was given in the description. However, a hint 
 
 >[!faq] PicoCTF Hint: All we know is that this packet capture includes a chat conversation and a file transfer.
 >
->We'll have to keep that in mind when we analyse the packets in [[Wireshark]].
+>We'll have to keep that in mind when we analyse the packets in Wireshark.
 
 We begin by downloading the file using `wget <link>`. Opening the `pcapng` file in Wireshark showed that there are only 75 packets in total. 
 

@@ -13,7 +13,7 @@ modified: 2024-09-03T13:45:30+08:00
 
 Hmmmm... vague description. We first download the file using `wget <link>` and see what type of file it is. 
 
-The downloaded file is called `tftp.pcapng`. We will use [[Wireshark]] to analyze the packets. Since both the downloaded file name and the challenge name talks about TFTP, I went to learn more about it. This page, [What is TFTP?](https://www.spiceworks.com/it-articles/what-is-tftp/), was a useful resource.
+The downloaded file is called `tftp.pcapng`. We will use Wireshark to analyze the packets. Since both the downloaded file name and the challenge name talks about TFTP, I went to learn more about it. This page, [What is TFTP?](https://www.spiceworks.com/it-articles/what-is-tftp/), was a useful resource.
 
 ### Examining the Protocol Hierarchy
 ![[PicoCTF Trivial Flag Transfer Protocol 2.png]]
@@ -86,17 +86,17 @@ dpkg-deb --info < file-name >
 The command `dpkg-deb --info <file-name>` is used to display information about the contents of a `.deb` package without actually installing it. This can be helpful to check what files the package will install and where they will be placed, as well as other metadata about the package.
 
 ![[PicoCTF Trivial Flag Transfer Protocol 6.png]]
-As seen above, we see a chunk of text under "Description" which states that Steghide is [[Steganography]] program which hides bits of a data file in some of the least significant bits of another file in such a way that the existence of the data file is not visible and cannot be proven.
+As seen above, we see a chunk of text under "Description" which states that Steghide is Steganography program which hides bits of a data file in some of the least significant bits of another file in such a way that the existence of the data file is not visible and cannot be proven.
 
-From the above clue about checking out the photos, we can conclude that the flag has been hidden in the photos using [[Steghide]]. 
+From the above clue about checking out the photos, we can conclude that the flag has been hidden in the photos using Steghide. 
 
 >[!faq] PicoCTF Hint: What are some other ways to hide data?
->Well, seems like the answer was [[Steganography]].
+>Well, seems like the answer was Steganography.
 
 ![[PicoCTF Trivial Flag Transfer Protocol 7.png]]
 
 >[!warning] Passphrase required
->To extract the flag hidden using [[Stegseek]], we must provide a passphrase. It seems like we have not been provided with any. Of course, we can use tools like Stegseek or Stegcracker to brute-force the passphrase.
+>To extract the flag hidden using Stegseek, we must provide a passphrase. It seems like we have not been provided with any. Of course, we can use tools like Stegseek or Stegcracker to brute-force the passphrase.
 >
 >However, thankfully, upon further inspection, we were actually given the passphrase. 
 >
@@ -111,7 +111,7 @@ steghide extract -sf < file-name > -p DUEDILIGENCE
 - `-sf`: Specifies name of the stego file
 - `-p`: Specifies passphrase
 
-[[Steghide]] was unable to extract any data from `picture1.bmp` and `picture2.bmp`, but for `picture3.bmp`, a file called `flag.txt` was extracted.
+Steghide was unable to extract any data from `picture1.bmp` and `picture2.bmp`, but for `picture3.bmp`, a file called `flag.txt` was extracted.
 
 When we `cat` this file, we will be able to see the flag. 
 

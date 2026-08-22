@@ -3,7 +3,7 @@ import { QuartzComponentProps } from "../../components/types"
 import HeaderConstructor from "../../components/Header"
 import BodyConstructor from "../../components/Body"
 import { pageResources, renderPage } from "../../components/renderPage"
-import { ProcessedContent, QuartzPluginData, defaultProcessedContent } from "../vfile"
+import { ProcessedContent, defaultProcessedContent } from "../vfile"
 import { FullPageLayout } from "../../cfg"
 import path from "path"
 import {
@@ -18,18 +18,15 @@ import {
 import { defaultListPageLayout, sharedPageComponents } from "../../../quartz.layout"
 import { FolderContent } from "../../components"
 import { write } from "./helpers"
-import { i18n } from "../../i18n"
 import DepGraph from "../../depgraph"
 
-interface FolderPageOptions extends FullPageLayout {
-  sort?: (f1: QuartzPluginData, f2: QuartzPluginData) => number
-}
+type FolderPageOptions = FullPageLayout
 
 export const FolderPage: QuartzEmitterPlugin<Partial<FolderPageOptions>> = (userOpts) => {
   const opts: FullPageLayout = {
     ...sharedPageComponents,
     ...defaultListPageLayout,
-    pageBody: FolderContent({ sort: userOpts?.sort }),
+    pageBody: FolderContent(),
     ...userOpts,
   }
 
@@ -91,7 +88,9 @@ export const FolderPage: QuartzEmitterPlugin<Partial<FolderPageOptions>> = (user
           defaultProcessedContent({
             slug: joinSegments(folder, "index") as FullSlug,
             frontmatter: {
-              title: `${i18n(cfg.locale).pages.folderContent.folder}: ${folder}`,
+              // use just the folder's own name (not its full path) as the title,
+              // matching how the breadcrumb trail displays folder names
+              title: (folder.split("/").pop() ?? folder).replaceAll("-", " "),
               tags: [],
             },
           }),

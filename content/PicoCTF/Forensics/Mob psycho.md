@@ -60,7 +60,7 @@ I tested the same command with the other directory (`res`), which contained 40 d
 >7069636f4354467b6178386d433052553676655f4e5838356c346178386d436c5f35326135653264657d
 >```
 
-I copied this string and pasted it in [[CyberChef]], which instinctively highlighted that this was a Hex string. Converting it from Hex will allow us to claim the flag.
+I copied this string and pasted it in CyberChef, which instinctively highlighted that this was a Hex string. Converting it from Hex will allow us to claim the flag.
 
 However, I was curious to check if I could convert this string using the CLI itself. From this [StackOverflow page](https://stackoverflow.com/questions/13160309/conversion-hex-string-into-ascii-in-bash-command-line), I learnt that this command can be used:
 

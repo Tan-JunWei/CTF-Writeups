@@ -3,7 +3,7 @@ import { QuartzComponentProps } from "../../components/types"
 import HeaderConstructor from "../../components/Header"
 import BodyConstructor from "../../components/Body"
 import { pageResources, renderPage } from "../../components/renderPage"
-import { ProcessedContent, QuartzPluginData, defaultProcessedContent } from "../vfile"
+import { ProcessedContent, defaultProcessedContent } from "../vfile"
 import { FullPageLayout } from "../../cfg"
 import {
   FilePath,
@@ -18,15 +18,13 @@ import { write } from "./helpers"
 import { i18n } from "../../i18n"
 import DepGraph from "../../depgraph"
 
-interface TagPageOptions extends FullPageLayout {
-  sort?: (f1: QuartzPluginData, f2: QuartzPluginData) => number
-}
+type TagPageOptions = FullPageLayout
 
 export const TagPage: QuartzEmitterPlugin<Partial<TagPageOptions>> = (userOpts) => {
   const opts: FullPageLayout = {
     ...sharedPageComponents,
     ...defaultListPageLayout,
-    pageBody: TagContent({ sort: userOpts?.sort }),
+    pageBody: TagContent(),
     ...userOpts,
   }
 
@@ -85,10 +83,9 @@ export const TagPage: QuartzEmitterPlugin<Partial<TagPageOptions>> = (userOpts) 
 
       const tagDescriptions: Record<string, ProcessedContent> = Object.fromEntries(
         [...tags].map((tag) => {
-          const title =
-            tag === "index"
-              ? i18n(cfg.locale).pages.tagContent.tagIndex
-              : `${i18n(cfg.locale).pages.tagContent.tag}: ${tag}`
+          // use just the tag's own name as the title (not "Tag: X"), matching
+          // how folder pages show just the folder's name
+          const title = tag === "index" ? i18n(cfg.locale).pages.tagContent.tagIndex : tag
           return [
             tag,
             defaultProcessedContent({

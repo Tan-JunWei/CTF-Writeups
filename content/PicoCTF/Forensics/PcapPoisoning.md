@@ -17,9 +17,9 @@ After downloading the file, we realise that it is a `pcap` file, as the challeng
 >
 >We can run `strings <file-name> | grep pico` to get the flag immediately. Piping the output of the `strings` command through `grep` will allow us to filter out line(s) that contain the search term "pico".
 
-Alternatively, we can use [[Wireshark]] for packet analysis.
+Alternatively, we can use Wireshark for packet analysis.
 
-### Using [[Wireshark]]
+### Using Wireshark
 
 ![[PicoCTF Pcap Poisoning 3.png]]
 

@@ -24,7 +24,7 @@ modified: 2026-08-22T08:25:37+08:00
 >[!info] What is a spectrogram?
 >A **spectrogram** is a visual representation of the frequencies present in an audio signal over time. The x-axis represents time, the y-axis represents frequency, and the colour/intensity represents amplitude at each frequency.
 >
->Hidden messages can be embedded in the high-frequency range of audio files, where they are inaudible to the human ear but visually visible in the spectrogram. This is a common audio [[Steganography]] technique in CTF challenges.
+>Hidden messages can be embedded in the high-frequency range of audio files, where they are inaudible to the human ear but visually visible in the spectrogram. This is a common audio Steganography technique in CTF challenges.
 
 1. Download the audio file (`cool.wav`) provided.
 

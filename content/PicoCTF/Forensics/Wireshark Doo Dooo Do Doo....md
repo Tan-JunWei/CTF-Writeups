@@ -10,16 +10,16 @@ modified: 2024-09-03T20:29:34+08:00
 ## Challenge Description
 
 ![[PicoCTF Wireshark doo dooo do doo... .png]]
-Aha, a [[Wireshark]] challenge. First we download the .`pcapng` file using `wget <link>`. 
+Aha, a Wireshark challenge. First we download the .`pcapng` file using `wget <link>`. 
 
 >[!important] Wireshark
 > Wireshark is a network analysis tool. 
 > 
-> For more information, refer to [[Wireshark|this page]].
+> For more information, refer to Wireshark's official documentation.
 ### Finding the flag
 ![[PicoCTF Wireshark doo dooo do doo... 1.5.png]]
 
-After opening the file in [[Wireshark]], I first went to check the Protocol Hierarchy, and decided to use `tcp` as a filter. 
+After opening the file in Wireshark, I first went to check the Protocol Hierarchy, and decided to use `tcp` as a filter. 
 
 >[!question] What is Protocol Hierarchy?
 >Protocol hierarchy in Wireshark is a feature that displays a breakdown of the different protocols
@@ -44,7 +44,7 @@ Since I did not intuitively realise which cipher was used to encrypt the flag, I
 
 ![[PicoCTF Wireshark doo dooo do doo... 4.png]]
 
-Since it highlighted that the string may have been encrypted using [ROT13](https://en.wikipedia.org/wiki/ROT13), I headed to [[CyberChef]] to obtain our flag. https://rot13.com/ also works.
+Since it highlighted that the string may have been encrypted using [ROT13](https://en.wikipedia.org/wiki/ROT13), I headed to CyberChef to obtain our flag. https://rot13.com/ also works.
 
 > [!NOTE] Flag
 > picoCTF{p33kab00_1_s33_u_deadbeef}

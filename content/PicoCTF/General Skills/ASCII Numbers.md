@@ -14,13 +14,13 @@ We are given a string of hexadecimal values, where each value corresponds to an 
 
 >[!faq] PicoCTF Hint: CyberChef is a great tool for any encoding but especially ASCII.
 >
->Indeed, [[CyberChef]] can be useful in challenges like these.
+>Indeed, CyberChef can be useful in challenges like these.
 
-### Acquiring the flag using [[CyberChef]]
+### Acquiring the flag using CyberChef
 
 ![[PicoCTF ASCII Numbers 2.png]]
 
-Using the 'From Hex' function in [[CyberChef]] shows the full flag as the output.
+Using the 'From Hex' function in CyberChef shows the full flag as the output.
 
 ### Acquiring the flag using a Python script
 

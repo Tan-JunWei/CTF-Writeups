@@ -24,7 +24,7 @@ This is an interesting challenge, as we are trying to crack the WPA password of 
 ### Downloaded file
 ![[PicoCTF WPA-ing Out 2.png]]
 
-We first begin by downloading the `wpa-ing_out.pcap` file. I proceeded to open it in [[Wireshark]], and observed that this file contains 23523 packets from an internal network. 
+We first begin by downloading the `wpa-ing_out.pcap` file. I proceeded to open it in Wireshark, and observed that this file contains 23523 packets from an internal network. 
 
 ### Cracking the password
 To crack the password of password of a wireless network like this by using a common password list, we can run this command:

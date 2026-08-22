@@ -45,7 +45,7 @@ I then headed over to [https://29a.ch/photo-forensics/#forensic-magnifier](https
 
 I searched online for other tools for image forensics, and came across [Aperi'Solve](https://www.aperisolve.com/). This was my first time using it. As seen above, the full flag was easily seen when I uploaded the file on Aperi'Solve.
 
-For more information, see [[Aperi'Solve]] or refer to their [official GitHub page](https://github.com/Zeecka/AperiSolve).
+For more information, see Aperi'Solve or refer to their [official GitHub page](https://github.com/Zeecka/AperiSolve).
 
 ![[PicoCTF advanced potion making 8.png]]
 

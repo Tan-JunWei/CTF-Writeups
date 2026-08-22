@@ -13,7 +13,7 @@ Based on the directions given, we will just have to `wget <link to file>` then r
 
 >[!important] The `mmls` command
 >`mmls` displays the partition layout of a volume system, which can be helpful in disk image analysis. 
->To find out more, check out [[The Sleuth Kit (TSK)]]
+>To find out more, check out The Sleuth Kit (TSK)
 ### Execution
 
 ![[PicoCTF Sleuthkit intro 2.png]]

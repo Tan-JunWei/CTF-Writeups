@@ -45,11 +45,11 @@ The problem now is that we don't know the number of rotations required to shift 
 
 However, the good news is that since there are only 26 possible shifts for the Caesar cipher, one for each letter in the alphabet. We will at most require 25 attempts to find the plaintext, because the 26th shift returns the original ciphertext.
 
-We can bruteforce this in many ways, such as writing a script or using an online tool like [[CyberChef]].
+We can bruteforce this in many ways, such as writing a script or using an online tool like CyberChef.
 ### Flag
 ![[PicoCTF Caesar 3.png]]
 
-For this challenge, I used [[CyberChef]] to obtain the plaintext. It didn't take too long for me to realise that the key (shift) used was 4, as the other values produced random strings of characters. From here, we just have to wrap this plaintext in `picoCTF{...}` format to get the flag.
+For this challenge, I used CyberChef to obtain the plaintext. It didn't take too long for me to realise that the key (shift) used was 4, as the other values produced random strings of characters. From here, we just have to wrap this plaintext in `picoCTF{...}` format to get the flag.
 
 > [!NOTE] Flag
 >picoCTF{crossingtherubiconvfhsjkou}

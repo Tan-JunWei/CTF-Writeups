@@ -18,7 +18,7 @@ From the description, it looks like we will have to download the disk image and 
 We first download and extract the disk image using `wget <link>` and `gunzip <image-name>`. We then run `mmls <file-name>` to display the partition layout of this volume system. We have to take note of the starting offsets of the different partitions. 
 
 >[!question] Disk Analysis Tool
->This challenge will require the usage of disk analysis tools like[[The Sleuth Kit (TSK)]].
+>This challenge will require the usage of disk analysis tools likeThe Sleuth Kit (TSK).
 ### `fls` command
 ![[PicoCTF operation oni 3.png]]
  We proceed by running `fls -o <image-offset> -r <image-name>` to display the files and directories of the available partitions. It appears that we will have to zoom into the second partition instead of the first, as the first partition does not look like it has the ssh keys. 

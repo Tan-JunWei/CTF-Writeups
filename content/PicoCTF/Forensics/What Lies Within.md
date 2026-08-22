@@ -17,7 +17,7 @@ Let's begin by downloading the file using `wget <link>`.
 The downloaded file, `buildings.png` looks like this. Doesn't seem helpful in any way.
 
 >[!question] PicoCTF Hint: There is data encoded somewhere... there might be an online decoder
->This may be hinting that this is a [[Steganography]] challenge.
+>This may be hinting that this is a Steganography challenge.
 
 ### Decoded Flag
 

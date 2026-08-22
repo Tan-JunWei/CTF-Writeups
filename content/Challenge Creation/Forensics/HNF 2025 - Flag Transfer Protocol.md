@@ -26,7 +26,7 @@ modified: 2026-08-22T08:25:37+08:00
 >
 >This is in contrast to SFTP (SSH File Transfer Protocol) or FTPS (FTP Secure), which encrypt the connection. The flag in this challenge directly references this vulnerability: `FTP_15_UN3CRYPT3D`.
 
-1. For this challenge, we are given a file called `ftp.pcap`. Open it in [[Wireshark]].
+1. For this challenge, we are given a file called `ftp.pcap`. Open it in Wireshark.
 
 2. Since FTP transmits data in plaintext, the flag is directly readable in the captured traffic. There are multiple approaches:
 

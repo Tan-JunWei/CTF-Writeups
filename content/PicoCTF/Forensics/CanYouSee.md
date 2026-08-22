@@ -34,7 +34,7 @@ The clue seems to be hinting us to check the metadata of the picture. We shall d
 
 
 
-From the metadata, we realise a suspicious string of characters shown for the `Attribution URL`. It looks like it is `base64 encoded`. We shall try decoding it using [[CyberChef]]. 
+From the metadata, we realise a suspicious string of characters shown for the `Attribution URL`. It looks like it is `base64 encoded`. We shall try decoding it using CyberChef. 
 
 
 ### CyberChef output

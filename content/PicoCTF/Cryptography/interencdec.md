@@ -19,15 +19,12 @@ From the description and hint provided, we can infer that this challenge will li
 After running `file enc_flag`, we realise that this file contains ASCII text. `cat enc_flag` displays a string of characters.
 
 >[!tip]
->Since the string ends with 2 `=` characters, this string is likely [[Base64]] encoded, because the special character "`=`" is used in its encoding process.
->
->How does Base64 encoding work? 
->Check this out: [[Base64#Base64 Encoding|Base64 Encoding]]
+>Since the string ends with 2 `=` characters, this string is likely Base64 encoded, because the special character "`=`" is used in its encoding process.
 
 ### The decoding process
 ![[PicoCTF interencdec 3.png]]
 
-Using [[CyberChef]], we proceed by attempting [[Base64]] decoding. We receive an output that contains a string of characters which once again, looks like it's [[Base64]] encoded. Let's extract that string and run it through the [[Base64]] decoding process again.
+Using CyberChef, we proceed by attempting Base64 decoding. We receive an output that contains a string of characters which once again, looks like it's Base64 encoded. Let's extract that string and run it through the Base64 decoding process again.
 
 ![[PicoCTF interencdec 4.png]]
 

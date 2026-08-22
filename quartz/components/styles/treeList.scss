@@ -1,0 +1,281 @@
+@use "../../styles/variables.scss" as *;
+
+// shared by the folder tree (FolderContent) and tag browsing pages (TagContent)
+//
+// specificity note: every rule that needs to beat the site-wide a.internal
+// pill styling is written as `.tree-page .xyz` (two classes, no tag). That
+// keeps this file at one consistent specificity tier, so overrides resolve
+// by source order instead of by accidental specificity differences.
+
+.tree-page {
+  margin-top: 2rem;
+}
+
+.tree-root {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+
+  & ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 1.4rem;
+  }
+
+  & summary {
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+}
+
+// breadcrumb-style trail above the tree, mirrors the highlighted path below
+.tree-trail {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--lightgray);
+  font-size: 0.9rem;
+}
+
+.tree-trail-link {
+  color: var(--gray);
+  font-weight: $normalWeight;
+  transition:
+    color 0.2s ease,
+    font-weight 0.2s ease;
+
+  &:hover {
+    color: var(--secondary);
+  }
+
+  &.current {
+    color: var(--darkgray);
+    font-weight: $semiBoldWeight;
+  }
+}
+
+.tree-trail-sep {
+  color: var(--gray);
+  opacity: 0.5;
+}
+
+// 1. baseline reset: strip the site-wide .internal pill (background/radius)
+.tree-page .internal {
+  background-color: transparent;
+  border-radius: 0;
+  line-height: inherit;
+}
+
+// 2. base row: icon + label, generous padding/gap so content never crowds
+// the icon or the accent border, full-width hover highlight
+.tree-page .tree-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.6rem;
+  margin: 0.05rem 0;
+  border-radius: 6px;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+  color: var(--darkgray);
+  font-weight: $normalWeight;
+  transition:
+    background-color 0.2s ease,
+    border-left-color 0.2s ease,
+    color 0.2s ease,
+    font-weight 0.2s ease;
+}
+
+// 3. generic hover
+.tree-page .tree-row:hover,
+summary.tree-row:hover {
+  background-color: var(--lightgray);
+}
+
+// 4. the whole active trail is highlighted the same way, the current
+// folder just gets a touch more weight so it's still clear where you are
+.tree-page .tree-row.on-path {
+  border-left-color: var(--secondary);
+  background-color: color-mix(in srgb, var(--secondary) 7%, transparent);
+  font-weight: $semiBoldWeight;
+
+  & .tree-icon {
+    color: var(--secondary);
+  }
+}
+
+// 5. hovering an on-path row deepens its own tint instead of falling back
+// to the plain gray hover
+.tree-page .tree-row.on-path:hover {
+  background-color: color-mix(in srgb, var(--secondary) 13%, transparent);
+}
+
+// 6. the exact current folder, not just the trail leading to it
+.tree-page .tree-row.on-path.current {
+  font-weight: $boldWeight;
+}
+
+.tree-icon {
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  color: var(--gray);
+  transition: color 0.2s ease;
+}
+
+.tree-chevron {
+  flex-shrink: 0;
+  width: 11px;
+  height: 11px;
+  color: var(--gray);
+  transition: transform 0.2s ease;
+}
+
+.tree-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// trailing muted meta text: an item count on folder/tag rows, or a date on file rows
+.tree-meta {
+  margin-left: auto;
+  padding-left: 0.5rem;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--gray);
+  opacity: 0.75;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+// --- folder branch rows (FolderContent) ---------------------------------
+// the twisty is a dedicated button, separate from the row link, but the
+// whole row is still clickable: it selects (navigates) and opens the
+// branch immediately (see folderTree.inline.ts), so nobody needs to land
+// precisely on the twisty just to look inside a folder
+.tree-row-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+
+  & > .tree-row {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+.tree-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: var(--lightgray);
+  }
+
+  &[aria-expanded="true"] .tree-chevron {
+    transform: rotate(90deg);
+  }
+}
+
+// animates a branch open/closed via CSS grid rows, no JS-measured heights
+// needed, and it keeps working when a new page's tree state is morphed in
+// over SPA navigation
+.tree-children {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.25s ease;
+
+  &.open {
+    grid-template-rows: 1fr;
+  }
+
+  & > ul {
+    overflow: hidden;
+    min-height: 0;
+  }
+}
+
+// --- tag branch rows (TagContent tag index) -----------------------------
+// tags don't have an "active path" or a separate toggle control: the
+// chevron sits inside the summary and toggles the native <details> itself
+summary.tree-branch {
+  padding: 0.35rem 0.6rem 0.35rem 0.35rem;
+
+  & > a.tree-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+    color: inherit;
+    font-weight: inherit;
+  }
+}
+
+// each tag gets its own icon color, hashed from its name, the same
+// per-tag hue used for the colored tag pills elsewhere (see
+// util/tagColor.ts), applied to the icon instead of a pill background
+.tag-color {
+  --tag-l: var(--tag-light-l);
+
+  & .tree-icon {
+    color: hsl(var(--tag-hue) 62% var(--tag-l) / 1);
+  }
+}
+
+:root[saved-theme="dark"] .tag-color {
+  --tag-l: var(--tag-dark-l);
+}
+
+// the "N items with this tag" line on an individual tag page, with that
+// tag's own colored icon leading it
+.tree-tag-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+details[open] > summary.tree-branch > .tree-chevron {
+  transform: rotate(90deg);
+}
+
+// files nested under a branch row are indented to align with sibling branch
+// names, past the twisty/chevron column. top-level file rows don't need this
+.tree-page .tree-file {
+  padding-left: 2.35rem;
+}
+
+// "+N more" link at the end of a truncated preview list
+.tree-more {
+  color: var(--gray);
+  font-style: italic;
+}
+
+@media all and (max-width: $mobileBreakpoint) {
+  .tree-root ul {
+    padding-left: 1.1rem;
+  }
+
+  .tree-page .tree-file {
+    padding-left: 2rem;
+  }
+}

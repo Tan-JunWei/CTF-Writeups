@@ -25,16 +25,16 @@ With the above hint, I ran `strings dump.pcap` to have a quick glimpse of what's
 >4. PBwaWUvQ1RGesabababkjaASKBKSBACVVAVSDDSSSSDSKJBJS  
 >5. PBwaWUvQ1RGe1Maybe try checking the other file
 
-Of the 5 strings, I zoomed into string 3 first. It seems like a [[Base64]] encoded string, with a padding character `=` at the end. I immediately went to [[CyberChef]] to try to decode from `Base64`.  
+Of the 5 strings, I zoomed into string 3 first. It seems like a Base64 encoded string, with a padding character `=` at the end. I immediately went to CyberChef to try to decode from `Base64`.  
 
 ### CyberChef Base64 Decoding
 ![[PicoCTF FindAndOpen 3.png]]
 
 All I got was gibberish. However, I noticed that this string has a length of 70.
 
->[!important] How the [[Base64]] encoding process works
+>[!important] How the Base64 encoding process works
 >
->During encoding, the [[Base64]] algorithm replaces each three bytes with four bytes and, if necessary, adds padding characters, so the result will always be a multiple of four (_What Is Base64? | Learn | Base64_, n.d.). 
+>During encoding, the Base64 algorithm replaces each three bytes with four bytes and, if necessary, adds padding characters, so the result will always be a multiple of four (_What Is Base64? | Learn | Base64_, n.d.). 
 
 This meant that I will have to delete 2 characters from the input string. I first tried to remove 2 characters from the front. 
 
