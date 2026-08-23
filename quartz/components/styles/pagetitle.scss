@@ -1,0 +1,10 @@
+@use "../../styles/variables.scss" as *;
+
+.page-title {
+  font-size: 1.75rem;
+  margin: 0;
+
+  @media all and (max-width: $fullPageWidth) {
+    font-size: 1.15rem;
+  }
+}

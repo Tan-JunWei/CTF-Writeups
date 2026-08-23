@@ -35,7 +35,7 @@ The major similarity in all "PW Crack" challenges is that we are only awarded th
 >
 >Interestingly, this challenge is extremely similar to [[PW Crack 3]] challenge. However, in the previous challenge, we are provided with 7 possible passwords to attempt. This challenge gives us 100.
 >
->The approach is similar; I'm still going to iterate through the list of possible passwords with a `for` loop.
+>The approach is similar, I'm still going to iterate through the list of possible passwords with a `for` loop.
 >
 >```python
 >import hashlib

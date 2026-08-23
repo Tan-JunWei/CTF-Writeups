@@ -12,7 +12,7 @@ modified: 2024-08-24T23:04:15+08:00
 For this challenge, we will basically repeat the same steps we did to retrieve the flag for the [[substitution0]] challenge. First, we download the file using `wget`, and then run `cat` to see the message.
 
 >[!important] Closely similar challenges
->[[substitution0]], [[substitution1]] and [[substitution2]] are 3 closely similar PicoCTF [[PicoCTF Writeups#Cryptography|Cryptography]] challenges.
+>[[substitution0]], [[substitution1]] and [[substitution2]] are 3 closely similar PicoCTF Cryptography challenges.
 
 ### The Message
 ![[PicoCTF substitution2 2.png]]

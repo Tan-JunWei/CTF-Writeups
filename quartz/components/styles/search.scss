@@ -31,12 +31,44 @@
       width: 18px;
       min-width: 18px;
       margin: 0 0.5rem;
+      overflow: visible;
 
       .search-path {
         stroke: var(--darkgray);
-        stroke-width: 2px;
+        stroke-width: 2.8px;
         transition: stroke 0.5s ease;
       }
+    }
+
+    @media all and (max-width: $fullPageWidth) {
+      background-color: transparent;
+      justify-content: center;
+      padding: 0.25rem;
+
+      & > p {
+        display: none;
+      }
+
+      & svg {
+        width: 22px;
+        min-width: 22px;
+        margin: 0;
+
+        .search-path {
+          stroke-width: 3px;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: $fullPageWidth) {
+    min-width: fit-content;
+    max-width: fit-content;
+    flex-grow: 0;
+
+    & > .search-button {
+      width: auto;
+      height: auto;
     }
   }
 

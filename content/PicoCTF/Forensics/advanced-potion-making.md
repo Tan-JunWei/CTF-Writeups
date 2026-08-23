@@ -20,7 +20,7 @@ We begin our quest for the flag by downloading the file using `wget`. Running `f
 According to [this source](https://www.oreilly.com/library/view/learning-malware-analysis/9781788392501/1b730be0-0f55-4400-a375-de996989d966.xhtml#:~:text=The%20manual%20method%20of%20determining,the%20analysis%20of%20a%20file.), one way of determining the file type is to look for the [_file signature_](https://threat.media/definition/what-is-a-file-signature/) by opening it in a hex editor.
 
 >[!important] Hex Editor
->A _hex editor_ is a tool that allows an examiner to inspect each byte of the file; most hex editors provide many functionalities that help in the analysis of a file.
+>A _hex editor_ is a tool that allows an examiner to inspect each byte of the file. Most hex editors provide many functionalities that help in the analysis of a file.
 
 So I proceeded to use `hexedit` and recognised that this file is likely a `png` file with a wrong file signature. 
 

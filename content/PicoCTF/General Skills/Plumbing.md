@@ -31,7 +31,7 @@ When I ran the command, the output contained an overwhelming number of lines, an
 >```
 >- `-l`:  print the newline counts (basically total number of lines)
 >
->I piped the output received through `wc` with the `-l` argument to check how many lines it consisted of. This step is optional; I was just curious.
+>I piped the output received through `wc` with the `-l` argument to check how many lines it consisted of. This step is optional, I was just curious.
 
 Since I knew that the flag format for picoCTF challenge is always `picoCTF{...}`, I can simply pipe the output through `grep` with the search term being "pico" to find our flag, using the command shown below.
 

@@ -42,7 +42,7 @@ For this challenge, I used a python script to assist with the binary operations:
 >
 ># Question 4: Multiplication of binary_number_1 and binary_number_2
 >print(f'{binary_number_1 * binary_number_2:08b}')
-># Output: 1110100010 (This result exceeds 8 bits; it will show as a larger binary number)
+># Output: 1110100010 (This result exceeds 8 bits, it will show as a larger binary number)
 >
 ># Left shift binary_number_1 by 1
 >print(f'{binary_number_1 << 1:08b}')

@@ -27,7 +27,7 @@ nc jupiter.challenges.picoctf.org 15130
 >
 >We are first tasked to convert a **binary (base-2) representation** of a word to the original word. There is a time limit of 45 seconds for us to submit to correct answer.
 >
->If the answer is correct, we will then be given an **octal (base-8) representation** of another word. Our task is basically the same; we have to decode the octal representation and submit the correct word.
+>If the answer is correct, we will then be given an **octal (base-8) representation** of another word. Our task is basically the same, we have to decode the octal representation and submit the correct word.
 >
 >The final stage will require us to decode the **base64 representation** of a word. After which, the answer submitted is correct, we will be awarded with the flag.
 

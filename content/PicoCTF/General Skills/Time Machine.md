@@ -8,7 +8,7 @@ modified: 2024-09-04T16:59:23+08:00
 ## Challenge Description
 ![[PicoCTF Time Machine.png]]
 
-Hmmmm.... the challenge description hints that we will be following a [[PicoCTF Writeups#Forensics|Forensics]] approach. However, this challenge is categorised under `General Skills`. We shall explore!
+Hmmmm.... the challenge description hints that we will be following a Forensics approach. However, this challenge is categorised under `General Skills`. We shall explore!
 
 We first download the file given using `wget <link>`.
 

@@ -1,0 +1,674 @@
+@use "../../styles/variables.scss" as *;
+
+// shared easing/duration for anything that flows to a new position rather than just fading
+$flow-duration: 0.22s;
+$flow-ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+.chart-tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  max-width: 13rem;
+  padding: 0.36rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background-color: var(--light);
+  color: var(--darkgray);
+  font-family: var(--bodyFont);
+  font-size: 0.76rem;
+  font-weight: $semiBoldWeight;
+  white-space: nowrap;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(2px);
+  // left/top transition on $flow-duration/$flow-ease so the tooltip glides between anchors
+  transition:
+    opacity 0.12s ease,
+    visibility 0.12s ease,
+    transform 0.12s ease,
+    left $flow-duration $flow-ease,
+    top $flow-duration $flow-ease;
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.hd-tt-month {
+  font-size: 0.68rem;
+  font-weight: $normalWeight;
+  color: var(--gray);
+}
+
+.hd-tt-total {
+  font-size: 0.82rem;
+}
+
+.hd-tt-delta {
+  color: var(--diff-easy);
+}
+
+.hd-dashboard {
+  margin: 2.2rem 0 2.6rem 0;
+  padding-top: 1.8rem;
+  border-top: 1px solid var(--lightgray);
+
+  --chart-accent: color-mix(in srgb, var(--secondary) 80%, var(--gray) 20%);
+  --chart-highlight: var(--tertiary);
+}
+
+.hd-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+
+  @media all and (max-width: $mobileBreakpoint) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hd-kpi {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background-color: color-mix(in srgb, var(--lightgray) 12%, var(--light));
+}
+
+a.hd-kpi {
+  color: inherit;
+  font-weight: $normalWeight;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    border-color: var(--secondary);
+    background-color: color-mix(in srgb, var(--secondary) 6%, var(--light));
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+
+  &:hover .hd-kpi-arrow,
+  &:focus-visible .hd-kpi-arrow {
+    color: var(--secondary);
+    transform: translate(1px, -1px);
+  }
+}
+
+// signals the two linked tiles are clickable without adding visible link styling to the numbers
+.hd-kpi-arrow {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  color: var(--gray);
+  transition:
+    color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.hd-kpi-num {
+  font-family: var(--headerFont);
+  font-size: 1.7rem;
+  font-weight: $boldWeight;
+  color: var(--dark);
+  line-height: 1.1;
+}
+
+.hd-kpi-label {
+  font-size: 0.76rem;
+  color: var(--gray);
+}
+
+.hd-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+
+  @media all and (max-width: $tabletBreakpoint) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// repeats its own mobile collapse since an unconditional rule here would win the cascade over .hd-row's
+.hd-row-equal {
+  grid-template-columns: 1fr 1fr;
+
+  @media all and (max-width: $tabletBreakpoint) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hd-panel {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background-color: color-mix(in srgb, var(--lightgray) 12%, var(--light));
+  min-width: 0;
+}
+
+.hd-panel-center {
+  display: flex;
+  flex-direction: column;
+
+  > *:last-child {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    > * {
+      width: 100%;
+    }
+  }
+}
+
+.hd-panel-title {
+  margin: 0 0 0.9rem 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: $semiBoldWeight;
+  color: var(--gray);
+}
+
+.hd-bars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.hd-bar-row {
+  --tag-l: var(--tag-light-l);
+
+  display: grid;
+  grid-template-columns: 5.8rem 1fr 3.3rem;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.2rem 0.3rem;
+  margin: 0 -0.3rem;
+  border-radius: 6px;
+  color: inherit;
+  font-weight: $normalWeight;
+  transition: background-color 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    background-color: color-mix(in srgb, var(--secondary) 7%, transparent);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 1px;
+  }
+
+  &:hover .hd-bar-fill,
+  &:focus-visible .hd-bar-fill {
+    filter: brightness(1.12);
+  }
+}
+
+:root[saved-theme="dark"] .hd-bar-row {
+  --tag-l: var(--tag-dark-l);
+}
+
+.hd-bar-label {
+  font-size: 0.8rem;
+  color: var(--darkgray);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hd-bar-track {
+  height: 0.5rem;
+  border-radius: 4px;
+  background-color: var(--lightgray);
+  overflow: hidden;
+}
+
+.hd-bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  background-color: hsl(var(--tag-hue) 62% var(--tag-l) / 1);
+  transition:
+    width 0.4s ease,
+    filter 0.15s ease;
+}
+
+.hd-bar-count {
+  font-size: 0.78rem;
+  font-weight: $semiBoldWeight;
+  color: var(--gray);
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.hd-bar-pct {
+  font-weight: $normalWeight;
+  color: hsl(var(--tag-hue) 62% var(--tag-l) / 1);
+}
+
+.hd-diff-body {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hd-ring-wrap {
+  position: relative;
+  width: 7.5rem;
+  height: 7.5rem;
+  flex-shrink: 0;
+  animation: hd-ring-in 0.5s cubic-bezier(0.25, 0.8, 0.4, 1) both;
+}
+
+@keyframes hd-ring-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+.hd-ring {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hd-ring-segment {
+  cursor: pointer;
+  outline: none;
+}
+
+.hd-ring-arc {
+  transform-box: view-box;
+  transform-origin: 60px 60px;
+  fill-opacity: 0.88;
+  filter: saturate(0.82);
+  transition:
+    transform 0.18s cubic-bezier(0.25, 0.8, 0.4, 1),
+    filter 0.15s ease,
+    fill-opacity 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.hd-ring-segment.hd-diff-active .hd-ring-arc {
+  transform: scale(1.045);
+  fill-opacity: 1;
+  filter: brightness(1.12) drop-shadow(0 0 5px color-mix(in srgb, currentColor 45%, transparent));
+}
+
+.hd-ring-segment.hd-diff-dim .hd-ring-arc {
+  opacity: 0.35;
+}
+
+.hd-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 0;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.15rem 0.3rem;
+    margin: 0 -0.3rem;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    color: inherit;
+    font-weight: $normalWeight;
+    transition:
+      background-color 0.15s ease,
+      opacity 0.15s ease;
+
+    &:hover,
+    &:focus-visible,
+    &.hd-diff-active {
+      background-color: color-mix(in srgb, var(--secondary) 7%, transparent);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--secondary);
+      outline-offset: 1px;
+    }
+
+    &.hd-diff-dim {
+      opacity: 0.45;
+    }
+  }
+}
+
+.hd-legend-dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  flex-shrink: 0;
+}
+
+.hd-legend-label {
+  flex: 1;
+  text-transform: capitalize;
+  color: var(--darkgray);
+}
+
+.hd-legend-count {
+  font-weight: $semiBoldWeight;
+  font-variant-numeric: tabular-nums;
+}
+
+.hd-legend-pct {
+  font-weight: $normalWeight;
+  opacity: 0.75;
+}
+
+.hd-timechart-body {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.hd-timechart-ylabels {
+  position: relative;
+  flex-shrink: 0;
+  width: 2rem;
+}
+
+.hd-timechart-ylabel {
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 0.72rem;
+  color: var(--gray);
+  font-variant-numeric: tabular-nums;
+}
+
+.hd-timechart-plot {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  aspect-ratio: 560 / 200;
+}
+
+.hd-area {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+.hd-timechart-xlabels {
+  position: relative;
+  height: 1.1rem;
+  margin: 0.5rem 0 0 calc(2rem + 0.6rem);
+}
+
+.hd-timechart-xlabel {
+  position: absolute;
+  top: 0;
+  font-size: 0.72rem;
+  color: var(--gray);
+  white-space: nowrap;
+}
+
+.hd-area-grid {
+  stroke: var(--lightgray);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+
+// eases in on mount. Opacity/transform only, not clip-path, which would distort
+// getBoundingClientRect() for the point hit-targets nested inside it
+.hd-area-reveal {
+  animation: hd-area-reveal 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes hd-area-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+.hd-area-line {
+  stroke: var(--chart-accent);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hd-area-point {
+  outline: none;
+}
+
+.hd-area-dot {
+  fill: var(--chart-accent);
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.15s ease;
+}
+
+.hd-area-point:focus-visible .hd-area-dot {
+  transform: scale(1.8);
+}
+
+.hd-area-hitlayer {
+  pointer-events: all;
+  cursor: crosshair;
+}
+
+.hd-area-line-highlight {
+  stroke: var(--chart-highlight);
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0;
+  filter:
+    drop-shadow(0 0 3px color-mix(in srgb, var(--chart-highlight) 90%, transparent))
+    drop-shadow(0 0 8px color-mix(in srgb, var(--chart-highlight) 65%, transparent));
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+.hd-area-band-clip-rect {
+  transition:
+    x $flow-duration $flow-ease,
+    width $flow-duration $flow-ease;
+}
+
+.hd-area-band-anchor {
+  pointer-events: none;
+}
+
+.hd-area-band-start,
+.hd-area-band-end {
+  stroke: var(--chart-highlight);
+  stroke-width: 1;
+  stroke-opacity: 0.6;
+  stroke-dasharray: 3 3;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.15s ease,
+    x1 $flow-duration $flow-ease,
+    x2 $flow-duration $flow-ease;
+}
+
+.hd-timechart-hover {
+  .hd-area-line-highlight,
+  .hd-area-band-start,
+  .hd-area-band-end {
+    opacity: 1;
+  }
+}
+
+.hd-radar-wrap {
+  --radar-h0: 351;
+  --radar-h1: 22;
+  --radar-h2: 46;
+  --radar-h3: 100;
+  --radar-h4: 168;
+  --radar-h5: 208;
+  --radar-h6: 252;
+
+  // per-hue lightness nudge since flat HSL lightness reads much lighter for yellow/green than blue/violet
+  --radar-l0: 40%;
+  --radar-l1: 34%;
+  --radar-l2: 27%;
+  --radar-l3: 27%;
+  --radar-l4: 27%;
+  --radar-l5: 35%;
+  --radar-l6: 46%;
+
+  position: relative;
+  width: 100%;
+  max-width: 23rem;
+  margin: 0 auto;
+  aspect-ratio: 220 / 200;
+  animation: hd-ring-in 0.5s cubic-bezier(0.25, 0.8, 0.4, 1) both;
+}
+
+:root[saved-theme="dark"] .hd-radar-wrap {
+  --radar-l0: 74%;
+  --radar-l1: 70%;
+  --radar-l2: 58%;
+  --radar-l3: 54%;
+  --radar-l4: 54%;
+  --radar-l5: 70%;
+  --radar-l6: 76%;
+}
+
+.hd-radar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+.hd-radar-fill {
+  position: absolute;
+  inset: 0;
+  opacity: 0.32;
+  transition: opacity 0.2s ease;
+}
+
+.hd-radar-wrap.hd-radar-hovering .hd-radar-fill {
+  opacity: 0.4;
+}
+
+.hd-radar-grid {
+  fill: none;
+  stroke: var(--lightgray);
+  stroke-width: 1;
+}
+
+.hd-radar-spoke {
+  stroke: var(--lightgray);
+  stroke-width: 1;
+}
+
+.hd-radar-edge {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-opacity: 0.6;
+  transition:
+    stroke-opacity 0.15s ease,
+    stroke-width 0.15s ease;
+}
+
+.hd-radar-edge-active {
+  stroke-width: 2.75;
+  stroke-opacity: 1;
+}
+
+.hd-radar-edge-dim {
+  stroke-opacity: 0.3;
+}
+
+.hd-radar-dot {
+  stroke: var(--light);
+  stroke-width: 1.5;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition:
+    transform 0.15s cubic-bezier(0.25, 0.8, 0.4, 1),
+    filter 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.hd-radar-point.hd-radar-active .hd-radar-dot,
+.hd-radar-point:focus-visible .hd-radar-dot {
+  filter: brightness(1.15) drop-shadow(0 0 5px color-mix(in srgb, currentColor 65%, transparent));
+}
+
+.hd-radar-point-dim .hd-radar-dot {
+  opacity: 0.55;
+}
+
+.hd-radar-labels {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hd-radar-label {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.05rem;
+  max-width: 5.8rem;
+  font-size: 0.74rem;
+  line-height: 1.25;
+  color: var(--gray);
+  text-align: center;
+  transition:
+    opacity 0.15s ease,
+    color 0.15s ease;
+
+  b {
+    font-size: 0.78rem;
+    font-weight: $semiBoldWeight;
+    transition: color 0.15s ease;
+  }
+
+  &.hd-radar-label-active {
+    color: var(--darkgray);
+  }
+
+  &.hd-radar-label-dim {
+    opacity: 0.55;
+  }
+}

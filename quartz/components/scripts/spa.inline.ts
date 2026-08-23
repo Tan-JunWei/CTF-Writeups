@@ -9,7 +9,7 @@ const isElement = (target: EventTarget | null): target is Element =>
   (target as Node)?.nodeType === NODE_TYPE_ELEMENT
 const isLocalUrl = (href: string) => {
   try {
-    const url = new URL(href)
+    const url = new URL(href, document.baseURI)
     if (window.location.origin === url.origin) {
       return true
     }
@@ -29,9 +29,10 @@ const getOpts = ({ target }: Event): { url: URL; scroll?: boolean } | undefined 
   const a = target.closest("a")
   if (!a) return
   if ("routerIgnore" in a.dataset) return
-  const { href } = a
+  // SVGAElement.href is an SVGAnimatedString, not a plain string like HTMLAnchorElement.href
+  const href = a instanceof SVGAElement ? a.href.baseVal : a.href
   if (!isLocalUrl(href)) return
-  return { url: new URL(href), scroll: "routerNoscroll" in a.dataset ? false : undefined }
+  return { url: new URL(href, document.baseURI), scroll: "routerNoscroll" in a.dataset ? false : undefined }
 }
 
 function notifyNav(url: FullSlug) {

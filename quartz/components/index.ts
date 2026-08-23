@@ -26,6 +26,7 @@ import PrevNextNav from "./PrevNextNav"
 import CodeLanguageLabel from "./CodeLanguageLabel"
 import ExplorerToggle from "./ExplorerToggle"
 import DynamicDate from "./DynamicDate"
+import Flex from "./Flex"
 export {
   ArticleTitle,
   Content,
@@ -55,4 +56,5 @@ export {
   CodeLanguageLabel,
   ExplorerToggle,
   DynamicDate,
+  Flex,
 }
